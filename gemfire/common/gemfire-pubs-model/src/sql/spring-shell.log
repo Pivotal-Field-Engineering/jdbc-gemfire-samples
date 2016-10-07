@@ -1,0 +1,101 @@
+// XD Shell 1.1.0.RELEASE log opened at 2016-03-24 15:27:27
+admin config server "http://pivhdsne:9393"
+// [failed] stream create pubs --definition "jdbc --spring.datasource.url=jdbc:postgresql://localhost:5432/postgres --spring.datasource.driverClassName=org.postgresql.Driver --spring.datasource.username=postgres --logging.level.org.springframework.jdbc=debug --includes='org.postgresql:postgresql:9.3-1102-jdbc4' --query='select au_id, au_lname, au_fname from authors' | log" --deploy
+// [failed] stream create pubs --definition "jdbc --spring.datasource.url=jdbc:postgresql://localhost:5432/postgres --spring.datasource.driverClassName=org.postgresql.Driver --spring.datasource.username=postgres --logging.level.org.springframework.jdbc=debug  --query='select au_id, au_lname, au_fname from authors' | log" --deploy
+stream create pubs --definition "jdbc --url=jdbc:postgresql://localhost:5432/postgres --driverClassName=org.postgresql.Driver --username=postgres --query='select * authors limit 5" --deploy
+stream list
+stream destroy pubs
+stream create pubs --definition "jdbc --url=jdbc:postgresql://localhost:5432/postgres --driverClassName=org.postgresql.Driver --username=postgres --query='select * authors limit 5" 
+stream destroy pubs
+stream create pubs --definition "jdbc --url=jdbc:postgresql://localhost:5432/postgres --driverClassName=org.postgresql.Driver --username=postgres --query='select * authors limit 5;’ | log"
+stream deploy pubs --properties "module.jdbc.criteria=groups.contains('sqlfire')"
+stream list
+// [failed] stream create pubs --definition "jdbc --url=jdbc:postgresql://localhost:5432/postgres --driverClassName=org.postgresql.Driver --username=postgres --query='select * authors'’ | log"
+stream list
+stream destroy pubs
+stream create pubs --definition "jdbc --url=jdbc:postgresql://localhost:5432/postgres --driverClassName=org.postgresql.Driver --username=postgres --query='select * authors'’ | log"
+stream destroy pubs
+stream create pubs --definition "jdbc --url=jdbc:postgresql://localhost:5432/postgres --driverClassName=org.postgresql.Driver --username=postgres --query='select * authors' | log"
+stream deploy pubs --properties "module.jdbc.criteria=groups.contains('sqlfire')"
+stream list
+stream destroy pubs
+stream create pubs --definition "jdbc --url=jdbc:postgresql://localhost:5432/postgres --driverClassName=org.postgresql.Driver --username=postgres --query='select * from authors' | log"
+stream deploy pubs --properties "module.jdbc.criteria=groups.contains('sqlfire')"
+stream undeploy pubs
+stream destroy pubs
+quit
+// XD Shell 1.1.0.RELEASE log closed at 2016-03-24 16:23:42
+// XD Shell 1.1.0.RELEASE log opened at 2016-03-30 13:27:20
+admin config server "http://pivhdsne:9393"
+stream list
+stream destroy pubs
+// [failed] stream create postgresToGemfire --definition "jdbc --fixedDelay=1 --split=1 --url=jdbc:postgresql://localhost:5432/postgres --testOnBorrow=true --driverClassName=org.postgresql.Driver --validateQuery='select 1' --username=postgres  --query='select * from authors where processed=0' --update='update authors set processed=1 where processed in (:AU_ID)' | object-to-json | gemfire-json-server --useLocator=true --host=172.31.9.231 --port=10334 --regionName=authors --keyExpression=payload.getField('AU_ID')"
+stream create postgresToGemfire --definition "jdbc --fixedDelay=1 --split=1 --url=jdbc:postgresql://localhost:5432/postgres --testOnBorrow=true --driverClassName=org.postgresql.Driver --validationQuery='select 1' --username=postgres  --query='select * from authors where processed=0' --update='update authors set processed=1 where processed in (:AU_ID)' | object-to-json | gemfire-json-server --useLocator=true --host=172.31.9.231 --port=10334 --regionName=authors --keyExpression=payload.getField('AU_ID')"
+stream deploy postgresToGemfire --properties "module.jdbc.criteria=groups.contains('sqlfire'), module.gemfire-json-server.criteria=groups.contains('gemfire')"
+stream list
+stream undeploy postgresToGemfire
+stream deploy postgresToGemfire --properties "module.jdbc.criteria=groups.contains('sqlfire'), module.gemfire-json-server.criteria=groups.contains('gemfire')"
+stream destroy postgresToGemfire
+stream create postgresToGemfire --definition "jdbc --fixedDelay=1 --split=1 --url=jdbc:postgresql://localhost:5432/postgres --testOnBorrow=true --driverClassName=org.postgresql.Driver --validationQuery='select 1' --username=postgres  --query='select * from authors where processed=0' --update='update authors set processed=1 where AU_ID in (:AU_ID)' | object-to-json | gemfire-json-server --useLocator=true --host=172.31.9.231 --port=10334 --regionName=authors --keyExpression=payload.getField('AU_ID')"
+stream deploy postgresToGemfire --properties "module.jdbc.criteria=groups.contains('sqlfire'), module.gemfire-json-server.criteria=groups.contains('gemfire')"
+stream destroy postgresToGemfire
+stream create postgresToGemfire --definition "jdbc --fixedDelay=1 --split=1 --url=jdbc:postgresql://localhost:5432/postgres --testOnBorrow=true --driverClassName=org.postgresql.Driver --validationQuery='select 1' --username=postgres  --query='select * from authors where processed=0' --update='update authors set processed=1 where AU_ID in (:AU_ID)' | object-to-json | gemfire-json-server --useLocator=true --host=172.31.9.231 --port=10334 --regionName=authors --keyExpression=payload.getField('au_id')"
+stream deploy postgresToGemfire --properties "module.jdbc.criteria=groups.contains('sqlfire'), module.gemfire-json-server.criteria=groups.contains('gemfire')"
+stream undeploy postgresToGemfire
+stream deploy postgresToGemfire --properties "module.jdbc.criteria=groups.contains('sqlfire'), module.gemfire-json-server.criteria=groups.contains('gemfire')"
+stream create sqlfireToGemfire --definition "jdbc --fixedDelay=1 --split=1 --url=jdbc:gemfirexd://localhost:1527 --testOnBorrow=true  --driverClassName=com.pivotal.gemfirexd.jdbc.ClientDriver --username=app --password=app --validationQuery='select 1 from authors'  --query='select * from authors where processed=0' --update='update authors set processed=1 where AU_ID in (:AU_ID)' | object-to-json | gemfire-json-server --useLocator=true --host=172.31.9.231 --port=10334 --regionName=authors --keyExpression=payload.getField('au_id')"
+// [failed] stream deploy postgresToGemfire --properties "module.jdbc.criteria=groups.contains('sqlfire'), module.gemfire-json-server.criteria=groups.contains('gemfire')"
+stream deploy sqlfireToGemfire  --properties "module.jdbc.criteria=groups.contains('sqlfire'), module.gemfire-json-server.criteria=groups.contains('gemfire')"
+stream list
+stream destroy postgresToGemfire
+stream undeploy sqlfireToGemfire
+stream deploy sqlfireToGemfire  --properties "module.jdbc.criteria=groups.contains('sqlfire'), module.gemfire-json-server.criteria=groups.contains('gemfire')"
+stream destroy sqlfireToGemfire
+stream create sqlfireToGemfire --definition "jdbc --fixedDelay=1 --split=1 --url=jdbc:gemfirexd://localhost:1527 --testOnBorrow=true  --driverClassName=com.pivotal.gemfirexd.jdbc.ClientDriver --username=app --password=app --validationQuery='select 1 from authors'  --query='select * from authors where processed=0' --update='update authors set processed=1 where AU_ID in (:AU_ID)' | object-to-json | gemfire-json-server --useLocator=true --host=172.31.9.231 --port=10334 --regionName=authors --keyExpression=payload.getField('AU_ID')"
+stream deploy sqlfireToGemfire  --properties "module.jdbc.criteria=groups.contains('sqlfire'), module.gemfire-json-server.criteria=groups.contains('gemfire')"
+quit
+// XD Shell 1.1.0.RELEASE log closed at 2016-03-30 14:23:29
+// XD Shell 1.1.0.RELEASE log opened at 2016-04-07 08:56:41
+quit
+// XD Shell 1.1.0.RELEASE log closed at 2016-04-07 08:56:43
+// XD Shell 1.1.0.RELEASE log opened at 2016-04-07 08:58:07
+stream create postgresToGemfire --definition "jdbc --fixedDelay=1 --split=1 --url=jdbc:postgresql://localhost:5432/postgres --testOnBorrow=true --driverClassName=org.postgresql.Driver --validationQuery='select 1' --username=postgres  --query='select * from authors where processed=0' --update='update authors set processed=1 where AU_ID in (:AU_ID)' | object-to-json | gemfire-json-server --useLocator=true --host=172.31.9.231 --port=10334 --regionName=authors --keyExpression=payload.getField('au_id')"
+stream deploy postgresToGemfire
+admin config server "http://localhost:9393"
+stream list
+stream create postgresToGemfire --definition "jdbc --fixedDelay=1 --split=1 --url=jdbc:postgresql://localhost:5432/postgres --testOnBorrow=true --driverClassName=org.postgresql.Driver --validationQuery='select 1' --username=postgres  --query='select * from authors where processed=0' --update='update authors set processed=1 where AU_ID in (:AU_ID)' | object-to-json | gemfire-json-server --useLocator=true --host=localhost --port=10334 --regionName=authors --keyExpression=payload.getField('au_id')"
+stream deploy postgresToGemfire
+module list
+// XD Shell 1.1.0.RELEASE log opened at 2016-04-07 14:00:40
+clear
+module list
+stream create ticktock --definition "time | log"
+stream list
+stream deploy ticktock
+// XD Shell 1.1.0.RELEASE log opened at 2016-04-07 14:02:32
+stream undeploy ticktock
+quit
+// XD Shell 1.1.0.RELEASE log closed at 2016-04-07 14:04:17
+// XD Shell 1.1.0.RELEASE log opened at 2016-04-07 14:04:29
+stream create tweets --definition "twitterstream | log"
+stream create tweetlang  --definition "tap:stream:tweets > field-value-counter --fieldName=lang" --deploy
+stream create tweetcount --definition "tap:stream:tweets > aggregate-counter" --deploy
+stream create tagcount --definition "tap:stream:tweets > field-value-counter --fieldName=entities.hashtags.text --name=hashtags" --deploy
+module list
+stream list
+stream deploy tweets
+stream create postgresToGemfire --definition "jdbc --fixedDelay=1 --split=1 --url=jdbc:postgresql://localhost:5432/postgres --testOnBorrow=true --driverClassName=org.postgresql.Driver --validationQuery='select 1' --username=postgres  --query='select * from authors where processed=0' --update='update authors set processed=1 where AU_ID in (:AU_ID)' | object-to-json | gemfire-json-server --useLocator=true --host=localhost --port=10334 --regionName=authors --keyExpression=payload.getField('au_id')"
+// XD Shell 1.1.0.RELEASE log opened at 2016-04-07 14:11:37
+quit
+// XD Shell 1.1.0.RELEASE log closed at 2016-04-07 16:02:25
+stream undeploy tweets
+quit
+// XD Shell 1.1.0.RELEASE log closed at 2016-04-07 23:39:45
+// XD Shell 1.1.0.RELEASE log opened at 2016-06-01 09:48:45
+module list
+quit
+// XD Shell 1.1.0.RELEASE log closed at 2016-06-01 09:50:03
+// XD Shell 1.1.0.RELEASE log opened at 2016-06-01 09:50:15
+module list
+quit
+// XD Shell 1.1.0.RELEASE log closed at 2016-06-01 14:52:20
