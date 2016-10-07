@@ -1,112 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <cache xmlns="http://schema.pivotal.io/gemfire/cache" xmlns:gpdb="http://schema.pivotal.io/gemfire/gpdb"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://schema.pivotal.io/gemfire/cache http://schema.pivotal.io/gemfire/cache/cache-8.1.xsd
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://schema.pivotal.io/gemfire/cache http://schema.pivotal.io/gemfire/cache/cache-8.1.xsd
                         http://schema.pivotal.io/gemfire/gpdb http://schema.pivotal.io/gemfire/gpdb/gpdb-1.0.xsd"
-	version="8.1">
+       version="8.1">
 
-	<disk-store name="pdx">
-		<disk-dirs>
-			<disk-dir>./</disk-dir>
-		</disk-dirs>
-	</disk-store>
+    <pdx read-serialized="false">
+        <pdx-serializer>
+            <class-name>com.gemstone.gemfire.pdx.ReflectionBasedAutoSerializer</class-name>
+            <parameter name="classes">
+                <string>io.pivotal.gemfire.pubs.model.*</string>
+            </parameter>
+        </pdx-serializer>
+    </pdx>
 
-	<disk-store name="AppointmentStore">
-		<disk-dirs>
-			<disk-dir>./</disk-dir>
-		</disk-dirs>
-	</disk-store>
+    <region name="Author" refid="REPLICATE"></region>
+    <region name="Editor" refid="REPLICATE"></region>
+    <region name="Publisher" refid="REPLICATE"></region>
+    <region name="RoyalitySchedule" refid="REPLICATE"></region>
+    <region name="Sale" refid="REPLICATE"></region>
+    <region name="SalesDetail" refid="REPLICATE"></region>
+    <region name="Title" refid="REPLICATE"></region>
+    <region name="TitleAuthor" refid="REPLICATE"></region>
+    <region name="TitleEditor" refid="REPLICATE"></region>
 
-	<disk-store name="MemberStore">
-		<disk-dirs>
-			<disk-dir>./</disk-dir>
-		</disk-dirs>
-	</disk-store>
-
-	<disk-store name="MemberPhoneStore">
-		<disk-dirs>
-			<disk-dir>./</disk-dir>
-		</disk-dirs>
-	</disk-store>
-
-	<disk-store name="AddressStore">
-		<disk-dirs>
-			<disk-dir>./</disk-dir>
-		</disk-dirs>
-	</disk-store>
-
-	<disk-store name="FacilityStore">
-		<disk-dirs>
-			<disk-dir>./</disk-dir>
-		</disk-dirs>
-	</disk-store>
-
-	<disk-store name="LocalMarketAreaStore">
-		<disk-dirs>
-			<disk-dir>./</disk-dir>
-		</disk-dirs>
-	</disk-store>
-
-	<disk-store name="MedicalCenterStore">
-		<disk-dirs>
-			<disk-dir>./</disk-dir>
-		</disk-dirs>
-	</disk-store>
-
-	<pdx disk-store-name="pdx" persistent="true" read-serialized="false">
-		<pdx-serializer>
-			<class-name>com.gemstone.gemfire.pdx.ReflectionBasedAutoSerializer</class-name>
-			<parameter name="classes">
-				<string>io.pivotal.kaiser.gemfire.common.model.*</string>
-			</parameter>
-		</pdx-serializer>
-	</pdx>
-
-	<region name="Appointment" refid="PARTITION_PERSISTENT">
-		<region-attributes disk-store-name="AppointmentStore">
-		</region-attributes>
-	</region>
-
-	<region name="Member" refid="PARTITION_PERSISTENT">
-		<region-attributes disk-store-name="MemberStore">
-		</region-attributes>
-	</region>
-
-	<region name="MemberPhone" refid="REPLICATE_PERSISTENT">
-		<region-attributes disk-store-name="MemberPhoneStore">
-
-		</region-attributes>
-	</region>
-
-	<region name="Address" refid="REPLICATE_PERSISTENT">
-		<region-attributes disk-store-name="AddressStore">
-
-		</region-attributes>
-	</region>
-
-	<region name="Facility" refid="REPLICATE_PERSISTENT">
-		<region-attributes disk-store-name="FacilityStore">
-
-		</region-attributes>
-	</region>
-
-	<region name="LocalMarketArea" refid="REPLICATE_PERSISTENT">
-		<region-attributes disk-store-name="LocalMarketAreaStore">
-
-		</region-attributes>
-	</region>
-
-
-	<region name="MedicalCenter" refid="REPLICATE_PERSISTENT">
-		<region-attributes disk-store-name="MedicalCenterStore">
-
-		</region-attributes>
-	</region>
-
-	<function-service>
-		<function>
-			<class-name>io.pivotal.kaiser.gemfire.proto.server.func.Rem_InvalidAppointFunction</class-name>
-		</function>
-	</function-service>
+    <!--<function-service>
+        <function>
+            <class-name>io.pivotal.kaiser.gemfire.proto.server.func.Rem_InvalidAppointFunction</class-name>
+        </function>
+    </function-service>-->
 
 </cache>

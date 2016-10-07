@@ -66,8 +66,8 @@
 			<version>2.1</version>
 		</dependency>
 		<dependency>
-			<groupId>io.pivotal.kaiser.gemfire.common</groupId>
-			<artifactId>gemfire-common</artifactId>
+			<groupId>io.pivotal.kaiser.gemfire.pubs.model</groupId>
+			<artifactId>gemfire-pubs-model</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
