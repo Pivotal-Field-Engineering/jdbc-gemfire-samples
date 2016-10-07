@@ -1,0 +1,15 @@
+*.iml
+*.js.map
+*.js
+
+*npm-debug.log
+.mvn/
+.vscode/
+node_modules/
+typings/
+target/
+out/
+src/main/resources/static/node/
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*

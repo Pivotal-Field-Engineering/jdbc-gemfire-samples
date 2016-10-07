@@ -1,0 +1,39 @@
+<plugin>
+    <service name="TTG SQLF Simple Row Loader" server="Sun JVM" version="1.5">
+
+        <plugin type="measurement" class="org.hyperic.hq.product.jmx.MxMeasurementPlugin" />
+
+        <plugin type="control" class="org.hyperic.hq.product.jmx.MxControlPlugin" />
+
+        <plugin type="log_track" class="org.hyperic.hq.product.jmx.MxNotificationPlugin" />
+
+        <property name="AUTOINVENTORY_NAME" value="%platform.name% SimpleRowLoader Timer %schemaName%.%tableName%" />
+
+        <property name="OBJECT_NAME" value="org.kp.timer:service=Timer,name=SimpleRowLoader,schemaName=*,tableName=*" />
+
+        <plugin type="autoinventory" />
+
+        <metric name="Average Load Time" template="${OBJECT_NAME}:average" indicator="true" units="mu" />
+
+        <metric name="Total Load Count" template="${OBJECT_NAME}:count" indicator="true" />
+
+        <metric name="Maximum Load Time" template="${OBJECT_NAME}:maximum" indicator="true" units="mu" />
+
+        <metric name="Minimum Load Time" template="${OBJECT_NAME}:minimum" indicator="true" units="mu" />
+
+        <metric name="Rolling Load Count" template="${OBJECT_NAME}:rollingCount" indicator="true" />
+
+        <metric name="Rolling Average Load Time" template="${OBJECT_NAME}:rollingAverage" indicator="true" units="mu" />
+
+        <metric name="Minimum Rolling Load Time" template="${OBJECT_NAME}:rollingMinimum" indicator="true" units="mu" />
+
+        <metric name="Maximum Rolling Load Time" template="${OBJECT_NAME}:rollingMaximum" indicator="true" units="mu" />
+
+        <metric name="Threshold Count for 10 ms" template="${OBJECT_NAME}:thresholdCount_10000" indicator="true" />
+
+        <metric name="Threshold Count for 100 ms" template="${OBJECT_NAME}:thresholdCount_100000" indicator="true" />
+
+        <actions include="reset" />
+
+    </service>
+</plugin>

@@ -1,0 +1,9 @@
+insert into "TPMG"."STUFF" (STUFF_ID,STUFF_NAME,STUFF_COUNT) values ('1','One',1);
+insert into "TPMG"."STUFF" (STUFF_ID,STUFF_NAME,STUFF_COUNT) values ('2','Two',2);
+insert into "TPMG"."STUFF" (STUFF_ID,STUFF_NAME,STUFF_COUNT) values ('3','Three',3);
+insert into "TPMG"."STUFF" (STUFF_ID,STUFF_NAME,STUFF_COUNT) values ('4','Four',4);
+insert into "TPMG"."STUFF" (STUFF_ID,STUFF_NAME,STUFF_COUNT) values ('5','Five',5);
+insert into "TPMG"."STUFF" (STUFF_ID,STUFF_NAME,STUFF_COUNT) values ('6','Six',6);
+insert into "TPMG"."STUFF" (STUFF_ID,STUFF_NAME,STUFF_COUNT) values ('7','Seven',7);
+insert into "TPMG"."STUFF" (STUFF_ID,STUFF_NAME,STUFF_COUNT) values ('8','Eight',8);
+insert into "TPMG"."STUFF" (STUFF_ID,STUFF_NAME,STUFF_COUNT) values ('9','Nine',9);

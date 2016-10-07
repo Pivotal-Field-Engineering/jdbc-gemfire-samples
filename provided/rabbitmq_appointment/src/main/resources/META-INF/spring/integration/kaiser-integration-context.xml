@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:rabbit="http://www.springframework.org/schema/rabbit"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:int="http://www.springframework.org/schema/integration"
+	xmlns:int-amqp="http://www.springframework.org/schema/integration/amqp"
+	xmlns:int-stream="http://www.springframework.org/schema/integration/stream"
+	xmlns:int-jms="http://www.springframework.org/schema/integration/jms"
+	xmlns:int-jdbc="http://www.springframework.org/schema/integration/jdbc"
+	xsi:schemaLocation="http://www.springframework.org/schema/integration/stream http://www.springframework.org/schema/integration/stream/spring-integration-stream.xsd
+		http://www.springframework.org/schema/integration/amqp http://www.springframework.org/schema/integration/amqp/spring-integration-amqp.xsd
+		http://www.springframework.org/schema/integration/jdbc http://www.springframework.org/schema/integration/jdbc/spring-integration-jdbc.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/integration/jms http://www.springframework.org/schema/integration/jms/spring-integration-jms.xsd
+		http://www.springframework.org/schema/rabbit http://www.springframework.org/schema/rabbit/spring-rabbit.xsd
+		http://www.springframework.org/schema/integration http://www.springframework.org/schema/integration/spring-integration.xsd">
+
+	<import resource="kaiser-integration-endpoints.xml"/>
+	<context:component-scan base-package="com.kp.rabbitmq" />
+	
+	<!--  
+	<int-jms:message-driven-channel-adapter 
+		connection-factory="mqConnectionFactory"
+		destination-name="${queue1}"
+		channel="jmsQ1"/>
+	<int:channel id="jmsQ1" />
+	<int:header-enricher input-channel="jmsQ1" output-channel="toRabbit">
+		<int:header name="queueName" value="queue1" />
+	</int:header-enricher>
+	
+	<int-jms:message-driven-channel-adapter 
+		connection-factory="mqConnectionFactory"
+		destination-name="${queue2}"
+		channel="jmsQ2"/>
+	<int:channel id="jmsQ2" />
+	<int:header-enricher input-channel="jmsQ2" output-channel="toRabbit">
+		<int:header name="queueName" value="queue2" />
+	</int:header-enricher>
+	
+	<int-jms:message-driven-channel-adapter 
+		connection-factory="mqConnectionFactory"
+		destination-name="${queue3}"
+		channel="jmsQ3"/>
+	<int:channel id="jmsQ3" />
+	<int:header-enricher input-channel="jmsQ3" output-channel="toRabbit">
+		<int:header name="queueName" value="queue3" />
+	</int:header-enricher>
+	
+	<int-jms:message-driven-channel-adapter 
+		connection-factory="mqConnectionFactory"
+		destination-name="${queue4}"
+		channel="jmsQ4"/>
+	<int:channel id="jmsQ4" />
+	<int:header-enricher input-channel="jmsQ4" output-channel="toRabbit">
+		<int:header name="queueName" value="queue4" />
+	</int:header-enricher>
+	
+	<int-jms:message-driven-channel-adapter 
+		connection-factory="mqConnectionFactory"
+		destination-name="${queue5}"
+		channel="jmsQ5"/>
+	<int:channel id="jmsQ5" />
+	<int:header-enricher input-channel="jmsQ5" output-channel="toRabbit">
+		<int:header name="queueName" value="queue5" />
+	</int:header-enricher>
+	
+	<int:channel id="toRabbit" />
+	<int-amqp:outbound-channel-adapter channel="toRabbit" 
+		amqp-template="amqpTemplate"
+		mapped-request-headers="*"
+		exchange-name="kaiser.appointment"/>  -->
+		
+	<!--  added by martin for inbound -->
+	<int:channel 
+		id="fromRabbit"  />
+	  <int-amqp:inbound-channel-adapter 
+		channel="fromRabbit" 
+		queue-names="${queue1}" connection-factory="connectionFactory" acknowledge-mode="AUTO" concurrent-consumers="5"/>
+	<int-amqp:inbound-channel-adapter 
+		channel="fromRabbit" 
+		queue-names="${queue2}" connection-factory="connectionFactory" acknowledge-mode="AUTO" concurrent-consumers="5"/>
+	<int-amqp:inbound-channel-adapter 
+		channel="fromRabbit" 
+		queue-names="${queue3}" connection-factory="connectionFactory" acknowledge-mode="AUTO" concurrent-consumers="5"/>
+	<int-amqp:inbound-channel-adapter 
+		channel="fromRabbit" 
+		queue-names="${queue4}" connection-factory="connectionFactory" acknowledge-mode="AUTO" concurrent-consumers="5"/> 
+	<int-amqp:inbound-channel-adapter 
+		channel="fromRabbit" 
+		queue-names="${queue5}" connection-factory="connectionFactory"  acknowledge-mode="AUTO" concurrent-consumers="5"/>
+	
+	<!--  int-stream:stdout-channel-adapter 
+		id="consoleOut" 
+		channel="fromRabbit"
+		append-newline="true" /-->	
+		
+	<int:service-activator input-channel="fromRabbit" ref="HL7Mapper" method="process"  />			
+	
+	<!--  int:service-activator input-channel="errorChannel" ref="HL7ErrorHandler" method="handleFailedMessage"/-->
+	
+	
+</beans>

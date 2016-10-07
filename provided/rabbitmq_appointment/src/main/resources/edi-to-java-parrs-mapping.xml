@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<medi:edimap xmlns:medi="http://www.milyn.org/schema/edi-message-mapping-1.3.xsd">
+
+	<medi:description name="PARRS" version="1.0" />
+
+	<medi:delimiters segment="&#10;" field="|" component="^" sub-component="*" />
+
+	<medi:segments xmltag="Parrs">
+
+		<medi:segment segcode="MSH" truncatable="true" xmltag="MessageHeader">
+			<medi:field xmltag="encoding-characters" />
+			<medi:field xmltag="sending-application" />
+			<medi:field xmltag="sending-facility" />
+			<medi:field xmltag="receiving-application" />
+			<medi:field xmltag="receiving-facility" />
+			<medi:field xmltag="date-time-of-message" />
+			<medi:field xmltag="empty-1" />
+			<medi:field xmltag="message-type" truncatable="true">
+				<medi:component xmltag="message-type-id" />
+				<medi:component xmltag="trigger-event" />
+				<medi:component xmltag="message-structure" />
+			</medi:field>
+			<medi:field xmltag="message-control-ID" />
+			<medi:field xmltag="processing-ID" />
+			<medi:field xmltag="version-ID" />
+		</medi:segment>
+		<medi:segment segcode="SCH" xmltag="AppointmentSchedule" truncatable="true">
+			<medi:field xmltag="empty-1"/>
+			<medi:field xmltag="filler-appointment" >
+				<medi:component xmltag="entity-identifier" />
+				<medi:component xmltag="namespace-ID" />
+			</medi:field>
+			<medi:field xmltag="empty-2" />
+			<medi:field xmltag="empty-3" />
+			<medi:field xmltag="empty-4" />
+			<medi:field xmltag="event-reason">
+				<medi:component xmltag="identifier" />
+				<medi:component xmltag="empty-5" />
+				<medi:component xmltag="name-of-coding-system" />
+			</medi:field>
+			<medi:field xmltag="appointment-reason">
+				<medi:component xmltag="identifier" />
+				<medi:component xmltag="empty-6" />
+				<medi:component xmltag="name-of-coding-system" />
+			</medi:field>
+			<medi:field xmltag="appointment-type">
+				<medi:component xmltag="identifier" />
+				<medi:component xmltag="empty-7" />
+				<medi:component xmltag="name-of-coding-system" />
+			</medi:field>
+			<medi:field xmltag="appointment-duration" />
+			<medi:field xmltag="appointment-duration-units">
+				<medi:component xmltag="identifier" />
+				<medi:component xmltag="empty-8" />
+				<medi:component xmltag="name-of-coding-system" />
+			</medi:field>
+			<medi:field xmltag="appointment-timing-quantity">
+				<medi:component xmltag="empty-9" />
+				<medi:component xmltag="empty-10" />
+				<medi:component xmltag="empty-11" />
+				<medi:component xmltag="start-date-time" />
+			</medi:field>
+			<medi:field xmltag="empty-12" />
+			<medi:field xmltag="empty-13" />
+			<medi:field xmltag="empty-14" />
+			<medi:field xmltag="empty-15" />
+			<medi:field xmltag="filler-contact-person" >
+				<medi:component xmltag="id-number" />
+				<medi:component xmltag="family-name" />
+			</medi:field>
+			<medi:field xmltag="empty-16" />
+			<medi:field xmltag="empty-17" />
+			<medi:field xmltag="empty-18" />
+			<medi:field xmltag="entered-by-person" >
+				<medi:component xmltag="identifier" />
+				<medi:component xmltag="family-name" />
+			</medi:field>
+			<medi:field xmltag="empty-19" />
+			<medi:field xmltag="empty-20" />
+			<medi:field xmltag="empty-21" />
+			<medi:field xmltag="empty-22" />
+			<medi:field xmltag="appointment-status" />
+			
+		</medi:segment>
+
+		<medi:segment segcode="NTE" xmltag="notes-comments-for-SCH" minOccurs="0" truncatable="true">
+			<medi:field xmltag="set-ID-NTE" />
+			<medi:field xmltag="source-of-comment" />
+			<medi:field xmltag="comment" />
+		</medi:segment>
+
+		<medi:segment segcode="PID" xmltag="patient-identification" minOccurs="0" truncatable="true">
+			<medi:field xmltag="empty-1" />
+			<medi:field xmltag="empty-2" />
+			<medi:field xmltag="patient-identifier-list">
+				<medi:component xmltag="identifier" />
+				<medi:component xmltag="empty-3" />
+				<medi:component xmltag="empty-4" />
+				<medi:component xmltag="assigning-authority" />
+				<medi:component xmltag="identifier-type-code" />
+			</medi:field>
+			<medi:field xmltag="empty-5" />
+			<medi:field xmltag="patient-name" truncatable="true">
+				<medi:component xmltag="family-name" />
+				<medi:component xmltag="given-name" />
+				<medi:component xmltag="middle-name" />
+				<medi:component xmltag="name-suffix" />
+			</medi:field>
+			<medi:field xmltag="empty-6" />
+			<medi:field xmltag="date-time-of-birth" />
+			<medi:field xmltag="sex" />
+			<medi:field xmltag="empty-7" />
+			<medi:field xmltag="empty-8" />
+			<medi:field xmltag="empty-9" />
+			<medi:field xmltag="empty-10" />
+			<medi:field xmltag="phone-number-home">
+				<medi:component xmltag="empty-11" />
+				<medi:component xmltag="telecommunication-use-code" />
+				<medi:component xmltag="telecommunication-equipment-type" />
+				<medi:component xmltag="empty-12" />
+				<medi:component xmltag="empty-13" />
+				<medi:component xmltag="area-city-code" />
+				<medi:component xmltag="phone-number" />
+				<medi:component xmltag="extension" />
+			</medi:field>
+			<medi:field xmltag="phone-number-business">
+				<medi:component xmltag="empty-11" />
+				<medi:component xmltag="telecommunication-use-code" />
+				<medi:component xmltag="telecommunication-equipment-type" />
+				<medi:component xmltag="empty-12" />
+				<medi:component xmltag="empty-13" />
+				<medi:component xmltag="area-city-code" />
+				<medi:component xmltag="phone-number" />
+				<medi:component xmltag="extension" />
+			</medi:field>
+		</medi:segment>
+		<medi:segment segcode="PV1" xmltag="patient-visit" minOccurs="0" truncatable="true">
+			<medi:field xmltag="empty-1" />
+			<medi:field xmltag="patient-class" />
+			<medi:field xmltag="assigned-patient-location" truncatable="true">
+				<medi:component xmltag="point-of-care" />
+				<medi:component xmltag="empty-2" />
+				<medi:component xmltag="empty-3" />
+				<medi:component xmltag="facility" />
+			</medi:field>
+			<medi:field xmltag="empty-4" />
+			<medi:field xmltag="empty-5" />
+			<medi:field xmltag="empty-6" />
+			<medi:field xmltag="empty-7" />
+			<medi:field xmltag="referring-doctor" truncatable="true">
+				<medi:component xmltag="id" />
+				<medi:component xmltag="family-name" />
+				<medi:component xmltag="given-name" />
+				<medi:component xmltag="middle-name" />
+				<medi:component xmltag="suffix" />
+				<medi:component xmltag="empty-8" />
+				<medi:component xmltag="Degree" />
+				<medi:component xmltag="empty-9" />
+				<medi:component xmltag="assigning-authority" />
+				<medi:component xmltag="empty-10" />
+				<medi:component xmltag="empty-11" />
+				<medi:component xmltag="empty-12" />
+				<medi:component xmltag="id-type-code" />
+			</medi:field>
+			<medi:field xmltag="empty-13" />
+			<medi:field xmltag="empty-14" />
+			<medi:field xmltag="empty-15" />
+			<medi:field xmltag="empty-16" />
+			<medi:field xmltag="empty-17" />
+			<medi:field xmltag="empty-18" />
+			<medi:field xmltag="empty-19" />
+			<medi:field xmltag="empty-20" />
+			<medi:field xmltag="empty-21" />
+			<medi:field xmltag="empty-22" />
+			<medi:field xmltag="visit-number" />
+		</medi:segment>
+		<medi:segment segcode="ZPM" xmltag="local-master-update" minOccurs="0" truncatable="true">
+			<medi:field xmltag="empty-1" />
+			<!-- <medi:field xmltag="empty-2" />
+			<medi:field xmltag="empty-3" />
+			<medi:field xmltag="empty-4" />
+			<medi:field xmltag="empty-5" />
+			<medi:field xmltag="empty-6" />
+			<medi:field xmltag="empty-7" />
+			<medi:field xmltag="empty-8" />
+			<medi:field xmltag="empty-9" />
+			<medi:field xmltag="empty-10" />
+			<medi:field xmltag="empty-11" />
+			<medi:field xmltag="empty-12" />
+			<medi:field xmltag="empty-13" />
+			<medi:field xmltag="empty-14" />
+			<medi:field xmltag="empty-15" />
+			<medi:field xmltag="empty-16" />
+			<medi:field xmltag="empty-17" />
+			<medi:field xmltag="empty-18" />
+			<medi:field xmltag="empty-19" />
+			<medi:field xmltag="empty-20" />
+			<medi:field xmltag="empty-21" />
+			<medi:field xmltag="empty-22" />
+			<medi:field xmltag="empty-23" />
+			<medi:field xmltag="empty-24" />
+			<medi:field xmltag="patient-alert-codes" truncatable="true">
+				<medi:component xmltag="identifier" />
+				<medi:component xmltag="empty-25" />
+				<medi:component xmltag="name-of-coding-system" />
+			</medi:field>	 -->
+		</medi:segment>
+		<medi:segment segcode="RGS" xmltag="resource-group-segment" minOccurs="0" truncatable="true">
+			<medi:field xmltag="set-id-rgs" />
+			<medi:field xmltag="empty-1" />
+			<medi:field xmltag="resource-group-id" truncatable="true">
+				<medi:component xmltag="identifier" />
+				<medi:component xmltag="empty-25" />
+				<medi:component xmltag="name-of-coding-system" />
+			</medi:field>	
+		</medi:segment>
+		<medi:segment segcode="AIS" xmltag="appointment-information–service" minOccurs="0" truncatable="true">
+			<medi:field xmltag="set-id-ais" />
+			<medi:field xmltag="empty-1" />
+			<medi:field xmltag="universal-service-identifier">
+				<medi:component xmltag="identifier" />
+				<medi:component xmltag="empty-2" />
+				<medi:component xmltag="name-of-coding-system" />
+			</medi:field>	
+		</medi:segment>
+		<medi:segment segcode="AIG" xmltag="appointment-information–general-resource" minOccurs="0"  maxOccurs="-1" truncatable="true">
+			<medi:field xmltag="set-id-aig" />
+			<medi:field xmltag="empty-1" />
+			<medi:field xmltag="resource-id" truncatable="true">
+				<medi:component xmltag="identifier" />
+				<medi:component xmltag="empty-2" />
+				<medi:component xmltag="name-of-coding-system" />
+			</medi:field>	
+			<medi:field xmltag="resource-type" truncatable="true">
+				<medi:component xmltag="identifier" />
+				<medi:component xmltag="text" />
+				<medi:component xmltag="name-of-coding-system" />
+			</medi:field>	
+		</medi:segment>
+		<medi:segment segcode="AIP" xmltag="appointment-information–personnel-resource" minOccurs="0"  maxOccurs="-1" truncatable="true">
+			<medi:field xmltag="set-id-aip" />
+			<medi:field xmltag="empty-1" />
+			<medi:field xmltag="resource-id" truncatable="true">
+				<medi:component xmltag="id-number" />
+				<medi:component xmltag="family-name" />
+				<medi:component xmltag="given-name" />
+				<medi:component xmltag="middle-name" />
+				<medi:component xmltag="suffix" />
+				<medi:component xmltag="empty-2" />
+				<medi:component xmltag="degree" />
+				<medi:component xmltag="empty-3" />
+				<medi:component xmltag="assigning-authority" />
+				<medi:component xmltag="empty-4" />
+				<medi:component xmltag="empty-5" />
+				<medi:component xmltag="empty-6" />
+				<medi:component xmltag="id-type-code" />
+			</medi:field>	
+			<medi:field xmltag="resource-role" truncatable="true">
+				<medi:component xmltag="identifier" />
+				<medi:component xmltag="text" />
+				<medi:component xmltag="name-of-coding-system" />
+			</medi:field>	
+		</medi:segment>
+		
+	</medi:segments>
+	
+</medi:edimap>

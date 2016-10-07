@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<!-- appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender"> 
+		<encoder> <pattern>%d %5p [%t] %logger %m %n</pattern> </encoder> </appender -->
+	<appender name="FILE" class="ch.qos.logback.core.FileAppender">
+		<file>/tmp/RabbitLog.log</file>
+		<layout class="ch.qos.logback.classic.PatternLayout">
+			<Pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n
+			</Pattern>
+		</layout>
+		<rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+			<fileNamePattern>RabbitLog.%i.log.zip</fileNamePattern>
+			<minIndex>1</minIndex>
+			<maxIndex>3</maxIndex>
+		</rollingPolicy>
+
+		<triggeringPolicy
+			class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+			<maxFileSize>5MB</maxFileSize>
+		</triggeringPolicy>
+		<encoder>
+			<pattern>%-4relative [%thread] %-5level %logger{35} - %msg%n
+			</pattern>
+		</encoder>
+	</appender>
+
+	<logger name="org.springframework">
+		<level value="INFO" />
+	</logger>
+	<!-- logger name="com.kp.rabbitmq.spring.integration"> <level value="DEBUG" 
+		/> </logger> <logger name="com.kp.rabbitmq.connection"> <level value="DEBUG" 
+		/> </logger> <logger name="com.kp.rabbitmq"> <level value="DEBUG" /> </logger -->
+	<logger name="com.kp.rabbitmq.spring.integration">
+		<level value="WARN" />
+	</logger>
+	<logger name="com.kp.rabbitmq">
+		<level value="WARN" />
+	</logger>
+
+	<logger mame="org.apache">
+		<level value="OFF" />
+	</logger>
+
+	<logger name="org.milyn">
+		<level value="OFF" />
+	</logger>
+
+	<root>
+		<level value="WARN" />
+		<!-- appender-ref ref="CONSOLE" / -->
+		<appender-ref ref="FILE" />
+	</root>
+</configuration>

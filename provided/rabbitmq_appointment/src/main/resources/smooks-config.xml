@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<smooks-resource-list
+	xmlns="http://www.milyn.org/xsd/smooks-1.1.xsd"
+	xmlns:edi="http://www.milyn.org/xsd/smooks/edi-1.1.xsd"
+	xmlns:jb="http://www.milyn.org/xsd/smooks/javabean-1.2.xsd">
+
+    <!--
+    Configure the EDI Reader to parse the message stream into a stream of SAX events.
+    -->
+    <edi:reader mappingModel="edi-to-java-parrs-mapping.xml" />
+
+    <!--
+    Create an "com.kp.org.parrs.model.Parrs" bean instance when we visit the start of the <Parrs> element.
+    Assign the new bean instance to the beanId of "Parrs".
+    The "header" and "orderItemList" beans are wired in.
+    -->
+    <jb:bean beanId="Parrs" class="com.kp.org.parrs.model.Parrs" createOnElement="Parrs">
+        <jb:wiring property="messageHeader" beanIdRef="MessageHeader" />
+        <jb:wiring property="appointmentSchedule" beanIdRef="AppointmentSchedule" />
+        <jb:wiring property="notes" beanIdRef="Notes" />
+        <jb:wiring property="patient" beanIdRef="Patient" />
+        <jb:wiring property="appointmentResource" beanIdRef="AppointmentResource" />
+    </jb:bean>
+
+    <!--
+    Create an "com.kp.org.parrs.model.MessageHeader" bean instance when we visit the start of the <Parrs> element.
+    Note, we're creating this bean instance before we encounter the actual <MessageHeader> element.
+    This bean is wired into the "Parrs" bean.
+    -->
+    <jb:bean beanId="MessageHeader" class="com.kp.org.parrs.model.MessageHeader" createOnElement="${Parrs}/MessageHeader">
+        <jb:value property="sendingApplication" data="#/sending-application" />
+        <jb:value property="sendingFacility" data="#/sending-facility" />
+        <jb:value property="receivingApplication" data="#/receiving-application" />
+        <jb:value property="receivingFacility" data="#/receiving-facility" />
+        <jb:value property="dateAndTimeOfMessage" data="#/date-time-of-message" />
+        <jb:value property="messageType" data="#/message-type/trigger-event" />
+        <jb:value property="eventDateAndTime" data="#/message-control-ID" />
+       
+     </jb:bean>
+     
+     <jb:bean beanId="AppointmentSchedule" class="com.kp.org.parrs.model.AppointmentSchedule" createOnElement="${Parrs}/AppointmentSchedule">
+        <jb:value property="entityIdentifier" data="#/filler-appointment/entity-identifier" />
+        <jb:value property="cancellationCode" data="#/event-reason/identifier" />
+        <jb:value property="availabiltyCode" data="#/appointment-reason/identifier" />
+        <jb:value property="appointmentType" data="#/appointment-type/identifier" />
+        <jb:value property="appointmentDuration" data="#/appointment-duration" />
+        <jb:value property="appointmentDurationUnit" data="#/appointment-duration-units/identifier" />
+        <jb:value property="appointmentStartDateAndTime" data="#/appointment-timing-quantity/start-date-time" />
+        <jb:value property="bookedById" data="#/filler-contact-person/id-number" />
+        <jb:value property="appoinmentStatus" data="#/appointment-status" />
+     </jb:bean>
+     
+      <jb:bean beanId="Notes" class="com.kp.org.parrs.model.Notes" createOnElement="${Parrs}/notes-comments-for-SCH">
+        <jb:value property="comment" data="#/comment" />
+     </jb:bean>
+     
+     <jb:bean beanId="Patient" class="com.kp.org.parrs.model.Patient" createOnElement="${Parrs}/patient-identification">
+        <jb:value property="mrn" data="#/patient-identifier-list/identifier" />
+        <jb:value property="lastName" data="#/patient-name/family-name" />
+        <jb:value property="firstName" data="#/patient-name/given-name" />
+        <jb:value property="middleName" data="#/patient-name/middle-name" />
+        <jb:value property="NameSuffix" data="#/patient-name/name-suffix/" />
+        <jb:value property="birthDate" data="#/date-time-of-birth" />
+        <jb:value property="gender" data="#/sex" />
+        <jb:value property="homePhoneNumberCityCode" data="#/phone-number-home/area-city-code" />
+        <jb:value property="homePhoneNumber" data="#/phone-number-home/phone-number" />
+        <jb:value property="homePhoneExt" data="#/phone-number-home/extension" />
+        <jb:value property="businessPhoneNumberCityCode" data="#/phone-number-business/area-city-code" />
+        <jb:value property="businessPhoneNumber" data="#/phone-number-business/phone-number" />
+        <jb:value property="businessPhoneExt" data="#/phone-number-home/extension" />
+        <jb:wiring property="patientVisit" beanIdRef="PatientVisit" />
+     </jb:bean>
+     
+     <jb:bean beanId="PatientVisit" class="com.kp.org.parrs.model.PatientVisit" createOnElement="patient-visit">
+        <jb:value property="patientClass" data="#/patient-class" />
+        <jb:value property="patientLocation" data="#/assigned-patient-location/point-of-care" />
+        <jb:value property="referringDoctorId" data="#/referring-doctor/id" />
+        <jb:value property="visitNumber" data="#/visit-number" />
+        <jb:wiring property="epicVisitType" beanIdRef="EpicVisitType" />
+     </jb:bean>
+     
+     
+     <jb:bean beanId="EpicVisitType" class="com.kp.org.parrs.model.EpicVisitType" createOnElement="appointment-information–service">
+        <jb:value property="id" data="#/universal-service-identifier/identifier" />
+     </jb:bean>
+     
+     <jb:bean beanId="AppointmentResource" class="com.kp.org.parrs.model.AppointmentResource" createOnElement="${Parrs}/resource-group-segment">
+        <jb:value property="resourceGroupId" data="#/resource-group-id/identifier" />
+        <jb:wiring property="resourceTypes" beanIdRef="resourceTypes" />
+     </jb:bean>
+     
+      <!--
+	Create an ArrayList when we visit the start of the <Parrs> element.
+	The "ResourceType" beans are wired into this list and this list is wired into the "Parrs" bean.
+	 -->
+    <jb:bean beanId="resourceTypes" class="java.util.ArrayList" createOnElement="${Parrs}/resource-group-segment">
+    	<jb:wiring beanIdRef="ResourceType" />
+    </jb:bean>
+    
+     <jb:bean beanId="ResourceType" class="com.kp.org.parrs.model.ResourceType" createOnElement="appointment-information–general-resource">
+        <jb:value property="id" data="#/resource-id/identifier" />
+        <jb:value property="type" data="#/resource-type/identifier" />
+        <jb:value property="description" data="#/resource-type/text" />
+    </jb:bean> 
+    
+     <jb:bean beanId="ResourceType" class="com.kp.org.parrs.model.ResourceType" createOnElement="appointment-information–personnel-resource">
+        <jb:value property="id" data="#/resource-id/id-number" />
+        <jb:value property="type" data="#/resource-role/identifier" />
+        <jb:value property="description" data="#/resource-role/text" />
+    </jb:bean> 
+   
+</smooks-resource-list>

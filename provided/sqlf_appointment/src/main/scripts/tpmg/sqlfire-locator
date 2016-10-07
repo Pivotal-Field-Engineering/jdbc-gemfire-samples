@@ -1,0 +1,78 @@
+#!/bin/bash
+
+source /etc/sqlfire-locator.conf
+
+# basics
+SQLF_LOCATOR_ARGS="-J-server -J-Xms3g -J-Xmx3g"
+SQLF_LOCATOR_ARGS="$SQLF_LOCATOR_ARGS -J-XX:NewSize=256m -J-XX:MaxNewSize=256m -J-XX:PermSize=256m"
+SQLF_LOCATOR_ARGS="$SQLF_LOCATOR_ARGS -J-Xss384k -J-XX:+UseParNewGC -J-XX:+UseConcMarkSweepGC -J-XX:ParallelGCThreads=2"
+SQLF_LOCATOR_ARGS="$SQLF_LOCATOR_ARGS -dir=${SQLF_LOCATOR_DIR}"
+SQLF_LOCATOR_ARGS="$SQLF_LOCATOR_ARGS -log-file=${SQLF_LOCATOR_LOG_FILE}"
+SQLF_LOCATOR_ARGS="$SQLF_LOCATOR_ARGS -locators=${LOCATOR_IP_STRING}"
+SQLF_LOCATOR_ARGS="$SQLF_LOCATOR_ARGS -client-bind-address=${BIND_ADDRESS} -client-port=${CLIENT_PORT}"
+SQLF_LOCATOR_ARGS="$SQLF_LOCATOR_ARGS -host-data=false"
+SQLF_LOCATOR_ARGS="$SQLF_LOCATOR_ARGS -peer-discovery-address=${BIND_ADDRESS} -peer-discovery-port=${LOCATOR_PORT}"
+SQLF_LOCATOR_ARGS="$SQLF_LOCATOR_ARGS -user=${SQLF_DB_USERNAME} -password=${SQLF_DB_PASSWORD}"
+# jmx
+SQLF_LOCATOR_ARGS="$SQLF_LOCATOR_ARGS -jmx-manager=true"
+# next line only on first locator
+SQLF_LOCATOR_ARGS="$SQLF_LOCATOR_ARGS -jmx-manager-start=true"
+SQLF_LOCATOR_ARGS="$SQLF_LOCATOR_ARGS -jmx-manager-bind-address=${BIND_ADDRESS}"
+SQLF_LOCATOR_ARGS="$SQLF_LOCATOR_ARGS -jmx-manager-hostname-for-clients=`hostname`"
+SQLF_LOCATOR_ARGS="$SQLF_LOCATOR_ARGS -jmx-manager-port=${JMX_PORT}"
+
+SQLF=${SQLF_HOME}/bin/sqlf
+SU="/bin/su -s /bin/sh"
+
+start() {
+    echo -n "Starting Pivotal SQLFire Locator: "
+    ${SU} ${SQLF_USER} -c "$SQLF locator start ${SQLF_LOCATOR_ARGS}"
+
+    if [ $? = 0 ]; then
+        echo "SUCCESS"
+        echo
+    else
+        echo "FAILURE"
+        echo
+    fi
+}
+
+stop() {
+    echo -n "Shutting down Pivotal SQLFire Locator: "
+    ${SU} ${SQLF_USER} -c "$SQLF locator stop -dir=${SQLF_LOCATOR_DIR}"
+
+    if [ $? = 0 ]; then
+        echo "SUCCESS"
+        echo
+    else
+        echo "FAILURE"
+        echo
+    fi
+}
+
+status() {
+    ${SU} ${SQLF_USER} -c "$SQLF locator status -dir=${SQLF_LOCATOR_DIR}"
+}
+
+
+
+case "$1" in
+    start)
+        start
+        ;;
+    stop)
+        stop
+        ;;
+    status)
+        status
+        ;;
+    restart)
+        stop
+        start
+        ;;
+    *)
+        echo "Usage: Pivotal SQLFire Locator {start|stop|status|restart}"
+        exit 1
+        ;;
+esac
+exit $?

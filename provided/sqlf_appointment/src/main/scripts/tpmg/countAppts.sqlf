@@ -1,0 +1,3 @@
+SELECT COUNT(*) FROM dbo.appointment WHERE APPT_CANCELLATION_CODE IS NULL;
+
+exit;
