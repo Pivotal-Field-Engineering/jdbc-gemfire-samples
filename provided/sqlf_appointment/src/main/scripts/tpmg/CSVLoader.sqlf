@@ -1,7 +1,0 @@
-#>sqlf
-#> CONNECT CLIENT 'TTGSSQA0VRHSF01.TTGTPMG.NET:1527;user=svc_mw_sqlfire_admin;password=FireLogin12390!';
-
-call dbo.csvloader('/tmp/EXTRACT8.csv','dbo','appointment');
-
-
-exit;

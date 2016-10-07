@@ -1,4 +1,0 @@
-call dbo.csvloader('/tmp/EXTRACT1.csv','dbo','appointment');
-
-
-exit;
