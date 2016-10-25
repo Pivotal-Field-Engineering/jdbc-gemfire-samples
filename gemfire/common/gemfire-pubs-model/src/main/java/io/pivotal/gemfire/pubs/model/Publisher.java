@@ -1,4 +1,4 @@
-package io.pivotal.gemfire.pubs.model.model;
+package io.pivotal.gemfire.pubs.model;
 
 public class Publisher {
 

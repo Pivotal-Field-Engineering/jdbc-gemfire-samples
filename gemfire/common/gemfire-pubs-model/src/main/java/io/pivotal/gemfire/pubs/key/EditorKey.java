@@ -1,4 +1,4 @@
-package io.pivotal.gemfire.pubs.model.key;
+package io.pivotal.gemfire.pubs.key;
 
 import com.gemstone.gemfire.DataSerializable;
 import com.gemstone.gemfire.DataSerializer;
@@ -46,11 +46,11 @@ public class EditorKey implements DataSerializable {
 
     @Override
     public void toData(DataOutput dataOutput) throws IOException {
-        DataSerializer.writeObject(edId, dataOutput);
+        DataSerializer.writeString(edId, dataOutput);
     }
 
     @Override
     public void fromData(DataInput dataInput) throws IOException, ClassNotFoundException {
-        edId = DataSerializer.readObject(dataInput);
+        edId = DataSerializer.readString(dataInput);
     }
 }

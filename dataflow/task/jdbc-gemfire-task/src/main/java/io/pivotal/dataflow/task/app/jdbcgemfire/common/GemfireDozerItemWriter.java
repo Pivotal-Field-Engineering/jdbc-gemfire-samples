@@ -49,11 +49,11 @@ public class GemfireDozerItemWriter implements ItemWriter<Map<String, Object>> {
 				Set columnNames = payloadAsMap.keySet();
 				LOG.debug("Fields from Map = {}", columnNames.toString());
 
-				Class K = Class.forName("io.pivotal.kaiser.gemfire.common.key." + props.regionName + "Key");
+				Class K = Class.forName("io.pivotal.gemfire.pubs.key." + props.regionName + "Key");
 				Object k = K.newInstance();
 				LOG.debug("KeyClass to map : {}", K.getName());
 
-				Class V = Class.forName("io.pivotal.kaiser.gemfire.common.model." + props.regionName);
+				Class V = Class.forName("io.pivotal.gemfire.pubs.model." + props.regionName);
 				Object v = V.newInstance();
 				LOG.debug("ValueClass to map : {}", V.getName());
 

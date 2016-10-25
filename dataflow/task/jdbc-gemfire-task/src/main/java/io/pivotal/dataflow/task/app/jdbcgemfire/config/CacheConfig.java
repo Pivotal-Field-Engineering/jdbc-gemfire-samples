@@ -37,7 +37,7 @@ public class CacheConfig {
 		}
 
 		ccf.setPdxReadSerialized(false);
-		ccf.setPdxSerializer(new ReflectionBasedAutoSerializer("io.pivotal.kaiser.gemfire.common.model.*"));
+		ccf.setPdxSerializer(new ReflectionBasedAutoSerializer("io.pivotal.gemfire.pubs.model.*"));
 
 		return ccf.create();
 	}

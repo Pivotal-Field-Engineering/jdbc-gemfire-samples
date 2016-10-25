@@ -1,4 +1,4 @@
-package io.pivotal.gemfire.pubs.model.key;
+package io.pivotal.gemfire.pubs.key;
 
 import com.gemstone.gemfire.DataSerializable;
 import com.gemstone.gemfire.DataSerializer;

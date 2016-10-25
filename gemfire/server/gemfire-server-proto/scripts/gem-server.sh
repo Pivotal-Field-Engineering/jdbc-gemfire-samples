@@ -8,7 +8,7 @@ loc=$1[10334]
 
 
 hn=`hostname`
-#target=/Users/wlund/Dropbox/git-workspace/wxlund/kaiser-gemfire-poc/gemfire/gemfire-server-proto/target
+target=/Users/wlund/Dropbox/git-workspace/wxlund/jdbc-gemfire-samples/gemfire/server/gemfire-server-proto/target
 xml=../xml
 
 cp=$target/classes

@@ -1,4 +1,4 @@
-package io.pivotal.gemfire.pubs.model.key;
+package io.pivotal.gemfire.pubs.key;
 
 import com.gemstone.gemfire.DataSerializable;
 import com.gemstone.gemfire.DataSerializer;
@@ -40,7 +40,7 @@ public class PublisherKey implements DataSerializable{
 
     @Override
     public void toData(DataOutput dataOutput) throws IOException {
-        DataSerializer.writeObject(pubId, dataOutput);
+        DataSerializer.writeString(pubId, dataOutput);
     }
 
     @Override
@@ -52,6 +52,6 @@ public class PublisherKey implements DataSerializable{
 
     @Override
     public void fromData(DataInput dataInput) throws IOException, ClassNotFoundException {
-        pubId = DataSerializer.readObject(dataInput);
+        pubId = DataSerializer.readString(dataInput);
     }
 }

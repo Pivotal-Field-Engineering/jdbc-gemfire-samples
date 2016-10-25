@@ -1,4 +1,4 @@
-package io.pivotal.gemfire.pubs.model.key;
+package io.pivotal.gemfire.pubs.key;
 
 import com.gemstone.gemfire.DataSerializable;
 import com.gemstone.gemfire.DataSerializer;
@@ -6,29 +6,22 @@ import com.gemstone.gemfire.DataSerializer;
 import java.io.DataInput;
 import java.io.DataOutput;
 import java.io.IOException;
+import java.math.BigDecimal;
 
 /**
  * Created by zhansen on 10/7/16.
  */
-public class AuthorKey implements DataSerializable {
-    private String auId;
+public class SaleKey implements DataSerializable {
+    private BigDecimal sonum;
 
     @Override
     public void toData(DataOutput dataOutput) throws IOException {
-        DataSerializer.writeObject(auId, dataOutput);
+        DataSerializer.writeObject(sonum, dataOutput);
     }
 
     @Override
     public void fromData(DataInput dataInput) throws IOException, ClassNotFoundException {
-        auId = DataSerializer.readObject(dataInput);
-    }
-
-    public String getAuId() {
-        return auId;
-    }
-
-    public void setAuId(String auId) {
-        this.auId = auId;
+        sonum = DataSerializer.readObject(dataInput);
     }
 
     @Override
@@ -36,21 +29,29 @@ public class AuthorKey implements DataSerializable {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        AuthorKey authorKey = (AuthorKey) o;
+        SaleKey saleKey = (SaleKey) o;
 
-        return auId != null ? auId.equals(authorKey.auId) : authorKey.auId == null;
+        return sonum != null ? sonum.equals(saleKey.sonum) : saleKey.sonum == null;
 
     }
 
     @Override
     public int hashCode() {
-        return auId != null ? auId.hashCode() : 0;
+        return sonum != null ? sonum.hashCode() : 0;
     }
 
     @Override
     public String toString() {
-        return "AuthorKey{" +
-                "auId='" + auId + '\'' +
+        return "SaleKey{" +
+                "sonum=" + sonum +
                 '}';
+    }
+
+    public BigDecimal getSonum() {
+        return sonum;
+    }
+
+    public void setSonum(BigDecimal sonum) {
+        this.sonum = sonum;
     }
 }

@@ -1,4 +1,4 @@
-package io.pivotal.gemfire.pubs.model.key;
+package io.pivotal.gemfire.pubs.key;
 
 import com.gemstone.gemfire.DataSerializable;
 import com.gemstone.gemfire.DataSerializer;
@@ -10,15 +10,11 @@ import java.io.IOException;
 /**
  * Created by zhansen on 10/7/16.
  */
-public class TitleEditorKey implements DataSerializable {
-    private String edId;
-    private String titleId;
-
+public class RoyalityScheduleKey implements DataSerializable {
     @Override
     public String toString() {
-        return "TitleEditorKey{" +
-                "edId='" + edId + '\'' +
-                ", titleId='" + titleId + '\'' +
+        return "RoyalityScheduleKey{" +
+                "titleId='" + titleId + '\'' +
                 '}';
     }
 
@@ -27,30 +23,19 @@ public class TitleEditorKey implements DataSerializable {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        TitleEditorKey that = (TitleEditorKey) o;
+        RoyalityScheduleKey that = (RoyalityScheduleKey) o;
 
-        if (edId != null ? !edId.equals(that.edId) : that.edId != null) return false;
         return titleId != null ? titleId.equals(that.titleId) : that.titleId == null;
 
     }
 
     @Override
     public int hashCode() {
-        int result = edId != null ? edId.hashCode() : 0;
-        result = 31 * result + (titleId != null ? titleId.hashCode() : 0);
-        return result;
-    }
-
-    public String getEdId() {
-
-        return edId;
-    }
-
-    public void setEdId(String edId) {
-        this.edId = edId;
+        return titleId != null ? titleId.hashCode() : 0;
     }
 
     public String getTitleId() {
+
         return titleId;
     }
 
@@ -58,15 +43,16 @@ public class TitleEditorKey implements DataSerializable {
         this.titleId = titleId;
     }
 
+    private String titleId;
+
     @Override
     public void toData(DataOutput dataOutput) throws IOException {
-        DataSerializer.writeString(edId, dataOutput);
         DataSerializer.writeString(titleId, dataOutput);
     }
 
     @Override
     public void fromData(DataInput dataInput) throws IOException, ClassNotFoundException {
-        edId = DataSerializer.readString(dataInput);
         titleId = DataSerializer.readString(dataInput);
     }
+
 }

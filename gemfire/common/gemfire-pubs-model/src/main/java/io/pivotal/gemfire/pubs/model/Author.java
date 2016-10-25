@@ -1,63 +1,54 @@
-package io.pivotal.gemfire.pubs.model.model;
+package io.pivotal.gemfire.pubs.model;
 
-public class Editor {
+public class Author {
 
-    private String edId;
-    private String edLname;
-    private String edFname;
-    private String edPos;
+    private String auId;
+    private String auLname;
+    private String auFname;
     private String phone;
     private String address;
     private String city;
     private String state;
     private String zip;
+    private Integer processed;
 
     @Override
     public String toString() {
-        return "Editor{" +
-                "edId='" + edId + '\'' +
-                ", edLname='" + edLname + '\'' +
-                ", edFname='" + edFname + '\'' +
-                ", edPos='" + edPos + '\'' +
+        return "Author{" +
+                "auId='" + auId + '\'' +
+                ", auLname='" + auLname + '\'' +
+                ", auFname='" + auFname + '\'' +
                 ", phone='" + phone + '\'' +
                 ", address='" + address + '\'' +
                 ", city='" + city + '\'' +
                 ", state='" + state + '\'' +
                 ", zip='" + zip + '\'' +
-                ", edBoss='" + edBoss + '\'' +
+                ", processed=" + processed +
                 '}';
     }
 
-    public String getEdId() {
-        return edId;
+    public String getAuId() {
+        return auId;
     }
 
-    public void setEdId(String edId) {
-        this.edId = edId;
+    public void setAuId(String auId) {
+        this.auId = auId;
     }
 
-    public String getEdLname() {
-        return edLname;
+    public String getAuLname() {
+        return auLname;
     }
 
-    public void setEdLname(String edLname) {
-        this.edLname = edLname;
+    public void setAuLname(String auLname) {
+        this.auLname = auLname;
     }
 
-    public String getEdFname() {
-        return edFname;
+    public String getAuFname() {
+        return auFname;
     }
 
-    public void setEdFname(String edFname) {
-        this.edFname = edFname;
-    }
-
-    public String getEdPos() {
-        return edPos;
-    }
-
-    public void setEdPos(String edPos) {
-        this.edPos = edPos;
+    public void setAuFname(String auFname) {
+        this.auFname = auFname;
     }
 
     public String getPhone() {
@@ -100,14 +91,11 @@ public class Editor {
         this.zip = zip;
     }
 
-    public String getEdBoss() {
-        return edBoss;
+    public Integer getProcessed() {
+        return processed;
     }
 
-    public void setEdBoss(String edBoss) {
-        this.edBoss = edBoss;
+    public void setProcessed(Integer processed) {
+        this.processed = processed;
     }
-
-    private String edBoss;
-
 }

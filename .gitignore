@@ -22,6 +22,9 @@ src/main/resources/static/node/
 .classpath
 .factorypath
 .springBeans
+gemfire/server/gemfire-server-proto/scripts/loc-Waynes-MacBook-Pro-8.local
+gemfire/server/gemfire-server-proto/scripts/server-Waynes-MacBook-Pro-8.local/
+
 
 provided/sqlf_appointment/server/*
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml

@@ -1,54 +1,63 @@
-package io.pivotal.gemfire.pubs.model.model;
+package io.pivotal.gemfire.pubs.model;
 
-public class Author {
+public class Editor {
 
-    private String auId;
-    private String auLname;
-    private String auFname;
+    private String edId;
+    private String edLname;
+    private String edFname;
+    private String edPos;
     private String phone;
     private String address;
     private String city;
     private String state;
     private String zip;
-    private Integer processed;
 
     @Override
     public String toString() {
-        return "Author{" +
-                "auId='" + auId + '\'' +
-                ", auLname='" + auLname + '\'' +
-                ", auFname='" + auFname + '\'' +
+        return "Editor{" +
+                "edId='" + edId + '\'' +
+                ", edLname='" + edLname + '\'' +
+                ", edFname='" + edFname + '\'' +
+                ", edPos='" + edPos + '\'' +
                 ", phone='" + phone + '\'' +
                 ", address='" + address + '\'' +
                 ", city='" + city + '\'' +
                 ", state='" + state + '\'' +
                 ", zip='" + zip + '\'' +
-                ", processed=" + processed +
+                ", edBoss='" + edBoss + '\'' +
                 '}';
     }
 
-    public String getAuId() {
-        return auId;
+    public String getEdId() {
+        return edId;
     }
 
-    public void setAuId(String auId) {
-        this.auId = auId;
+    public void setEdId(String edId) {
+        this.edId = edId;
     }
 
-    public String getAuLname() {
-        return auLname;
+    public String getEdLname() {
+        return edLname;
     }
 
-    public void setAuLname(String auLname) {
-        this.auLname = auLname;
+    public void setEdLname(String edLname) {
+        this.edLname = edLname;
     }
 
-    public String getAuFname() {
-        return auFname;
+    public String getEdFname() {
+        return edFname;
     }
 
-    public void setAuFname(String auFname) {
-        this.auFname = auFname;
+    public void setEdFname(String edFname) {
+        this.edFname = edFname;
+    }
+
+    public String getEdPos() {
+        return edPos;
+    }
+
+    public void setEdPos(String edPos) {
+        this.edPos = edPos;
     }
 
     public String getPhone() {
@@ -91,11 +100,14 @@ public class Author {
         this.zip = zip;
     }
 
-    public Integer getProcessed() {
-        return processed;
+    public String getEdBoss() {
+        return edBoss;
     }
 
-    public void setProcessed(Integer processed) {
-        this.processed = processed;
+    public void setEdBoss(String edBoss) {
+        this.edBoss = edBoss;
     }
+
+    private String edBoss;
+
 }
