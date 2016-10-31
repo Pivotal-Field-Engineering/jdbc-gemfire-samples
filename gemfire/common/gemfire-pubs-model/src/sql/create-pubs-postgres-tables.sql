@@ -2,68 +2,74 @@
 --connect name/password (substitute yours);
 --start filename.txt;
 -- DROP TABLE and CREATE TABLE commands
-drop table if exists  authors;
+drop table if exists  authors CASCADE;
 create table authors
- (au_id char(11) not null,
+ (au_id char(11) UNIQUE not null,
  au_lname varchar(40) not null,
  au_fname varchar(20) not null,
  phone char(12) null,
  address varchar(40) null,
  city varchar(20) null,
  state char(2) null,
- zip char(5) null);
-grant select on authors to public
-;
+ zip char(5) null,
+ PRIMARY KEY (au_id));
+grant select on authors to public;
+
 drop table if exists  publishers;
 create table publishers
-  (pub_id char(4) not null,
+  (pub_id char(4) UNIQUE not null,
   pub_name varchar(40) null,
   address varchar(40) null,
   city varchar(20) null,
-  state char(2) null);
-grant select on publishers to public
-;
-drop table if exists  roysched;
+  state char(2) null,
+  PRIMARY KEY (pub_id));
+grant select on publishers to public;
+
+drop table if exists  titles CASCADE;
+create table titles
+(title_id char(6) UNIQUE not null,
+ title varchar(80) not null,
+ type char(12) null,
+ pub_id char(4) null,
+ price numeric(9,2) null,
+ advance numeric(9,2) null,
+ ytd_sales int null,
+ contract char(1) not null,
+ notes varchar(200) null,
+ pubdate date null,
+ PRIMARY KEY (title_id));
+grant select on titles to public;
+
+drop table if exists  roysched CASCADE ;
 create table roysched
- (title_id char(6) not null,
+ (title_id char(6) not null REFERENCES titles(title_id) on DELETE CASCADE,
  lorange numeric null,
  hirange numeric null,
- royalty numeric(5,2) null);
-grant select on roysched to public
-;
-drop table if exists  titleauthors;
+ royalty numeric(5,2) null,
+  PRIMARY KEY (title_id, lorange, hirange));
+grant select on roysched to public;
+
+drop table if exists  titleauthors CASCADE;
 create table titleauthors
- (au_id char(11) not null,
- title_id char(6) not null,
+ (au_id char(11) not null REFERENCES authors(au_id) on DELETE CASCADE,
+ title_id char(6) not null REFERENCES titles(title_id) on DELETE CASCADE,
  au_ord numeric not null,
- royaltyshare numeric (5,2) null);
-grant select on titleauthors to public
-;
-drop table if exists  titles;
-create table titles
-  (title_id char(6) not null,
-  title varchar(80) not null,
-  type char(12) null,
-  pub_id char(4) null,
-  price numeric(9,2) null,
-  advance numeric(9,2) null,
-  ytd_sales int null,
-  contract char(1) not null,
-  notes varchar(200) null,
-  pubdate date null);
-grant select on titles to public
-;
-drop table if exists  sales;
+ royaltyshare numeric (5,2) null,
+ PRIMARY KEY (au_id, title_id));
+ grant select on titleauthors to public;
+
+drop table if exists  sales CASCADE;
 create table sales
-  (sonum numeric not null,
+  (sonum numeric UNIQUE not null,
   stor_id char(4) not null,
   ponum varchar(20) not null,
-  sdate date null);
-grant select on sales to public
-;
-drop table if exists  editors;
+  sdate date null,
+  PRIMARY KEY (sonum));
+grant select on sales to public;
+
+drop table if exists  editors CASCADE;
 create table editors
- (ed_id char(11) not null,
+ (ed_id char(11) UNIQUE not null,
  ed_lname varchar(40) not null,
  ed_fname varchar(20) not null,
  ed_pos varchar(12) null,
@@ -72,23 +78,26 @@ create table editors
  city varchar(20) null,
  state char(2) null,
  zip char(5) null,
- ed_boss char(11) null );
+ ed_boss char(11) null,
+ PRIMARY KEY (ed_id));
 grant select on editors to public
 ;
 drop table if exists  titleditors;
 create table titleditors
- (ed_id char(11) not null,
- title_id char(6) not null,
- ed_ord numeric null);
+ (ed_id char(11) not null REFERENCES editors(ed_id) on DELETE CASCADE,
+ title_id char(6) not null REFERENCES titles(title_id) on DELETE CASCADE,
+ ed_ord numeric null,
+ PRIMARY KEY (ed_id, title_id));
 grant select on titleditors to public
 ;
-drop table if exists  salesdetails;
+drop table if exists  salesdetails CASCADE;
 create table salesdetails
-  (sonum numeric not null,
+  (sonum numeric not null REFERENCES sales(sonum) ON DELETE CASCADE,
   qty_ordered numeric not null,
   qty_shipped numeric null,
-  title_id char(6) not null,
-  date_shipped date null);
+  title_id char(6) not null REFERENCES titles(title_id) ON DELETE CASCADE,
+  date_shipped date null,
+  PRIMARY KEY (sonum, title_id));
 grant select on salesdetails to public
 ;
 --CREATE INDEX commands

@@ -21,7 +21,7 @@ import org.springframework.beans.factory.annotation.Value;
 @ConfigurationProperties("jdbcgemfire")
 public class JdbcGemfireTaskProperties {
 
-	
+	@Value("$jdbcgemfire.regionName:RoyaltySchedule")
 	public String regionName;
 
 	@Value("${locators:localhost:10334}")

@@ -9,8 +9,8 @@ SCDF makes it simple to select a jdbc src and ingest the contents into
 Gemfire.  However, in this particular reference had multiple goals to
 be accomplished that surrounded a simple task:
 
-1. Produce a Java Object Model in the spirit of java beans. <*> instead of using the Entity and
-column names from RDBMS. 
+1. Produce a Java Object Model in the spirit of java beans instead of using the Entity and
+Column names from the RDBMS schema. 
 2. Create existing tables equivalent to current sql tables (authors,
 books, titles, etc.)
 3. Refresh all tables (except sales related - txn) that have source
@@ -34,15 +34,12 @@ the gemfire README.md
 app register --name jdbc-gemfire-task --type task --uri
 file:///[local-git-repo]/jdbc-gemfire-samples/dataflow/task/jdbc-gemfire-task/target/jdbc-gemfire-task-1.3.7.RELEASE.jar
 --force
-app register --name jdbc-gemfire-task --type task --uri file:///Users/wlund/Dropbox/git-workspace/wxlund/jdbc-gemfire-samples/dataflow/task/jdbc-gemfire-task/target/jdbc-gemfire-task-1.3.7.RELEASE.jar --force
 app list
-task create --definition 'jdbc-gemfire-task --jdbcgemfire.datasource.username=postgres --jdbcgemfire.datasource.url=jdbc:postgresql://localhost:5432/postgres --jdbcgemfire.datasource.driver-class-name=org.postgresql.Driver --jdbcgemfire.region-name=Author --jdbcgemfire.commit-interval=1000 --jdbcgemfire.sql="select * from authors"' --name pubs-author2
-app register --name jdbc-gemfire-task --type task --uri file:///Users/wlund/Dropbox/git-workspace/wxlund/jdbc-gemfire-samples/dataflow/task/jdbc-gemfire-task/target/jdbc-gemfire-task-1.3.7.RELEASE.jar --force
 task list
 
 you can launch the task from either the shell or use
 http://localhost:9393/dashboard/index.html#/tasks/definitions. The
-parameters we're collected from the UI so that it could be scriptedf
+parameters we're collected from the UI so that it could be scripted
 as seen above.
 
 

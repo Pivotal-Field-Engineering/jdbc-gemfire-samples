@@ -17,7 +17,7 @@
     <region name="Author" refid="REPLICATE"></region>
     <region name="Editor" refid="REPLICATE"></region>
     <region name="Publisher" refid="REPLICATE"></region>
-    <region name="RoyalitySchedule" refid="REPLICATE"></region>
+    <region name="RoyaltySchedule" refid="REPLICATE"></region>
     <region name="Sale" refid="REPLICATE"></region>
     <region name="SalesDetail" refid="REPLICATE"></region>
     <region name="Title" refid="REPLICATE"></region>
