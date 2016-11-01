@@ -44,55 +44,79 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 @SpringApplicationConfiguration(classes = JdbcGemfireTaskApplication.class)
 @SuppressWarnings("serial")
 public class GemfireDozerItemWriterTests {
-    private static final Map<String, Object> MY_MAP = createMap();
-    Exception ex = null;
+	private static final Map<String, Object> MY_MAP = createMap();
+	private static final Map<String, Object> SALES_MAP = createSalesMap();
+	Exception ex = null;
 
-        private static Map<String, Object> createMap() {
-            Map<String, Object> result = new HashMap<String, Object>();
-// output from log used failure log used for test data
-//            {lorange=5001, hirange=50000, titleId=BU1032, royalty=0.12}
-            result.put("lorange", 5001);
-            result.put("hirange", 50000);
-            result.put("titleId", "BU1032");
-            result.put("royalty", 0.12);
-            return Collections.unmodifiableMap(result);
-        }
+	private static Map<String, Object> createMap() {
+		Map<String, Object> result = new HashMap<String, Object>();
+		// output from log used failure log used for test data
+		// {lorange=5001, hirange=50000, titleId=BU1032, royalty=0.12}
+		result.put("lorange", 5001);
+		result.put("hirange", 50000);
+		result.put("titleId", "BU1032");
+		result.put("royalty", 0.12);
+		return Collections.unmodifiableMap(result);
+	}
 
+	private static Map<String, Object> createSalesMap() {
+		Map<String, Object> salesItems = new HashMap<String, Object>();
+		// output from log used failure log used for test data
+		//  {sonum=2, sdate=1998-09-14, ponum=D4482, storId=7067}
+		salesItems.put("sonum", 2);
+		salesItems.put("sdate", "1998-09-14");
+		salesItems.put("ponum", "D4482");
+		salesItems.put("storId", 7067);
+		return Collections.unmodifiableMap(salesItems);
+	}
+	
+	@Autowired
+	ConfigurableApplicationContext applicationContext;
 
-    @Autowired
-    ConfigurableApplicationContext applicationContext;
-
-    @Autowired
+	@Autowired
 	GemfireDozerItemWriter itemWriter;
 
-    @Autowired
-	DozerBeanMapper dmb;	// private PlatformTransactionManager transactionManager = new ResourcelessTransactionManager();
+	@Autowired
+	DozerBeanMapper dmb; // private PlatformTransactionManager
+							// transactionManager = new
+							// ResourcelessTransactionManager();
 
 	@Autowired
 	JdbcGemfireTaskProperties props;
 
-	@Test
- 	public void testWrite() {
-
-        try {
-            itemWriter.write((List<? extends Map<String, Object>>) MY_MAP);
-        } catch (Exception e) {
-        	System.out.println("ex: " +  e.getMessage());
-           ex = e;
-        }
-        assertEquals(null, ex);
-    }
-
-
 //	@Test
+	public void testWrite() {
+
+		try {
+			itemWriter.write((List<? extends Map<String, Object>>) MY_MAP);
+		} catch (Exception e) {
+			System.out.println("ex: " + e.getMessage());
+			ex = e;
+		}
+		assertEquals(null, ex);
+	}
+
+	@Test
+	public void testWriteSalesItems() {
+
+		try {
+			itemWriter.write((List<? extends Map<String, Object>>) SALES_MAP);
+		} catch (Exception e) {
+			System.out.println("ex: " + e.getMessage());
+			ex = e;
+		}
+		assertEquals(null, ex);
+	}
+
+	// @Test
 	public void testBasicDelete() throws Exception {
 	}
 
-	//	@Test
+	// @Test
 	public void testWriteWithCustomItemKeyMapper() throws Exception {
 	}
 
-//	@Test
+	// @Test
 	public void testWriteNoTransactionNoItems() throws Exception {
 	}
 

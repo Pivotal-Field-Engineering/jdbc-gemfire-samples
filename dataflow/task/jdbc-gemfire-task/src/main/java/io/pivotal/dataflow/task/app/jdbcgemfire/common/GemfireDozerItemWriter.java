@@ -68,7 +68,7 @@ public class GemfireDozerItemWriter implements ItemWriter<Map<String, Object>> {
 				region.put(k, v);
 
 			} catch (Exception e) {
-				LOG.error("Exception in {} : Exception {} : Caused by: {}", "GemfireSinkProtoConfiguration.class",
+				LOG.error("Exception in {} : Exception {} : Caused by: {}", "GemfireDozerItemWriter.class",
 						e.getMessage(), e.getCause());
 
 			}
