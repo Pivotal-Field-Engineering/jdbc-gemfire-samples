@@ -1,0 +1,56 @@
+
+[info 2016/10/07 15:17:13.080 PDT <main> tid=0x1] Log opened with new distributed system connection.  View(creator=Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:47757:locator)<v0>:59002, viewId=0, [Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:47757:locator)<v0>:59002])
+
+[info 2016/10/07 15:17:30.304 PDT <DM-MemberEventInvoker> tid=0x20] A new member joined: Waynes-MacBook-Pro-8(server-Waynes-MacBook-Pro-8.local:47830)<v1>:65214.  View(creator=Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:47757:locator)<v0>:59002, viewId=1, [Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:47757:locator)<v0>:59002, Waynes-MacBook-Pro-8(server-Waynes-MacBook-Pro-8.local:47830)<v1>:65214])
+
+[info 2016/10/07 15:17:32.653 PDT <Pooled High Priority Message Processor 1> tid=0x77] server summary: 1 cache servers with 0 client connections/current cache servers : Waynes-MacBook-Pro-8(server-Waynes-MacBook-Pro-8.local:47830)<v1>:65214 
+
+[info 2016/10/07 16:00:39.529 PDT <main> tid=0x1] Log opened with new distributed system connection.  View(creator=Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:52040:locator)<v0>:50561, viewId=0, [Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:52040:locator)<v0>:50561])
+
+[info 2016/10/07 16:01:00.797 PDT <DM-MemberEventInvoker> tid=0x20] A new member joined: Waynes-MacBook-Pro-8(server-Waynes-MacBook-Pro-8.local:52111)<v1>:21269.  View(creator=Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:52040:locator)<v0>:50561, viewId=1, [Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:52040:locator)<v0>:50561, Waynes-MacBook-Pro-8(server-Waynes-MacBook-Pro-8.local:52111)<v1>:21269])
+
+[info 2016/10/07 16:01:04.286 PDT <Pooled High Priority Message Processor 1> tid=0x78] server summary: 1 cache servers with 0 client connections/current cache servers : Waynes-MacBook-Pro-8(server-Waynes-MacBook-Pro-8.local:52111)<v1>:21269 
+
+[info 2016/10/07 16:58:36.313 PDT <main> tid=0x1] Log opened with new distributed system connection.  View(creator=Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:57605:locator)<v0>:33270, viewId=0, [Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:57605:locator)<v0>:33270])
+
+[info 2016/10/07 16:58:52.029 PDT <DM-MemberEventInvoker> tid=0x20] A new member joined: Waynes-MacBook-Pro-8(server-Waynes-MacBook-Pro-8.local:57666)<v1>:32181.  View(creator=Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:57605:locator)<v0>:33270, viewId=1, [Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:57605:locator)<v0>:33270, Waynes-MacBook-Pro-8(server-Waynes-MacBook-Pro-8.local:57666)<v1>:32181])
+
+[info 2016/10/07 16:58:53.820 PDT <Pooled High Priority Message Processor 1> tid=0x77] server summary: 1 cache servers with 0 client connections/current cache servers : Waynes-MacBook-Pro-8(server-Waynes-MacBook-Pro-8.local:57666)<v1>:32181 
+
+[info 2016/10/25 14:23:28.809 PDT <main> tid=0x1] Log opened with new distributed system connection.  View(creator=Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:14019:locator)<v0>:59942, viewId=0, [Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:14019:locator)<v0>:59942])
+
+[info 2016/10/25 14:29:19.457 PDT <DM-MemberEventInvoker> tid=0x20] A new member joined: Waynes-MacBook-Pro-8(server-Waynes-MacBook-Pro-8.local:14152)<v1>:22985.  View(creator=Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:14019:locator)<v0>:59942, viewId=1, [Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:14019:locator)<v0>:59942, Waynes-MacBook-Pro-8(server-Waynes-MacBook-Pro-8.local:14152)<v1>:22985])
+
+[info 2016/10/25 14:29:21.266 PDT <Pooled High Priority Message Processor 1> tid=0x78] server summary: 1 cache servers with 0 client connections/current cache servers : Waynes-MacBook-Pro-8(server-Waynes-MacBook-Pro-8.local:14152)<v1>:22985 
+
+[info 2016/10/25 16:02:27.568 PDT <DM-MemberEventInvoker> tid=0x20] A new member joined: Waynes-MacBook-Pro-8(server-Waynes-MacBook-Pro-8.local:17383)<v3>:21253.  View(creator=Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:14019:locator)<v0>:59942, viewId=3, [Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:14019:locator)<v0>:59942, Waynes-MacBook-Pro-8(server-Waynes-MacBook-Pro-8.local:17383)<v3>:21253])
+
+[info 2016/10/25 16:02:29.312 PDT <Pooled High Priority Message Processor 1> tid=0x78] server summary: 1 cache servers with 0 client connections/current cache servers : Waynes-MacBook-Pro-8(server-Waynes-MacBook-Pro-8.local:17383)<v3>:21253 
+
+[info 2016/10/25 16:10:10.610 PDT <DM-MemberEventInvoker> tid=0x20] A new member joined: Waynes-MacBook-Pro-8(server-Waynes-MacBook-Pro-8.local:17888)<v5>:14100.  View(creator=Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:14019:locator)<v0>:59942, viewId=5, [Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:14019:locator)<v0>:59942, Waynes-MacBook-Pro-8(server-Waynes-MacBook-Pro-8.local:17888)<v5>:14100])
+
+[info 2016/10/25 16:10:12.310 PDT <Pooled High Priority Message Processor 1> tid=0x78] server summary: 1 cache servers with 0 client connections/current cache servers : Waynes-MacBook-Pro-8(server-Waynes-MacBook-Pro-8.local:17888)<v5>:14100 
+
+[info 2016/10/25 16:13:19.958 PDT <DM-MemberEventInvoker> tid=0x20] A new member joined: Waynes-MacBook-Pro-8(server-Waynes-MacBook-Pro-8.local:18048)<v7>:59289.  View(creator=Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:14019:locator)<v0>:59942, viewId=7, [Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:14019:locator)<v0>:59942, Waynes-MacBook-Pro-8(server-Waynes-MacBook-Pro-8.local:18048)<v7>:59289])
+
+[info 2016/10/25 16:13:21.687 PDT <Pooled High Priority Message Processor 1> tid=0x78] server summary: 1 cache servers with 0 client connections/current cache servers : Waynes-MacBook-Pro-8(server-Waynes-MacBook-Pro-8.local:18048)<v7>:59289 
+
+[info 2016/10/25 16:39:15.873 PDT <DM-MemberEventInvoker> tid=0x20] A new member joined: Waynes-MacBook-Pro-8(server-Waynes-MacBook-Pro-8.local:19048)<v9>:44486.  View(creator=Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:14019:locator)<v0>:59942, viewId=9, [Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:14019:locator)<v0>:59942, Waynes-MacBook-Pro-8(server-Waynes-MacBook-Pro-8.local:19048)<v9>:44486])
+
+[info 2016/10/25 16:39:17.608 PDT <Pooled High Priority Message Processor 1> tid=0x78] server summary: 1 cache servers with 0 client connections/current cache servers : Waynes-MacBook-Pro-8(server-Waynes-MacBook-Pro-8.local:19048)<v9>:44486 
+
+[info 2016/10/31 14:00:39.458 PDT <main> tid=0x1] Log opened with new distributed system connection.  View(creator=Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:85993:locator)<v0>:36121, viewId=0, [Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:85993:locator)<v0>:36121])
+
+[info 2016/10/31 14:00:59.791 PDT <DM-MemberEventInvoker> tid=0x20] A new member joined: Waynes-MacBook-Pro-8(server-Waynes-MacBook-Pro-8.local:86035)<v1>:14967.  View(creator=Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:85993:locator)<v0>:36121, viewId=1, [Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:85993:locator)<v0>:36121, Waynes-MacBook-Pro-8(server-Waynes-MacBook-Pro-8.local:86035)<v1>:14967])
+
+[info 2016/10/31 14:01:02.032 PDT <Pooled High Priority Message Processor 1> tid=0x78] server summary: 1 cache servers with 0 client connections/current cache servers : Waynes-MacBook-Pro-8(server-Waynes-MacBook-Pro-8.local:86035)<v1>:14967 
+
+[info 2016/10/31 16:02:50.339 PDT <main> tid=0x1] Log opened with new distributed system connection.  View(creator=Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:87847:locator)<v0>:24375, viewId=0, [Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:87847:locator)<v0>:24375])
+
+[info 2016/10/31 16:03:06.192 PDT <DM-MemberEventInvoker> tid=0x20] A new member joined: Waynes-MacBook-Pro-8(server-Waynes-MacBook-Pro-8.local:87883)<v1>:51107.  View(creator=Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:87847:locator)<v0>:24375, viewId=1, [Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:87847:locator)<v0>:24375, Waynes-MacBook-Pro-8(server-Waynes-MacBook-Pro-8.local:87883)<v1>:51107])
+
+[info 2016/10/31 16:03:08.130 PDT <Pooled High Priority Message Processor 1> tid=0x78] server summary: 1 cache servers with 0 client connections/current cache servers : Waynes-MacBook-Pro-8(server-Waynes-MacBook-Pro-8.local:87883)<v1>:51107 
+
+[info 2016/11/01 14:20:52.755 PDT <DM-MemberEventInvoker> tid=0x20] A new member joined: Waynes-MacBook-Pro-8(server-Waynes-MacBook-Pro-8.local:93724)<v3>:24768.  View(creator=Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:87847:locator)<v0>:24375, viewId=3, [Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:87847:locator)<v0>:24375, Waynes-MacBook-Pro-8(server-Waynes-MacBook-Pro-8.local:93724)<v3>:24768])
+
+[info 2016/11/01 14:20:54.667 PDT <Pooled High Priority Message Processor 1> tid=0x78] server summary: 1 cache servers with 0 client connections/current cache servers : Waynes-MacBook-Pro-8(server-Waynes-MacBook-Pro-8.local:93724)<v3>:24768 
