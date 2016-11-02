@@ -42,7 +42,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>io.pivotal.kaiser.gemfire.pubs.model</groupId>
+            <groupId>io.pivotal.gemfire.pubs.model</groupId>
             <artifactId>gemfire-pubs-model</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
