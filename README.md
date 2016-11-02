@@ -42,6 +42,52 @@ http://localhost:9393/dashboard/index.html#/tasks/definitions. The
 parameters we're collected from the UI so that it could be scripted
 as seen above.
 
+The tasks are created in no particular order:
+task create --definition 'jdbc-gemfire-task
+--jdbcgemfire.datasource.username=postgres
+--jdbcgemfire.datasource.url=jdbc:postgresql://localhost:5432/postgres
+--jdbcgemfire.datasource.driver-class-name=org.postgresql.Driver
+--jdbcgemfire.region-name=Author --jdbcgemfire.commit-interval=1000
+--jdbcgemfire.sql="select * from authors"' --name pubs-author
+
+task create --definition 'jdbc-gemfire-task
+--jdbcgemfire.datasource.username=postgres
+--jdbcgemfire.datasource.url=jdbc:postgresql://localhost:5432/postgres
+--jdbcgemfire.datasource.driver-class-name=org.postgresql.Driver
+--jdbcgemfire.region-name=Author --jdbcgemfire.commit-interval=1000
+--jdbcgemfire.sql="select * from authors"' --name pubs-editors
+
+task create --definition 'jdbc-gemfire-task
+--jdbcgemfire.datasource.username=postgres
+--jdbcgemfire.datasource.url=jdbc:postgresql://localhost:5432/postgres
+--jdbcgemfire.datasource.driver-class-name=org.postgresql.Driver 
+--jdbcgemfire.region-name=Editor --jdbcgemfire.commit-interval=1000 
+--jdbcgemfire.sql="select * from editors"' --name pubs-editors
+
+task create --definition 'jdbc-gemfire-task
+--jdbcgemfire.datasource.username=postgres
+--jdbcgemfire.datasource.url=jdbc:postgresql://localhost:5432/postgres
+--jdbcgemfire.datasource.driver-class-name=org.postgresql.Driver
+--jdbcgemfire.region-name=Publisher --jdbcgemfire.commit-interval=1000
+--jdbcgemfire.sql="select * from publishers"' --name pubs-publishers
+
+task create --definition 'jdbc-gemfire-task
+--jdbcgemfire.datasource.username=postgres
+--jdbcgemfire.datasource.url=jdbc:postgresql://localhost:5432/postgres
+--jdbcgemfire.datasource.driver-class-name=org.postgresql.Driver
+--jdbcgemfire.region-name=Sale --jdbcgemfire.commit-interval=1000
+--jdbcgemfire.sql="select * from sales"' --name pubs-sales
+
+task create --definition 'jdbc-gemfire-task
+--jdbcgemfire.datasource.username=postgres
+--jdbcgemfire.datasource.url=jdbc:postgresql://localhost:5432/postgres
+--jdbcgemfire.datasource.driver-class-name=org.postgresql.Driver
+--jdbcgemfire.region-name=SalesDetail
+--jdbcgemfire.commit-interval=1000
+--jdbcgemfire.sql="select * from salesdetails"'
+--name pubs-sales-details
+
+
 
 ** Starting Gemfire
 

@@ -35,7 +35,7 @@ import io.pivotal.dataflow.task.app.jdbcgemfire.common.GemfireDozerItemWriter;
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(classes = JdbcGemfireTaskApplication.class)
 @SuppressWarnings("serial")
-@TestPropertySource(properties = {"spring.cloud.task.name=pubs-sales-test-10", "jdbcgemfire.region-name=Sale"})
+@TestPropertySource(properties = {"spring.cloud.task.name=pubs-titleauthors-test-1", "jdbcgemfire.region-name=TitleAuthor"})
 public class GemfireDozerItemWriterTests {
     private static final Map<String, Map<String, Object>> DATA_SET = createDataSet();
     Map<String, Object> map = new HashMap<>();
@@ -92,4 +92,63 @@ public class GemfireDozerItemWriterTests {
         salesItems.put("storId", 7067);
         return Collections.unmodifiableMap(salesItems);
     }
+
+    private static Map<String, Object> createSalesDetailMap() {
+        Map<String, Object> salesDetailsItems = new HashMap<String, Object>();
+        // output from log used failure log used for test data
+        //  {sonum=2, sdate=1998-09-14, ponum=D4482, storId=7067}
+        salesDetailsItems.put("sonum", 2);
+        salesDetailsItems.put("qtyOrdered", 10);
+        salesDetailsItems.put("titleId", "PS2091");
+        salesDetailsItems.put("qtyShipped", 10);
+        salesDetailsItems.put("dateShipped", "1998-09-22");
+        return Collections.unmodifiableMap(salesDetailsItems);
+    }
+
+    private static Map<String, Object> createTitlesMap() {
+        Map<String, Object> titlesItems = new HashMap<String, Object>();
+        // output from log used failure log used for test data
+        //  {sonum=2, sdate=1998-09-14, ponum=D4482, storId=7067}
+        titlesItems.put("titleId", "PS7777");
+        titlesItems.put("pubId", "0736");
+        titlesItems.put("title", "Emotional Security: A New Algorithm");
+        titlesItems.put("pubdate", "1998-06-12");
+        titlesItems.put("price", 17.99);
+        titlesItems.put("ytdSales", 3336);
+        titlesItems.put("contract", 1);
+        titlesItems.put("type", "psychology");
+        titlesItems.put("note", "Protecting yourself and your loved ones from undue emotional stress in the modern world.  Use of computer and nutritional aids emphasized.");
+        return Collections.unmodifiableMap(titlesItems);
+    }
+
+    private static Map<String, Object> createTitleAuthorsMap() {
+        Map<String, Object> titleAuthorsItems = new HashMap<String, Object>();
+        // output from log used failure log used for test data
+        //  {sonum=2, sdate=1998-09-14, ponum=D4482, storId=7067}
+        titleAuthorsItems.put("auId", "409-56-7008");
+        titleAuthorsItems.put("titleId", "BU1032");
+        titleAuthorsItems.put("auOrd", 1);
+        titleAuthorsItems.put("royaltyshare", 0.60);
+        return Collections.unmodifiableMap(titleAuthorsItems);
+    }
+
+    private static Map<String, Object> createTitleEditorsMap() {
+        Map<String, Object> titleEditorsItems = new HashMap<String, Object>();
+        // output from log used failure log used for test data
+        //  {sonum=2, sdate=1998-09-14, ponum=D4482, storId=7067}
+        titleEditorsItems.put("titleId", "PS7777");
+        titleEditorsItems.put("pubId", "0736");
+        titleEditorsItems.put("title", "Emotional Security: A New Algorithm");
+        titleEditorsItems.put("pubdate", "1998-06-12");
+        titleEditorsItems.put("price", 17.99);
+        titleEditorsItems.put("ytdSales", 3336);
+        titleEditorsItems.put("contract", 1);
+        titleEditorsItems.put("type", "psychology");
+        titleEditorsItems.put("note", "Protecting yourself and your loved ones from undue emotional stress in the modern world.  Use of computer and nutritional aids emphasized.");
+        return Collections.unmodifiableMap(titleEditorsItems);
+    }
+
+
+
+
 }
