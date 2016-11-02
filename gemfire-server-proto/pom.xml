@@ -1,17 +1,18 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	<groupId>io.pivotal.kaiser.gemfire.proto.server</groupId>
-	<artifactId>gemfire-server-proto</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>gemfire-server-proto</name>
-	<description>A prototype gemfire server code for Kaiser </description>
-	<parent>
-	  <groupId>jdbc-gemfire-samples</groupId>
-	  <artifactId>parent</artifactId>
-	  <version>1.0</version>
-	</parent>
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>io.pivotal.kaiser.gemfire.proto.server</groupId>
+    <artifactId>gemfire-server-proto</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>gemfire-server-proto</name>
+    <description>A prototype gemfire server code for Kaiser</description>
+    <parent>
+        <groupId>jdbc-gemfire-samples</groupId>
+        <artifactId>parent</artifactId>
+        <version>1.0</version>
+    </parent>
 
+<<<<<<< HEAD
 	<build>
 		<plugins>
 			<plugin>
@@ -76,4 +77,40 @@
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
+=======
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <configuration>
+                    <excludeScope>provided</excludeScope>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>copy-dependencies</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+    <dependencies>
+        <dependency>
+            <groupId>io.pivotal.kaiser.gemfire.pubs.model</groupId>
+            <artifactId>gemfire-pubs-model</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+>>>>>>> f35cdce50f56a760b91a091d6dd43496f6960d32
 </project>

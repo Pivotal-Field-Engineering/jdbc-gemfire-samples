@@ -15,8 +15,14 @@
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.6.7" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.6.7" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.6.7" level="project" />
+<<<<<<< HEAD
     <orderEntry type="library" name="Maven: org.apache.logging.log4j:log4j-api:2.4.1" level="project" />
+=======
+>>>>>>> f35cdce50f56a760b91a091d6dd43496f6960d32
     <orderEntry type="library" name="Maven: org.apache.logging.log4j:log4j-core:2.4.1" level="project" />
     <orderEntry type="library" name="Maven: xom:xom:1.2.5" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.logging.log4j:log4j-slf4j-impl:2.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.logging.log4j:log4j-api:2.1" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.12" level="project" />
   </component>
 </module>
