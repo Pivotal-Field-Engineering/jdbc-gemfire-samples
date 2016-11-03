@@ -8,10 +8,10 @@
     <name>jdbc-gemfire-task</name>
     <description>Spring Cloud Task Jdbc Gemfire Starter</description>
     <parent>
-      <groupId>jdbc-gemfire-samples</groupId>
-      <artifactId>jdbc-gemfire-samples-parent</artifactId>
-      <version>1.0</version>
-      <relativePath>../jdbc-gemfire-samples-parent</relativePath>
+        <groupId>jdbc-gemfire-samples</groupId>
+        <artifactId>jdbc-gemfire-samples-parent</artifactId>
+        <version>1.0</version>
+        <relativePath>../jdbc-gemfire-samples-parent</relativePath>
     </parent>
 
     <dependencyManagement>
@@ -25,14 +25,6 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
-    <repositories>
-        <repository>
-            <id>gemfire-repository</id>
-            <name>Gemfire Repository</name>
-            <url>http://dist.gemstone.com/maven/release</url>
-        </repository>
-    </repositories>
 
 
     <dependencies>
