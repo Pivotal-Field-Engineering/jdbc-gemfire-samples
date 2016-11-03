@@ -8,16 +8,10 @@
     <name>jdbc-gemfire-task</name>
     <description>Spring Cloud Task Jdbc Gemfire Starter</description>
     <parent>
-<<<<<<< HEAD
       <groupId>jdbc-gemfire-samples</groupId>
       <artifactId>jdbc-gemfire-samples-parent</artifactId>
       <version>1.0</version>
       <relativePath>../jdbc-gemfire-samples-parent</relativePath>
-=======
-        <groupId>jdbc-gemfire-samples</groupId>
-        <artifactId>parent</artifactId>
-        <version>1.0</version>
->>>>>>> master
     </parent>
 
     <dependencyManagement>
@@ -58,16 +52,12 @@
             <optional>true</optional>
         </dependency>
         <dependency>
-<<<<<<< HEAD
             <groupId>com.gemstone.gemfire</groupId>
             <artifactId>gemfire</artifactId>
             <version>8.2.0</version>
         </dependency>
         <dependency>
             <groupId>io.pivotal.gemfire.pubs.model</groupId>
-=======
-            <groupId>io.pivotal.kaiser.gemfire.pubs.model</groupId>
->>>>>>> master
             <artifactId>gemfire-pubs-model</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>

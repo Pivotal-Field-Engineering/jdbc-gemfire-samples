@@ -1,17 +1,16 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-<<<<<<< HEAD
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>io.pivotal.gemfire.proto.server</groupId>
 	<artifactId>gemfire-server-proto</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>gemfire-server-proto</name>
-	<description>A prototype gemfire server for task with jdbc to gemfire </description>
+	<description>A prototype gemfire server code for Kaiser </description>
 	<parent>
 	  <groupId>jdbc-gemfire-samples</groupId>
 	  <artifactId>jdbc-gemfire-samples-parent</artifactId>
 	  <version>1.0</version>
-      <relativePath>../jdbc-gemfire-samples-parent</relativePath>
+	  <relativePath>../jdbc-gemfire-samples-parent</relativePath>
 	</parent>
 
 	<build>
@@ -41,58 +40,8 @@
 			</plugin>
 		</plugins>
 	</build>
-=======
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    <groupId>io.pivotal.kaiser.gemfire.proto.server</groupId>
-    <artifactId>gemfire-server-proto</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>gemfire-server-proto</name>
-    <description>A prototype gemfire server code for Kaiser</description>
-    <parent>
-        <groupId>jdbc-gemfire-samples</groupId>
-        <artifactId>parent</artifactId>
-        <version>1.0</version>
-    </parent>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-dependency-plugin</artifactId>
-                <configuration>
-                    <excludeScope>provided</excludeScope>
-                </configuration>
-                <executions>
-                    <execution>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>copy-dependencies</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>
->>>>>>> master
 
-    <dependencies>
-        <dependency>
-            <groupId>io.pivotal.gemfire.pubs.model</groupId>
-            <artifactId>gemfire-pubs-model</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-    </dependencies>
-
-<<<<<<< HEAD
 	<repositories>
 		<repository>
 			<id>gemfire-repository</id>
@@ -128,6 +77,4 @@
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
-=======
->>>>>>> master
 </project>

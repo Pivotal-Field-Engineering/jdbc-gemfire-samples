@@ -3,20 +3,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
                              http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
-<<<<<<< HEAD:jdbc-gemfire-samples-parent/pom.xml
   <groupId>jdbc-gemfire-samples</groupId>
   <artifactId>jdbc-gemfire-samples-parent</artifactId>
   <packaging>pom</packaging>
   <version>1.0</version>
   <name>jdbc-gemfire-samples-parent</name>
-=======
-    <groupId>jdbc-gemfire-samples</groupId>
-    <artifactId>parent</artifactId>
-    <packaging>pom</packaging>
-    <version>1.0.0.BUILD-SNAPSHOT</version>
-    <name>jdbc-gemfire-samples-parent</name>
->>>>>>> master:pom.xml
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -29,8 +20,7 @@
         <java.version>1.8</java.version>
         <local.deployer.version>1.0.0.RELEASE</local.deployer.version>
     </properties>
-<<<<<<< HEAD:jdbc-gemfire-samples-parent/pom.xml
-  
+
   <modules>
     <module>../gemfire-pubs-model</module>
     <module>../gemfire-server-proto</module>
@@ -52,59 +42,4 @@
       </plugins>
     </pluginManagement>
   </build>
-=======
-
-    <modules>
-        <module>gemfire-pubs-model</module>
-        <module>gemfire-server-proto</module>
-        <module>jdbc-gemfire-task</module>
-    </modules>
-
-    <build>
-        <pluginManagement>
-            <plugins>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-compiler-plugin</artifactId>
-                    <configuration>
-                        <source>1.8</source>
-                        <target>1.8</target>
-                    </configuration>
-                </plugin>
-            </plugins>
-        </pluginManagement>
-    </build>
-
-    <repositories>
-        <repository>
-            <id>gemfire-repository</id>
-            <name>Gemfire Repository</name>
-            <url>http://dist.gemstone.com/maven/release</url>
-        </repository>
-    </repositories>
-
-    <dependencies>
-        <dependency>
-            <groupId>com.gemstone.gemfire</groupId>
-            <artifactId>gemfire</artifactId>
-            <version>8.2.0</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-slf4j-impl</artifactId>
-            <version>2.1</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-api</artifactId>
-            <version>2.1</version>
-        </dependency>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-            <version>1.7.12</version>
-        </dependency>
-    </dependencies>
->>>>>>> master:pom.xml
-
 </project>
