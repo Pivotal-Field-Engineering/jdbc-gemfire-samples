@@ -1,4 +1,8 @@
-.iml
+loc*.local
+server*.local
+*.iml
+*.ipr
+*.iws
 .js.map
 .js
 .jar
@@ -12,19 +16,44 @@ out
 src/main/resources/static/node/
 .DS_Store
 
-.irf
-.crf
-.drf
-.lk
+*.irf
+*.crf
+*.drf
+*.lk
 .idea
 .project
 .settings
 .classpath
 .factorypath
 .springBeans
-gemfire/server/gemfire-server-proto/scripts/loc-Waynes-MacBook-Pro-8.local
-gemfire/server/gemfire-server-proto/scripts/server-Waynes-MacBook-Pro-8.local/
-
+.gradle
+*.class
+*.if
+build
+vf.*
+bin
+# packaging
+*.7z
+*.dmg
+*.gz
+*.iso
+*.rar
+*.tar
+*.zip
+target/
+BACKUP*
+# logs and database
+*.log
+*.sqlite
+*.state
+*.lock
+*.crf
+*.drf
+# OS generate files #
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
 
 provided/sqlf_appointment/server/*
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml

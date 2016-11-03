@@ -1,7 +1,7 @@
-# jdbc-gemfire-samples 
+# jdbc-gemfire-samples
  * **gemfire**  - Gemfire project space (client,server,model)
- * **dataflow** - Custom SCS components for SCDF (jdbc-source,groovy-processor,gemfire-sink)
- * **test**     - Local test suite (gemfire-sink-test)
+  * **dataflow** - Custom SCS components for SCDF (jdbc-source,groovy-processor,gemfire-sink)
+   * **test**     - Local test suite (gemfire-sink-test)
 
 # Problem Statement
 
@@ -10,12 +10,12 @@ Gemfire.  However, in this particular reference had multiple goals to
 be accomplished that surrounded a simple task:
 
 1. Produce a Java Object Model in the spirit of java beans instead of using the Entity and
-Column names from the RDBMS schema. 
+Column names from the RDBMS schema.
 2. Create existing tables equivalent to current sql tables (authors,
 books, titles, etc.)
 3. Refresh all tables (except sales related - txn) that have source
 data in underlying SQL tables daily ( bulk load or incremental )
-4. Load sales data from current sales tables. 
+4. Load sales data from current sales tables.
 5. Insert/update/read Sales from java application (source is RabbitMQ and other clients/consumers)
 [6. Persistence store in case of VM/Server reboot -- out of scope for samples]
 [7. Use LDAP for Authentication -- out of scope for samples]
@@ -41,6 +41,52 @@ you can launch the task from either the shell or use
 http://localhost:9393/dashboard/index.html#/tasks/definitions. The
 parameters we're collected from the UI so that it could be scripted
 as seen above.
+
+The tasks are created in no particular order:
+task create --definition 'jdbc-gemfire-task
+--jdbcgemfire.datasource.username=postgres
+--jdbcgemfire.datasource.url=jdbc:postgresql://localhost:5432/postgres
+--jdbcgemfire.datasource.driver-class-name=org.postgresql.Driver
+--jdbcgemfire.region-name=Author --jdbcgemfire.commit-interval=1000
+--jdbcgemfire.sql="select * from authors"' --name pubs-author
+
+task create --definition 'jdbc-gemfire-task
+--jdbcgemfire.datasource.username=postgres
+--jdbcgemfire.datasource.url=jdbc:postgresql://localhost:5432/postgres
+--jdbcgemfire.datasource.driver-class-name=org.postgresql.Driver
+--jdbcgemfire.region-name=Author --jdbcgemfire.commit-interval=1000
+--jdbcgemfire.sql="select * from authors"' --name pubs-editors
+
+task create --definition 'jdbc-gemfire-task
+--jdbcgemfire.datasource.username=postgres
+--jdbcgemfire.datasource.url=jdbc:postgresql://localhost:5432/postgres
+--jdbcgemfire.datasource.driver-class-name=org.postgresql.Driver
+--jdbcgemfire.region-name=Editor --jdbcgemfire.commit-interval=1000
+--jdbcgemfire.sql="select * from editors"' --name pubs-editors
+
+task create --definition 'jdbc-gemfire-task
+--jdbcgemfire.datasource.username=postgres
+--jdbcgemfire.datasource.url=jdbc:postgresql://localhost:5432/postgres
+--jdbcgemfire.datasource.driver-class-name=org.postgresql.Driver
+--jdbcgemfire.region-name=Publisher --jdbcgemfire.commit-interval=1000
+--jdbcgemfire.sql="select * from publishers"' --name pubs-publishers
+
+task create --definition 'jdbc-gemfire-task
+--jdbcgemfire.datasource.username=postgres
+--jdbcgemfire.datasource.url=jdbc:postgresql://localhost:5432/postgres
+--jdbcgemfire.datasource.driver-class-name=org.postgresql.Driver
+--jdbcgemfire.region-name=Sale --jdbcgemfire.commit-interval=1000
+--jdbcgemfire.sql="select * from sales"' --name pubs-sales
+
+task create --definition 'jdbc-gemfire-task
+--jdbcgemfire.datasource.username=postgres
+--jdbcgemfire.datasource.url=jdbc:postgresql://localhost:5432/postgres
+--jdbcgemfire.datasource.driver-class-name=org.postgresql.Driver
+--jdbcgemfire.region-name=SalesDetail
+--jdbcgemfire.commit-interval=1000
+--jdbcgemfire.sql="select * from salesdetails"'
+--name pubs-sales-details
+
 
 
 ** Starting Gemfire

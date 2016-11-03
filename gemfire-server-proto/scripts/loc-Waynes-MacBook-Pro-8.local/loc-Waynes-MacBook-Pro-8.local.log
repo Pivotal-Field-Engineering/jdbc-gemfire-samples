@@ -1,7 +1,7 @@
 
-[info 2016/10/31 16:02:35.877 PDT loc-Waynes-MacBook-Pro-8.local <main> tid=0x1] Renamed old log file to "loc-Waynes-MacBook-Pro-8.local-05-01.log".
+[info 2016/11/02 21:47:24.434 PDT loc-Waynes-MacBook-Pro-8.local <main> tid=0x1] Renamed old log file to "loc-Waynes-MacBook-Pro-8.local-08-01.log".
 
-[info 2016/10/31 16:02:35.897 PDT loc-Waynes-MacBook-Pro-8.local <main> tid=0x1] 
+[info 2016/11/02 21:47:24.456 PDT loc-Waynes-MacBook-Pro-8.local <main> tid=0x1] 
   ---------------------------------------------------------------------------
   
     Copyright (C) 1997-2015 Pivotal Software, Inc. All rights reserved. This
@@ -18,9 +18,9 @@
   Source revision: a58a25d2be7eab751794e9cc78ff04a03bb09a65
   Source repository: gemfire82_dev
   Running on: Waynes-MacBook-Pro-8.local/10.0.0.45, 8 cpu(s), x86_64 Mac OS X 10.12.1
-  Process ID: 87847
+  Process ID: 14657
   User: wlund
-  Current dir: /Users/wlund/Dropbox/git-workspace/wxlund/jdbc-gemfire-samples/gemfire/server/gemfire-server-proto/scripts/loc-Waynes-MacBook-Pro-8.local
+  Current dir: /Users/wlund/Dropbox/git-workspace/wxlund/jdbc-gemfire-samples/gemfire-server-proto/scripts/loc-Waynes-MacBook-Pro-8.local
   Home dir: /Users/wlund
   Command Line Parameters:
     -Dgemfire.locators=localhost[10334]
@@ -89,7 +89,7 @@
       java.vm.vendor = Oracle Corporation
       java.vm.version = 25.91-b14
       jna.platform.library.path = /usr/lib:/usr/lib
-      jnidispatch.path = /var/folders/kd/trtc0t5x1lsf2v0fp31_2w780000gn/T/jna-113232374/jna7100395354014406847.tmp
+      jnidispatch.path = /var/folders/kd/trtc0t5x1lsf2v0fp31_2w780000gn/T/jna-113232374/jna7870817134852410688.tmp
       line.separator = 
   
       log4j.configurationFile = jar:file:/usr/local/Cellar/gemfire/8.2.0/libexec/lib/gemfire.jar!/com/gemstone/gemfire/internal/logging/log4j/log4j2-default.xml
@@ -116,21 +116,21 @@
   ---------------------------------------------------------------------------
   
 
-[info 2016/10/31 16:02:36.149 PDT loc-Waynes-MacBook-Pro-8.local <main> tid=0x1] Starting peer location for Distribution Locator on Waynes-MacBook-Pro-8.local[10334]
+[info 2016/11/02 21:47:24.706 PDT loc-Waynes-MacBook-Pro-8.local <main> tid=0x1] Starting peer location for Distribution Locator on Waynes-MacBook-Pro-8.local[10334]
 
-[info 2016/10/31 16:02:36.153 PDT loc-Waynes-MacBook-Pro-8.local <main> tid=0x1] Starting Distribution Locator on Waynes-MacBook-Pro-8.local[10334]
+[info 2016/11/02 21:47:24.711 PDT loc-Waynes-MacBook-Pro-8.local <main> tid=0x1] Starting Distribution Locator on Waynes-MacBook-Pro-8.local[10334]
 
-[info 2016/10/31 16:02:36.166 PDT loc-Waynes-MacBook-Pro-8.local <main> tid=0x1] Recovering state from locator10334state.dat
+[info 2016/11/02 21:47:24.724 PDT loc-Waynes-MacBook-Pro-8.local <main> tid=0x1] Recovering state from locator10334state.dat
 
-[info 2016/10/31 16:02:36.205 PDT loc-Waynes-MacBook-Pro-8.local <main> tid=0x1] Discovery set was written with GFE 8.1
+[info 2016/11/02 21:47:24.761 PDT loc-Waynes-MacBook-Pro-8.local <main> tid=0x1] Discovery set was written with GFE 8.1
 
-[info 2016/10/31 16:02:36.226 PDT loc-Waynes-MacBook-Pro-8.local <main> tid=0x1] Initial discovery set is [mbr=172.25.68.101(server-Waynes-MacBook-Pro-8.local:86035)<v1>:14967, mbr=172.25.68.101(loc-Waynes-MacBook-Pro-8.local:85993:locator)<v0>:36121]
+[info 2016/11/02 21:47:24.825 PDT loc-Waynes-MacBook-Pro-8.local <main> tid=0x1] Initial discovery set is [mbr=172.25.2.19(server-Waynes-MacBook-Pro-8.local:13008)<v3>:35552, mbr=172.25.2.19(loc-Waynes-MacBook-Pro-8.local:11875:locator)<v0>:29497]
 
-[info 2016/10/31 16:02:36.229 PDT loc-Waynes-MacBook-Pro-8.local <main> tid=0x1] Waynes-MacBook-Pro-8.local [ 10,334 ] attempting to get state from  localhost [ 10,334 ]
+[info 2016/11/02 21:47:24.827 PDT loc-Waynes-MacBook-Pro-8.local <main> tid=0x1] Waynes-MacBook-Pro-8.local [ 10,334 ] attempting to get state from  localhost [ 10,334 ]
 
-[info 2016/10/31 16:02:37.258 PDT loc-Waynes-MacBook-Pro-8.local <main> tid=0x1] Starting distributed system
+[info 2016/11/02 21:47:25.849 PDT loc-Waynes-MacBook-Pro-8.local <main> tid=0x1] Starting distributed system
 
-[info 2016/10/31 16:02:37.263 PDT loc-Waynes-MacBook-Pro-8.local <main> tid=0x1] Startup Configuration:
+[info 2016/11/02 21:47:25.854 PDT loc-Waynes-MacBook-Pro-8.local <main> tid=0x1] Startup Configuration:
    ### GemFire Properties defined with system property ###
   archive-disk-space-limit=1000
   archive-file-size-limit=100
@@ -277,7 +277,7 @@
   writable-working-dir=
   
 
-[info 2016/10/31 16:02:37.278 PDT loc-Waynes-MacBook-Pro-8.local <main> tid=0x1] 
+[info 2016/11/02 21:47:25.869 PDT loc-Waynes-MacBook-Pro-8.local <main> tid=0x1] 
   ---------------------------------------------------------------------------
   
     Copyright (C) 1997-2015 Pivotal Software, Inc. All rights reserved. This
@@ -294,9 +294,9 @@
   Source revision: a58a25d2be7eab751794e9cc78ff04a03bb09a65
   Source repository: gemfire82_dev
   Running on: Waynes-MacBook-Pro-8.local/10.0.0.45, 8 cpu(s), x86_64 Mac OS X 10.12.1
-  Process ID: 87847
+  Process ID: 14657
   User: wlund
-  Current dir: /Users/wlund/Dropbox/git-workspace/wxlund/jdbc-gemfire-samples/gemfire/server/gemfire-server-proto/scripts/loc-Waynes-MacBook-Pro-8.local
+  Current dir: /Users/wlund/Dropbox/git-workspace/wxlund/jdbc-gemfire-samples/gemfire-server-proto/scripts/loc-Waynes-MacBook-Pro-8.local
   Home dir: /Users/wlund
   Command Line Parameters:
     -Dgemfire.locators=localhost[10334]
@@ -366,7 +366,7 @@
       java.vm.vendor = Oracle Corporation
       java.vm.version = 25.91-b14
       jna.platform.library.path = /usr/lib:/usr/lib
-      jnidispatch.path = /var/folders/kd/trtc0t5x1lsf2v0fp31_2w780000gn/T/jna-113232374/jna7100395354014406847.tmp
+      jnidispatch.path = /var/folders/kd/trtc0t5x1lsf2v0fp31_2w780000gn/T/jna-113232374/jna7870817134852410688.tmp
       line.separator = 
   
       log4j.configurationFile = jar:file:/usr/local/Cellar/gemfire/8.2.0/libexec/lib/gemfire.jar!/com/gemstone/gemfire/internal/logging/log4j/log4j2-default.xml
@@ -395,7 +395,7 @@
   ---------------------------------------------------------------------------
   
 
-[info 2016/10/31 16:02:37.280 PDT loc-Waynes-MacBook-Pro-8.local <main> tid=0x1] Startup Configuration:
+[info 2016/11/02 21:47:25.871 PDT loc-Waynes-MacBook-Pro-8.local <main> tid=0x1] Startup Configuration:
    ### GemFire Properties defined with system property ###
   archive-disk-space-limit=1000
   archive-file-size-limit=100
@@ -542,443 +542,326 @@
   writable-working-dir=
   
 
-[info 2016/10/31 16:02:37.332 PDT loc-Waynes-MacBook-Pro-8.local <main> tid=0x1] GemFire P2P Listener started on  tcp:///10.0.0.45:6161
+[info 2016/11/02 21:47:25.919 PDT loc-Waynes-MacBook-Pro-8.local <main> tid=0x1] GemFire P2P Listener started on  tcp:///10.0.0.45:45649
 
-[info 2016/10/31 16:02:37.402 PDT loc-Waynes-MacBook-Pro-8.local <PingSender> tid=0x2b] locator Waynes-MacBook-Pro-8(null)<v0>:10334 member address is Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:87847:locator):24375
+[info 2016/11/02 21:47:25.990 PDT loc-Waynes-MacBook-Pro-8.local <PingSender> tid=0x2c] locator Waynes-MacBook-Pro-8(null)<v0>:10334 member address is Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:14657:locator):10915
 
-[info 2016/10/31 16:02:37.405 PDT loc-Waynes-MacBook-Pro-8.local <PingSender> tid=0x2b] locator localhost(null)<v0>:10334 member address is Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:87847:locator):24375
+[info 2016/11/02 21:47:25.993 PDT loc-Waynes-MacBook-Pro-8.local <PingSender> tid=0x2c] locator localhost(null)<v0>:10334 member address is Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:14657:locator):10915
 
-[info 2016/10/31 16:02:44.411 PDT loc-Waynes-MacBook-Pro-8.local <PingSender> tid=0x3c] locator Waynes-MacBook-Pro-8(null)<v0>:10334 member address is Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:87847:locator):24375
+[info 2016/11/02 21:47:33.007 PDT loc-Waynes-MacBook-Pro-8.local <PingSender> tid=0x3c] locator Waynes-MacBook-Pro-8(null)<v0>:10334 member address is Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:14657:locator):10915
 
-[info 2016/10/31 16:02:44.413 PDT loc-Waynes-MacBook-Pro-8.local <PingSender> tid=0x3c] locator localhost(null)<v0>:10334 member address is Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:87847:locator):24375
+[info 2016/11/02 21:47:33.009 PDT loc-Waynes-MacBook-Pro-8.local <PingSender> tid=0x3c] locator localhost(null)<v0>:10334 member address is Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:14657:locator):10915
 
-[info 2016/10/31 16:02:49.422 PDT loc-Waynes-MacBook-Pro-8.local <main> tid=0x1] This member, Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:87847:locator):24375, is becoming group coordinator.
+[info 2016/11/02 21:47:38.020 PDT loc-Waynes-MacBook-Pro-8.local <main> tid=0x1] This member, Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:14657:locator):10915, is becoming group coordinator.
 
-[info 2016/10/31 16:02:49.425 PDT loc-Waynes-MacBook-Pro-8.local <main> tid=0x1] Entered into membership with ID Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:87847:locator)<v0>:24375.
+[info 2016/11/02 21:47:38.023 PDT loc-Waynes-MacBook-Pro-8.local <main> tid=0x1] Entered into membership with ID Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:14657:locator)<v0>:10915.
 
-[info 2016/10/31 16:02:49.426 PDT loc-Waynes-MacBook-Pro-8.local <main> tid=0x1] Starting DistributionManager Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:87847:locator)<v0>:24375.  (took 12113/ ms)
+[info 2016/11/02 21:47:38.023 PDT loc-Waynes-MacBook-Pro-8.local <main> tid=0x1] Starting DistributionManager Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:14657:locator)<v0>:10915.  (took 12125/ ms)
 
-[info 2016/10/31 16:02:49.426 PDT loc-Waynes-MacBook-Pro-8.local <main> tid=0x1] Initial (membershipManager) view =  [Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:87847:locator)<v0>:24375]
+[info 2016/11/02 21:47:38.025 PDT loc-Waynes-MacBook-Pro-8.local <main> tid=0x1] Initial (membershipManager) view =  [Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:14657:locator)<v0>:10915]
 
-[info 2016/10/31 16:02:49.426 PDT loc-Waynes-MacBook-Pro-8.local <main> tid=0x1] Admitting member <Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:87847:locator)<v0>:24375>. Now there are 1 non-admin member(s).
+[info 2016/11/02 21:47:38.025 PDT loc-Waynes-MacBook-Pro-8.local <main> tid=0x1] Admitting member <Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:14657:locator)<v0>:10915>. Now there are 1 non-admin member(s).
 
-[info 2016/10/31 16:02:49.427 PDT loc-Waynes-MacBook-Pro-8.local <main> tid=0x1] Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:87847:locator)<v0>:24375 is the elder and the only member.
+[info 2016/11/02 21:47:38.026 PDT loc-Waynes-MacBook-Pro-8.local <main> tid=0x1] Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:14657:locator)<v0>:10915 is the elder and the only member.
 
-[info 2016/10/31 16:02:49.429 PDT loc-Waynes-MacBook-Pro-8.local <main> tid=0x1] Did not hear back from any other system. I am the first one.
+[info 2016/11/02 21:47:38.028 PDT loc-Waynes-MacBook-Pro-8.local <main> tid=0x1] Did not hear back from any other system. I am the first one.
 
-[info 2016/10/31 16:02:49.444 PDT loc-Waynes-MacBook-Pro-8.local <main> tid=0x1] Creating cache for locator.
+[info 2016/11/02 21:47:38.042 PDT loc-Waynes-MacBook-Pro-8.local <main> tid=0x1] Creating cache for locator.
 
-[info 2016/10/31 16:02:49.585 PDT loc-Waynes-MacBook-Pro-8.local <main> tid=0x1] Initializing region _monitoringRegion_10.0.0.45<v0>24375
+[info 2016/11/02 21:47:38.176 PDT loc-Waynes-MacBook-Pro-8.local <main> tid=0x1] Initializing region _monitoringRegion_10.0.0.45<v0>10915
 
-[info 2016/10/31 16:02:49.587 PDT loc-Waynes-MacBook-Pro-8.local <main> tid=0x1] Initialization of region _monitoringRegion_10.0.0.45<v0>24375 completed
+[info 2016/11/02 21:47:38.179 PDT loc-Waynes-MacBook-Pro-8.local <main> tid=0x1] Initialization of region _monitoringRegion_10.0.0.45<v0>10915 completed
 
-[info 2016/10/31 16:02:50.337 PDT loc-Waynes-MacBook-Pro-8.local <main> tid=0x1] SharedConfigStatusRequestHandler installed
+[info 2016/11/02 21:47:38.889 PDT loc-Waynes-MacBook-Pro-8.local <main> tid=0x1] SharedConfigStatusRequestHandler installed
 
-[info 2016/10/31 16:02:50.338 PDT loc-Waynes-MacBook-Pro-8.local <main> tid=0x1] Locator started on  10.0.0.45[10334]
+[info 2016/11/02 21:47:38.890 PDT loc-Waynes-MacBook-Pro-8.local <main> tid=0x1] Locator started on  10.0.0.45[10334]
 
-[info 2016/10/31 16:02:50.339 PDT loc-Waynes-MacBook-Pro-8.local <main> tid=0x1] Starting server location for Distribution Locator on Waynes-MacBook-Pro-8.local[10334]
+[info 2016/11/02 21:47:38.890 PDT loc-Waynes-MacBook-Pro-8.local <main> tid=0x1] Starting server location for Distribution Locator on Waynes-MacBook-Pro-8.local[10334]
 
-[info 2016/10/31 16:02:50.352 PDT loc-Waynes-MacBook-Pro-8.local <WAN Locator Discovery Thread> tid=0x56] Locator discovery task exchanged locator information Waynes-MacBook-Pro-8.local[10334] with localhost[10334]: {-1=[Waynes-MacBook-Pro-8.local[10334]]}.
+[info 2016/11/02 21:47:38.904 PDT loc-Waynes-MacBook-Pro-8.local <WAN Locator Discovery Thread> tid=0x56] Locator discovery task exchanged locator information Waynes-MacBook-Pro-8.local[10334] with localhost[10334]: {-1=[Waynes-MacBook-Pro-8.local[10334]]}.
 
-[info 2016/10/31 16:02:50.386 PDT loc-Waynes-MacBook-Pro-8.local <Pooled Message Processor 1> tid=0x54] Recovered disk store cluster_config with unique id d50e7d1af3734b56-84cd2b10965fcf30
+[info 2016/11/02 21:47:38.939 PDT loc-Waynes-MacBook-Pro-8.local <Pooled Message Processor 1> tid=0x54] Recovered disk store cluster_config with unique id d50e7d1af3734b56-84cd2b10965fcf30
 
-[info 2016/10/31 16:02:50.392 PDT loc-Waynes-MacBook-Pro-8.local <Pooled Message Processor 1> tid=0x54] Recovering oplog#5 /Users/wlund/Dropbox/git-workspace/wxlund/jdbc-gemfire-samples/gemfire/server/gemfire-server-proto/scripts/loc-Waynes-MacBook-Pro-8.local/ConfigDiskDir_loc-Waynes-MacBook-Pro-8.local/BACKUPcluster_config_5.drf for disk store cluster_config.
+[info 2016/11/02 21:47:38.945 PDT loc-Waynes-MacBook-Pro-8.local <Pooled Message Processor 1> tid=0x54] Recovering oplog#8 /Users/wlund/Dropbox/git-workspace/wxlund/jdbc-gemfire-samples/gemfire-server-proto/scripts/loc-Waynes-MacBook-Pro-8.local/ConfigDiskDir_loc-Waynes-MacBook-Pro-8.local/BACKUPcluster_config_8.drf for disk store cluster_config.
 
-[info 2016/10/31 16:02:50.393 PDT loc-Waynes-MacBook-Pro-8.local <Pooled Message Processor 1> tid=0x54] Recovering oplog#5 /Users/wlund/Dropbox/git-workspace/wxlund/jdbc-gemfire-samples/gemfire/server/gemfire-server-proto/scripts/loc-Waynes-MacBook-Pro-8.local/ConfigDiskDir_loc-Waynes-MacBook-Pro-8.local/BACKUPcluster_config_5.crf for disk store cluster_config.
+[info 2016/11/02 21:47:38.947 PDT loc-Waynes-MacBook-Pro-8.local <Pooled Message Processor 1> tid=0x54] Recovering oplog#8 /Users/wlund/Dropbox/git-workspace/wxlund/jdbc-gemfire-samples/gemfire-server-proto/scripts/loc-Waynes-MacBook-Pro-8.local/ConfigDiskDir_loc-Waynes-MacBook-Pro-8.local/BACKUPcluster_config_8.crf for disk store cluster_config.
 
-[info 2016/10/31 16:02:50.396 PDT loc-Waynes-MacBook-Pro-8.local <Pooled Message Processor 1> tid=0x54] recovery oplog load took 4 ms
+[info 2016/11/02 21:47:38.950 PDT loc-Waynes-MacBook-Pro-8.local <Pooled Message Processor 1> tid=0x54] recovery oplog load took 5 ms
 
-[info 2016/10/31 16:02:50.402 PDT loc-Waynes-MacBook-Pro-8.local <Oplog Delete Task> tid=0x58] Deleted oplog#5 crf for disk store cluster_config.
+[info 2016/11/02 21:47:38.958 PDT loc-Waynes-MacBook-Pro-8.local <Oplog Delete Task> tid=0x58] Deleted oplog#8 crf for disk store cluster_config.
 
-[info 2016/10/31 16:02:50.403 PDT loc-Waynes-MacBook-Pro-8.local <Oplog Delete Task> tid=0x58] Deleted oplog#5 drf for disk store cluster_config.
+[info 2016/11/02 21:47:38.959 PDT loc-Waynes-MacBook-Pro-8.local <Oplog Delete Task> tid=0x58] Deleted oplog#8 drf for disk store cluster_config.
 
-[info 2016/10/31 16:02:50.450 PDT loc-Waynes-MacBook-Pro-8.local <Pooled Message Processor 1> tid=0x54] Created oplog#6 drf for disk store cluster_config.
+[info 2016/11/02 21:47:39.002 PDT loc-Waynes-MacBook-Pro-8.local <Pooled Message Processor 1> tid=0x54] Created oplog#9 drf for disk store cluster_config.
 
-[info 2016/10/31 16:02:50.507 PDT loc-Waynes-MacBook-Pro-8.local <Pooled Message Processor 1> tid=0x54] Created oplog#6 crf for disk store cluster_config.
+[info 2016/11/02 21:47:39.071 PDT loc-Waynes-MacBook-Pro-8.local <Pooled Message Processor 1> tid=0x54] Created oplog#9 crf for disk store cluster_config.
 
-[info 2016/10/31 16:02:50.508 PDT loc-Waynes-MacBook-Pro-8.local <Pooled Message Processor 1> tid=0x54] recovery region initialization took 112 ms
+[info 2016/11/02 21:47:39.073 PDT loc-Waynes-MacBook-Pro-8.local <Pooled Message Processor 1> tid=0x54] recovery region initialization took 122 ms
 
-[warning 2016/10/31 16:02:50.513 PDT loc-Waynes-MacBook-Pro-8.local <Pooled Message Processor 1> tid=0x54] Creating persistent region _ConfigurationRegion, but enable-network-partition-detection is set to false. Running with network partition detection disabled can lead to an unrecoverable system in the event of a network split.
+[warning 2016/11/02 21:47:39.078 PDT loc-Waynes-MacBook-Pro-8.local <Pooled Message Processor 1> tid=0x54] Creating persistent region _ConfigurationRegion, but enable-network-partition-detection is set to false. Running with network partition detection disabled can lead to an unrecoverable system in the event of a network split.
 
-[info 2016/10/31 16:02:50.515 PDT loc-Waynes-MacBook-Pro-8.local <Pooled Message Processor 1> tid=0x54] Initializing region _ConfigurationRegion
+[info 2016/11/02 21:47:39.079 PDT loc-Waynes-MacBook-Pro-8.local <Pooled Message Processor 1> tid=0x54] Initializing region _ConfigurationRegion
 
-[info 2016/10/31 16:02:50.516 PDT loc-Waynes-MacBook-Pro-8.local <Pooled Message Processor 1> tid=0x54] Region /_ConfigurationRegion recovered from the local disk. Old persistent ID: /172.25.68.101:/Users/wlund/Dropbox/git-workspace/wxlund/jdbc-gemfire-samples/gemfire/server/gemfire-server-proto/scripts/loc-Waynes-MacBook-Pro-8.local/ConfigDiskDir_loc-Waynes-MacBook-Pro-8.local created at timestamp 1477947639659 version 0 diskStoreId d50e7d1af3734b56-84cd2b10965fcf30 name loc-Waynes-MacBook-Pro-8.local, new persistent ID /10.0.0.45:/Users/wlund/Dropbox/git-workspace/wxlund/jdbc-gemfire-samples/gemfire/server/gemfire-server-proto/scripts/loc-Waynes-MacBook-Pro-8.local/ConfigDiskDir_loc-Waynes-MacBook-Pro-8.local created at timestamp 1477954970514 version 0 diskStoreId d50e7d1af3734b56-84cd2b10965fcf30 name loc-Waynes-MacBook-Pro-8.local
+[info 2016/11/02 21:47:39.080 PDT loc-Waynes-MacBook-Pro-8.local <Pooled Message Processor 1> tid=0x54] Region /_ConfigurationRegion recovered from the local disk. Old persistent ID: /172.25.2.19:/Users/wlund/Dropbox/git-workspace/wxlund/jdbc-gemfire-samples/gemfire-server-proto/scripts/loc-Waynes-MacBook-Pro-8.local/ConfigDiskDir_loc-Waynes-MacBook-Pro-8.local created at timestamp 1478127730715 version 0 diskStoreId d50e7d1af3734b56-84cd2b10965fcf30 name loc-Waynes-MacBook-Pro-8.local, new persistent ID /10.0.0.45:/Users/wlund/Dropbox/git-workspace/wxlund/jdbc-gemfire-samples/gemfire-server-proto/scripts/loc-Waynes-MacBook-Pro-8.local/ConfigDiskDir_loc-Waynes-MacBook-Pro-8.local created at timestamp 1478148459078 version 0 diskStoreId d50e7d1af3734b56-84cd2b10965fcf30 name loc-Waynes-MacBook-Pro-8.local
 
-[info 2016/10/31 16:02:50.521 PDT loc-Waynes-MacBook-Pro-8.local <Pooled Message Processor 1> tid=0x54] Initialization of region _ConfigurationRegion completed
+[info 2016/11/02 21:47:39.085 PDT loc-Waynes-MacBook-Pro-8.local <Pooled Message Processor 1> tid=0x54] Initialization of region _ConfigurationRegion completed
 
-[info 2016/10/31 16:02:50.535 PDT loc-Waynes-MacBook-Pro-8.local <Pooled Message Processor 1> tid=0x54] Completed writing the shared configuration to 'cluster_config' directory
+[info 2016/11/02 21:47:39.100 PDT loc-Waynes-MacBook-Pro-8.local <Pooled Message Processor 1> tid=0x54] Completed writing the shared configuration to 'cluster_config' directory
 
-[info 2016/10/31 16:02:50.535 PDT loc-Waynes-MacBook-Pro-8.local <Pooled Message Processor 1> tid=0x54] Getting Jar files from other locators
+[info 2016/11/02 21:47:39.100 PDT loc-Waynes-MacBook-Pro-8.local <Pooled Message Processor 1> tid=0x54] Getting Jar files from other locators
 
-[info 2016/10/31 16:02:50.535 PDT loc-Waynes-MacBook-Pro-8.local <Pooled Message Processor 1> tid=0x54] No other locators present
+[info 2016/11/02 21:47:39.101 PDT loc-Waynes-MacBook-Pro-8.local <Pooled Message Processor 1> tid=0x54] No other locators present
 
-[info 2016/10/31 16:02:50.537 PDT loc-Waynes-MacBook-Pro-8.local <Pooled Message Processor 1> tid=0x54] ConfigRequestHandler installed
+[info 2016/11/02 21:47:39.102 PDT loc-Waynes-MacBook-Pro-8.local <Pooled Message Processor 1> tid=0x54] ConfigRequestHandler installed
 
-[info 2016/10/31 16:02:50.537 PDT loc-Waynes-MacBook-Pro-8.local <Pooled Message Processor 1> tid=0x54] Cluster configuration service start up completed successfully and is now running ....
+[info 2016/11/02 21:47:39.102 PDT loc-Waynes-MacBook-Pro-8.local <Pooled Message Processor 1> tid=0x54] Cluster configuration service start up completed successfully and is now running ....
 
-[info 2016/10/31 16:02:51.123 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Logging initialized @16178ms
+[info 2016/11/02 21:47:39.667 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Logging initialized @16111ms
 
-[info 2016/10/31 16:02:51.182 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] jetty-9.2.3.v20140905
+[info 2016/11/02 21:47:39.715 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] jetty-9.2.3.v20140905
 
-[info 2016/10/31 16:02:51.611 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] NO JSP Support for /gemfire, did not find org.apache.jasper.servlet.JspServlet
+[info 2016/11/02 21:47:40.037 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] NO JSP Support for /gemfire, did not find org.apache.jasper.servlet.JspServlet
 
-[info 2016/10/31 16:02:51.874 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Initializing Spring FrameworkServlet 'gemfire'
+[info 2016/11/02 21:47:40.273 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Initializing Spring FrameworkServlet 'gemfire'
 
-[info 2016/10/31 16:02:51.874 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] FrameworkServlet 'gemfire': initialization started
+[info 2016/11/02 21:47:40.274 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] FrameworkServlet 'gemfire': initialization started
 
-[info 2016/10/31 16:02:51.890 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Refreshing WebApplicationContext for namespace 'gemfire-servlet': startup date [Mon Oct 31 16:02:51 PDT 2016]; root of context hierarchy
+[info 2016/11/02 21:47:40.290 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Refreshing WebApplicationContext for namespace 'gemfire-servlet': startup date [Wed Nov 02 21:47:40 PDT 2016]; root of context hierarchy
 
-[info 2016/10/31 16:02:51.920 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Loading XML bean definitions from ServletContext resource [/WEB-INF/gemfire-servlet.xml]
+[info 2016/11/02 21:47:40.316 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Loading XML bean definitions from ServletContext resource [/WEB-INF/gemfire-servlet.xml]
 
-[info 2016/10/31 16:02:52.301 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@671e219f: defining beans [clientController,clusterController,configController,dataController,deployController,diskStoreController,durableClientController,functionController,indexController,launcherLifecycleController,memberController,miscellaneousController,pdxController,queueController,regionController,shellController,wanController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,asyncTaskExecutor,multipartResolver,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.handler.MappedInterceptor#1,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[info 2016/11/02 21:47:40.621 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3f8fd46d: defining beans [clientController,clusterController,configController,dataController,deployController,diskStoreController,durableClientController,functionController,indexController,launcherLifecycleController,memberController,miscellaneousController,pdxController,queueController,regionController,shellController,wanController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,asyncTaskExecutor,multipartResolver,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.handler.MappedInterceptor#1,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
 
-[info 2016/10/31 16:02:52.408 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Initializing ExecutorService  'asyncTaskExecutor'
+[info 2016/11/02 21:47:40.711 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Initializing ExecutorService  'asyncTaskExecutor'
 
-[info 2016/10/31 16:02:52.467 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/clients/{clientID}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.ClientCommandsController.describeClient(java.lang.String)
+[info 2016/11/02 21:47:40.776 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/clients/{clientID}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.ClientCommandsController.describeClient(java.lang.String)
 
-[info 2016/10/31 16:02:52.468 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/clients],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.ClientCommandsController.listClients()
+[info 2016/11/02 21:47:40.776 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/clients],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.ClientCommandsController.listClients()
 
-[info 2016/10/31 16:02:52.468 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/cluster],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.ClusterCommandsController.statusSystem()
+[info 2016/11/02 21:47:40.776 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/cluster],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.ClusterCommandsController.statusSystem()
 
-[info 2016/10/31 16:02:52.470 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/config],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.concurrent.Callable<org.springframework.http.ResponseEntity<java.lang.String>> com.gemstone.gemfire.management.internal.web.controllers.ConfigCommandsController.exportConfig(java.lang.String[],java.lang.String[],java.lang.String)
+[info 2016/11/02 21:47:40.777 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/members/{member}/config],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.ConfigCommandsController.describeConfig(java.lang.String,java.lang.Boolean)
 
-[info 2016/10/31 16:02:52.470 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/config],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.ConfigCommandsController.alterRuntime(java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String,java.lang.Integer,java.lang.Boolean,java.lang.Boolean,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer)
+[info 2016/11/02 21:47:40.778 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/config],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.concurrent.Callable<org.springframework.http.ResponseEntity<java.lang.String>> com.gemstone.gemfire.management.internal.web.controllers.ConfigCommandsController.exportConfig(java.lang.String[],java.lang.String[],java.lang.String)
 
-[info 2016/10/31 16:02:52.470 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/config/cluster],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.concurrent.Callable<org.springframework.http.ResponseEntity<java.lang.String>> com.gemstone.gemfire.management.internal.web.controllers.ConfigCommandsController.exportClusterConfig(java.lang.String,java.lang.String)
+[info 2016/11/02 21:47:40.778 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/config],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.ConfigCommandsController.alterRuntime(java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String,java.lang.Integer,java.lang.Boolean,java.lang.Boolean,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer)
 
-[info 2016/10/31 16:02:52.471 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/config/cluster],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.concurrent.Callable<org.springframework.http.ResponseEntity<java.lang.String>> com.gemstone.gemfire.management.internal.web.controllers.ConfigCommandsController.importClusterConfig(org.springframework.web.multipart.MultipartFile[],java.lang.String) throws java.io.IOException
+[info 2016/11/02 21:47:40.778 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/config/cluster],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.concurrent.Callable<org.springframework.http.ResponseEntity<java.lang.String>> com.gemstone.gemfire.management.internal.web.controllers.ConfigCommandsController.exportClusterConfig(java.lang.String,java.lang.String)
 
-[info 2016/10/31 16:02:52.471 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/services/cluster-config],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.ConfigCommandsController.statusClusterConfig()
+[info 2016/11/02 21:47:40.778 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/config/cluster],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.concurrent.Callable<org.springframework.http.ResponseEntity<java.lang.String>> com.gemstone.gemfire.management.internal.web.controllers.ConfigCommandsController.importClusterConfig(org.springframework.web.multipart.MultipartFile[],java.lang.String) throws java.io.IOException
 
-[info 2016/10/31 16:02:52.471 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/members/{member}/config],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.ConfigCommandsController.describeConfig(java.lang.String,java.lang.Boolean)
+[info 2016/11/02 21:47:40.778 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/services/cluster-config],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.ConfigCommandsController.statusClusterConfig()
 
-[info 2016/10/31 16:02:52.474 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/regions/{region}/data],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.DataCommandsController.remove(java.lang.String,java.lang.Boolean,java.lang.String,java.lang.String)
+[info 2016/11/02 21:47:40.781 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/regions/{region}/data],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.DataCommandsController.remove(java.lang.String,java.lang.Boolean,java.lang.String,java.lang.String)
 
-[info 2016/10/31 16:02:52.475 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/regions/{region}/data],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.DataCommandsController.get(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Boolean)
+[info 2016/11/02 21:47:40.781 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/regions/{region}/data],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.DataCommandsController.get(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Boolean)
 
-[info 2016/10/31 16:02:52.475 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/regions/{region}/data],methods=[PUT],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.DataCommandsController.put(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Boolean)
+[info 2016/11/02 21:47:40.781 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/regions/{region}/data],methods=[PUT],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.DataCommandsController.put(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Boolean)
 
-[info 2016/10/31 16:02:52.475 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/regions/data/query],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.concurrent.Callable<org.springframework.http.ResponseEntity<java.lang.String>> com.gemstone.gemfire.management.internal.web.controllers.DataCommandsController.query(org.springframework.web.context.request.WebRequest,java.lang.String,java.lang.String,java.lang.Boolean)
+[info 2016/11/02 21:47:40.782 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/regions/data/query],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.concurrent.Callable<org.springframework.http.ResponseEntity<java.lang.String>> com.gemstone.gemfire.management.internal.web.controllers.DataCommandsController.query(org.springframework.web.context.request.WebRequest,java.lang.String,java.lang.String,java.lang.Boolean)
 
-[info 2016/10/31 16:02:52.475 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/regions/data],methods=[POST],params=[op=rebalance],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.concurrent.Callable<org.springframework.http.ResponseEntity<java.lang.String>> com.gemstone.gemfire.management.internal.web.controllers.DataCommandsController.rebalance(java.lang.String[],java.lang.String[],java.lang.Boolean,java.lang.Long)
+[info 2016/11/02 21:47:40.782 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/regions/data],methods=[POST],params=[op=rebalance],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.concurrent.Callable<org.springframework.http.ResponseEntity<java.lang.String>> com.gemstone.gemfire.management.internal.web.controllers.DataCommandsController.rebalance(java.lang.String[],java.lang.String[],java.lang.Boolean,java.lang.Long)
 
-[info 2016/10/31 16:02:52.476 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/members/{member}/regions/{region}/data],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.concurrent.Callable<org.springframework.http.ResponseEntity<java.lang.String>> com.gemstone.gemfire.management.internal.web.controllers.DataCommandsController.exportData(java.lang.String,java.lang.String,java.lang.String)
+[info 2016/11/02 21:47:40.782 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/members/{member}/regions/{region}/data],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.concurrent.Callable<org.springframework.http.ResponseEntity<java.lang.String>> com.gemstone.gemfire.management.internal.web.controllers.DataCommandsController.exportData(java.lang.String,java.lang.String,java.lang.String)
 
-[info 2016/10/31 16:02:52.476 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/members/{member}/regions/{region}/data],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.concurrent.Callable<org.springframework.http.ResponseEntity<java.lang.String>> com.gemstone.gemfire.management.internal.web.controllers.DataCommandsController.importData(java.lang.String,java.lang.String,java.lang.String)
+[info 2016/11/02 21:47:40.782 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/members/{member}/regions/{region}/data],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.concurrent.Callable<org.springframework.http.ResponseEntity<java.lang.String>> com.gemstone.gemfire.management.internal.web.controllers.DataCommandsController.importData(java.lang.String,java.lang.String,java.lang.String)
 
-[info 2016/10/31 16:02:52.476 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/regions/{region}/data/location],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.DataCommandsController.locateEntry(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Boolean)
+[info 2016/11/02 21:47:40.783 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/regions/{region}/data/location],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.DataCommandsController.locateEntry(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Boolean)
 
-[info 2016/10/31 16:02:52.477 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/deployed],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.DeployCommandsController.deploy(org.springframework.web.multipart.MultipartFile[],java.lang.String[],java.lang.String,java.lang.String) throws java.io.IOException
+[info 2016/11/02 21:47:40.783 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/deployed],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.DeployCommandsController.deploy(org.springframework.web.multipart.MultipartFile[],java.lang.String[],java.lang.String,java.lang.String) throws java.io.IOException
 
-[info 2016/10/31 16:02:52.478 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/deployed],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.DeployCommandsController.undeploy(java.lang.String[],java.lang.String[])
+[info 2016/11/02 21:47:40.784 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/deployed],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.DeployCommandsController.undeploy(java.lang.String[],java.lang.String[])
 
-[info 2016/10/31 16:02:52.478 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/deployed],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.DeployCommandsController.listDeployed(java.lang.String[])
+[info 2016/11/02 21:47:40.784 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/deployed],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.DeployCommandsController.listDeployed(java.lang.String[])
 
-[info 2016/10/31 16:02:52.480 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/diskstores],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.DiskStoreCommandsController.createDiskStore(java.lang.String,java.lang.String[],java.lang.Boolean,java.lang.Boolean,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Long,java.lang.Integer,java.lang.Float,java.lang.Integer,java.lang.String[])
+[info 2016/11/02 21:47:40.785 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/diskstores/{name}],methods=[POST],params=[op=compact],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.concurrent.Callable<org.springframework.http.ResponseEntity<java.lang.String>> com.gemstone.gemfire.management.internal.web.controllers.DiskStoreCommandsController.compactDiskStore(java.lang.String,java.lang.String[])
 
-[info 2016/10/31 16:02:52.480 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/diskstores/missing],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.DiskStoreCommandsController.showMissingDiskStores()
+[info 2016/11/02 21:47:40.785 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/diskstores],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.DiskStoreCommandsController.createDiskStore(java.lang.String,java.lang.String[],java.lang.Boolean,java.lang.Boolean,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Long,java.lang.Integer,java.lang.Float,java.lang.Integer,java.lang.String[])
 
-[info 2016/10/31 16:02:52.480 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/diskstores],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.DiskStoreCommandsController.listDiskStores()
+[info 2016/11/02 21:47:40.785 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/diskstores],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.DiskStoreCommandsController.listDiskStores()
 
-[info 2016/10/31 16:02:52.480 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/diskstores/{name}],methods=[POST],params=[op=compact],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.concurrent.Callable<org.springframework.http.ResponseEntity<java.lang.String>> com.gemstone.gemfire.management.internal.web.controllers.DiskStoreCommandsController.compactDiskStore(java.lang.String,java.lang.String[])
+[info 2016/11/02 21:47:40.786 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/diskstores],methods=[POST],params=[op=backup],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.concurrent.Callable<org.springframework.http.ResponseEntity<java.lang.String>> com.gemstone.gemfire.management.internal.web.controllers.DiskStoreCommandsController.backupDiskStore(java.lang.String,java.lang.String)
 
-[info 2016/10/31 16:02:52.481 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/diskstores],methods=[POST],params=[op=backup],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.concurrent.Callable<org.springframework.http.ResponseEntity<java.lang.String>> com.gemstone.gemfire.management.internal.web.controllers.DiskStoreCommandsController.backupDiskStore(java.lang.String,java.lang.String)
+[info 2016/11/02 21:47:40.786 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/diskstores/{name}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.DiskStoreCommandsController.describeDiskStore(java.lang.String,java.lang.String)
 
-[info 2016/10/31 16:02:52.481 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/diskstores/{name}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.DiskStoreCommandsController.describeDiskStore(java.lang.String,java.lang.String)
+[info 2016/11/02 21:47:40.786 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/diskstores/{id}],methods=[POST],params=[op=revoke],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.DiskStoreCommandsController.revokeMissingDiskStore(java.lang.String)
 
-[info 2016/10/31 16:02:52.481 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/diskstores/{id}],methods=[POST],params=[op=revoke],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.DiskStoreCommandsController.revokeMissingDiskStore(java.lang.String)
+[info 2016/11/02 21:47:40.786 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/diskstores/{name}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.DiskStoreCommandsController.destroyDiskStore(java.lang.String,java.lang.String[])
 
-[info 2016/10/31 16:02:52.481 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/diskstores/{name}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.DiskStoreCommandsController.destroyDiskStore(java.lang.String,java.lang.String[])
+[info 2016/11/02 21:47:40.786 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/diskstores/missing],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.DiskStoreCommandsController.showMissingDiskStores()
 
-[info 2016/10/31 16:02:52.483 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/durable-clients/{durable-client-id}],methods=[POST],params=[op=close],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.DurableClientCommandsController.closeDurableClient(java.lang.String,java.lang.String,java.lang.String[])
+[info 2016/11/02 21:47:40.788 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/durable-clients/{durable-client-id}],methods=[POST],params=[op=close],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.DurableClientCommandsController.closeDurableClient(java.lang.String,java.lang.String,java.lang.String[])
 
-[info 2016/10/31 16:02:52.483 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/durable-clients/{durable-client-id}/cqs/{durable-cq-name}/events],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.DurableClientCommandsController.countDurableClientContinuousQueryEvents(java.lang.String,java.lang.String,java.lang.String,java.lang.String[])
+[info 2016/11/02 21:47:40.788 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/durable-clients/{durable-client-id}/cqs],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.DurableClientCommandsController.listDurableClientContinuousQueries(java.lang.String,java.lang.String,java.lang.String[])
 
-[info 2016/10/31 16:02:52.483 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/durable-clients/{durable-client-id}/cqs/events],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.DurableClientCommandsController.countDurableClientContinuousQueryEvents(java.lang.String,java.lang.String,java.lang.String[])
+[info 2016/11/02 21:47:40.788 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/durable-clients/{durable-client-id}/cqs/{durable-cq-name}/events],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.DurableClientCommandsController.countDurableClientContinuousQueryEvents(java.lang.String,java.lang.String,java.lang.String,java.lang.String[])
 
-[info 2016/10/31 16:02:52.484 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/durable-clients/{durable-client-id}/cqs],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.DurableClientCommandsController.listDurableClientContinuousQueries(java.lang.String,java.lang.String,java.lang.String[])
+[info 2016/11/02 21:47:40.788 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/durable-clients/{durable-client-id}/cqs/events],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.DurableClientCommandsController.countDurableClientContinuousQueryEvents(java.lang.String,java.lang.String,java.lang.String[])
 
-[info 2016/10/31 16:02:52.484 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/durable-clients/{durable-client-id}/cqs/{durable-cq-name}],methods=[POST],params=[op=close],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.DurableClientCommandsController.closeDurableContinuousQuery(java.lang.String,java.lang.String,java.lang.String,java.lang.String[])
+[info 2016/11/02 21:47:40.788 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/durable-clients/{durable-client-id}/cqs/{durable-cq-name}],methods=[POST],params=[op=close],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.DurableClientCommandsController.closeDurableContinuousQuery(java.lang.String,java.lang.String,java.lang.String,java.lang.String[])
 
-[info 2016/10/31 16:02:52.485 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/functions/{id}],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.concurrent.Callable<org.springframework.http.ResponseEntity<java.lang.String>> com.gemstone.gemfire.management.internal.web.controllers.FunctionCommandsController.executeFunction(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String[],java.lang.String,java.lang.String)
+[info 2016/11/02 21:47:40.789 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/functions/{id}],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.concurrent.Callable<org.springframework.http.ResponseEntity<java.lang.String>> com.gemstone.gemfire.management.internal.web.controllers.FunctionCommandsController.executeFunction(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String[],java.lang.String,java.lang.String)
 
-[info 2016/10/31 16:02:52.485 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/functions/{id}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.FunctionCommandsController.destroyFunction(java.lang.String,java.lang.String,java.lang.String)
+[info 2016/11/02 21:47:40.789 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/functions/{id}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.FunctionCommandsController.destroyFunction(java.lang.String,java.lang.String,java.lang.String)
 
-[info 2016/10/31 16:02:52.486 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/functions],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.FunctionCommandsController.listFunctions(java.lang.String[],java.lang.String[],java.lang.String)
+[info 2016/11/02 21:47:40.790 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/functions],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.FunctionCommandsController.listFunctions(java.lang.String[],java.lang.String[],java.lang.String)
 
-[info 2016/10/31 16:02:52.487 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/indexes],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.IndexCommandsController.listIndex(java.lang.Boolean)
+[info 2016/11/02 21:47:40.791 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/indexes],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.IndexCommandsController.createIndex(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
 
-[info 2016/10/31 16:02:52.488 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/indexes/{name}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.IndexCommandsController.destroyIndex(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+[info 2016/11/02 21:47:40.791 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/indexes],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.IndexCommandsController.listIndex(java.lang.Boolean)
 
-[info 2016/10/31 16:02:52.488 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/indexes],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.IndexCommandsController.destroyIndexes(java.lang.String,java.lang.String,java.lang.String)
+[info 2016/11/02 21:47:40.792 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/indexes/{name}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.IndexCommandsController.destroyIndex(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
 
-[info 2016/10/31 16:02:52.488 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/indexes],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.IndexCommandsController.createIndex(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+[info 2016/11/02 21:47:40.792 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/indexes],methods=[POST],params=[op=define],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.IndexCommandsController.defineIndex(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
 
-[info 2016/10/31 16:02:52.488 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/indexes],methods=[POST],params=[op=define],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.IndexCommandsController.defineIndex(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+[info 2016/11/02 21:47:40.792 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/indexes],methods=[POST],params=[op=create-defined],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.IndexCommandsController.createDefinedIndexes(java.lang.String,java.lang.String)
 
-[info 2016/10/31 16:02:52.489 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/indexes],methods=[POST],params=[op=create-defined],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.IndexCommandsController.createDefinedIndexes(java.lang.String,java.lang.String)
+[info 2016/11/02 21:47:40.792 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/indexes],methods=[DELETE],params=[op=clear-defined],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.IndexCommandsController.clearDefinedIndexes()
 
-[info 2016/10/31 16:02:52.489 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/indexes],methods=[DELETE],params=[op=clear-defined],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.IndexCommandsController.clearDefinedIndexes()
+[info 2016/11/02 21:47:40.793 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/indexes],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.IndexCommandsController.destroyIndexes(java.lang.String,java.lang.String,java.lang.String)
 
-[info 2016/10/31 16:02:52.490 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/members/{name}/server],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.LauncherLifecycleCommandsController.statusServer(java.lang.String)
+[info 2016/11/02 21:47:40.793 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/members/{name}/locator],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.LauncherLifecycleCommandsController.statusLocator(java.lang.String)
 
-[info 2016/10/31 16:02:52.490 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/members/{name}/locator],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.LauncherLifecycleCommandsController.statusLocator(java.lang.String)
+[info 2016/11/02 21:47:40.793 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/members/{name}/server],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.LauncherLifecycleCommandsController.statusServer(java.lang.String)
 
-[info 2016/10/31 16:02:52.491 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/members/{name}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.MemberCommandsController.describeMember(java.lang.String)
+[info 2016/11/02 21:47:40.795 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/members/{name}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.MemberCommandsController.describeMember(java.lang.String)
 
-[info 2016/10/31 16:02:52.491 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/members],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.MemberCommandsController.listMembers(java.lang.String)
+[info 2016/11/02 21:47:40.795 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/members],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.MemberCommandsController.listMembers(java.lang.String)
 
-[info 2016/10/31 16:02:52.494 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/shutdown],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.MiscellaneousCommandsController.shutdown(java.lang.Integer)
+[info 2016/11/02 21:47:40.796 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/shutdown],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.MiscellaneousCommandsController.shutdown(java.lang.Integer)
 
-[info 2016/10/31 16:02:52.494 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/gc],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.MiscellaneousCommandsController.gc(java.lang.String[])
+[info 2016/11/02 21:47:40.797 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/members/{member}/gc],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.MiscellaneousCommandsController.gc(java.lang.String)
 
-[info 2016/10/31 16:02:52.494 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/members/{member}/gc],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.MiscellaneousCommandsController.gc(java.lang.String)
+[info 2016/11/02 21:47:40.797 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/gc],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.MiscellaneousCommandsController.gc(java.lang.String[])
 
-[info 2016/10/31 16:02:52.494 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/netstat],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.MiscellaneousCommandsController.netstat(java.lang.String[],java.lang.String,java.lang.String,java.lang.Boolean)
+[info 2016/11/02 21:47:40.797 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/netstat],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.MiscellaneousCommandsController.netstat(java.lang.String[],java.lang.String,java.lang.String,java.lang.Boolean)
 
-[info 2016/10/31 16:02:52.495 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/logs],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.concurrent.Callable<org.springframework.http.ResponseEntity<java.lang.String>> com.gemstone.gemfire.management.internal.web.controllers.MiscellaneousCommandsController.exportLogs(java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.Boolean,java.lang.Boolean,java.lang.String,java.lang.String)
+[info 2016/11/02 21:47:40.797 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/logs],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.concurrent.Callable<org.springframework.http.ResponseEntity<java.lang.String>> com.gemstone.gemfire.management.internal.web.controllers.MiscellaneousCommandsController.exportLogs(java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.Boolean,java.lang.Boolean,java.lang.String,java.lang.String)
 
-[info 2016/10/31 16:02:52.495 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/metrics],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.MiscellaneousCommandsController.showMetrics(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String[])
+[info 2016/11/02 21:47:40.797 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/metrics],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.MiscellaneousCommandsController.showMetrics(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String[])
 
-[info 2016/10/31 16:02:52.495 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/stacktraces],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.MiscellaneousCommandsController.exportStackTraces(java.lang.String,java.lang.String,java.lang.String)
+[info 2016/11/02 21:47:40.797 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/members/{member}/log],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.MiscellaneousCommandsController.showLog(java.lang.String,java.lang.Integer)
 
-[info 2016/10/31 16:02:52.495 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/deadlocks],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.MiscellaneousCommandsController.showDeadLock(java.lang.String)
+[info 2016/11/02 21:47:40.798 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/stacktraces],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.MiscellaneousCommandsController.exportStackTraces(java.lang.String,java.lang.String,java.lang.String)
 
-[info 2016/10/31 16:02:52.495 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/groups/{groups}/loglevel],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.MiscellaneousCommandsController.changeLogLevelForGroups(java.lang.String,java.lang.String)
+[info 2016/11/02 21:47:40.798 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/deadlocks],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.MiscellaneousCommandsController.showDeadLock(java.lang.String)
 
-[info 2016/10/31 16:02:52.495 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/members/{members}/loglevel],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.MiscellaneousCommandsController.changeLogLevelForMembers(java.lang.String,java.lang.String)
+[info 2016/11/02 21:47:40.798 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/groups/{groups}/loglevel],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.MiscellaneousCommandsController.changeLogLevelForGroups(java.lang.String,java.lang.String)
 
-[info 2016/10/31 16:02:52.496 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/members/{members}/groups/{groups}/loglevel],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.MiscellaneousCommandsController.changeLogLevelForMembersAndGroups(java.lang.String,java.lang.String,java.lang.String)
+[info 2016/11/02 21:47:40.798 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/members/{members}/loglevel],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.MiscellaneousCommandsController.changeLogLevelForMembers(java.lang.String,java.lang.String)
 
-[info 2016/10/31 16:02:52.496 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/members/{member}/log],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.MiscellaneousCommandsController.showLog(java.lang.String,java.lang.Integer)
+[info 2016/11/02 21:47:40.798 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/members/{members}/groups/{groups}/loglevel],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.MiscellaneousCommandsController.changeLogLevelForMembersAndGroups(java.lang.String,java.lang.String,java.lang.String)
 
-[info 2016/10/31 16:02:52.496 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/pdx/type],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.PdxCommandsController.pdxRename(java.lang.String,java.lang.String,java.lang.String,java.lang.String[])
+[info 2016/11/02 21:47:40.799 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/pdx/type],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.PdxCommandsController.pdxRename(java.lang.String,java.lang.String,java.lang.String,java.lang.String[])
 
-[info 2016/10/31 16:02:52.496 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/pdx],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.PdxCommandsController.configurePdx(java.lang.Boolean,java.lang.Boolean,java.lang.String,java.lang.String[],java.lang.String[])
+[info 2016/11/02 21:47:40.799 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/pdx],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.PdxCommandsController.configurePdx(java.lang.Boolean,java.lang.Boolean,java.lang.String,java.lang.String[],java.lang.String[])
 
-[info 2016/10/31 16:02:52.497 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/async-event-queues],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.QueueCommandsController.createAsyncEventQueue(java.lang.String,java.lang.String,java.lang.String[],java.lang.String[],java.lang.Boolean,java.lang.Boolean,java.lang.Integer,java.lang.Integer,java.lang.Boolean,java.lang.String,java.lang.Boolean,java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String[],java.lang.String)
+[info 2016/11/02 21:47:40.799 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/async-event-queues],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.QueueCommandsController.createAsyncEventQueue(java.lang.String,java.lang.String,java.lang.String[],java.lang.String[],java.lang.Boolean,java.lang.Boolean,java.lang.Integer,java.lang.Integer,java.lang.Boolean,java.lang.String,java.lang.Boolean,java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String[],java.lang.String)
 
-[info 2016/10/31 16:02:52.497 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/async-event-queues],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.QueueCommandsController.listAsyncEventQueues()
+[info 2016/11/02 21:47:40.800 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/async-event-queues],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.QueueCommandsController.listAsyncEventQueues()
 
-[info 2016/10/31 16:02:52.498 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/regions],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.RegionCommandsController.createRegion(java.lang.String,java.lang.String,java.lang.String,java.lang.String[],java.lang.Boolean,java.lang.String,java.lang.String,java.lang.Boolean,java.lang.Integer,java.lang.String,java.lang.Integer,java.lang.String,java.lang.Integer,java.lang.String,java.lang.Integer,java.lang.String,java.lang.String,java.lang.Boolean,java.lang.Boolean,java.lang.Boolean,java.lang.String[],java.lang.String,java.lang.String,java.lang.String[],java.lang.String[],java.lang.Boolean,java.lang.Boolean,java.lang.Integer,java.lang.String,java.lang.Integer,java.lang.Long,java.lang.Integer,java.lang.Long,java.lang.Long,java.lang.Integer,java.lang.String)
+[info 2016/11/02 21:47:40.800 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/regions],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.RegionCommandsController.createRegion(java.lang.String,java.lang.String,java.lang.String,java.lang.String[],java.lang.Boolean,java.lang.String,java.lang.String,java.lang.Boolean,java.lang.Integer,java.lang.String,java.lang.Integer,java.lang.String,java.lang.Integer,java.lang.String,java.lang.Integer,java.lang.String,java.lang.String,java.lang.Boolean,java.lang.Boolean,java.lang.Boolean,java.lang.String[],java.lang.String,java.lang.String,java.lang.String[],java.lang.String[],java.lang.Boolean,java.lang.Boolean,java.lang.Integer,java.lang.String,java.lang.Integer,java.lang.Long,java.lang.Integer,java.lang.Long,java.lang.Long,java.lang.Integer,java.lang.String)
 
-[info 2016/10/31 16:02:52.499 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/regions/{name}],methods=[PUT],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.RegionCommandsController.alterRegion(org.springframework.web.context.request.WebRequest,java.lang.String,java.lang.String[],java.lang.Integer,java.lang.String,java.lang.Integer,java.lang.String,java.lang.Integer,java.lang.String,java.lang.Integer,java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String[],java.lang.String[],java.lang.Boolean,java.lang.Integer)
+[info 2016/11/02 21:47:40.801 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/regions/{name}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.RegionCommandsController.destroyRegion(java.lang.String)
 
-[info 2016/10/31 16:02:52.499 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/regions/{name}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.RegionCommandsController.describeRegion(java.lang.String)
+[info 2016/11/02 21:47:40.801 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/regions/{name}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.RegionCommandsController.describeRegion(java.lang.String)
 
-[info 2016/10/31 16:02:52.499 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/regions/{name}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.RegionCommandsController.destroyRegion(java.lang.String)
+[info 2016/11/02 21:47:40.801 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/regions],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.RegionCommandsController.listRegions(java.lang.String,java.lang.String)
 
-[info 2016/10/31 16:02:52.499 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/regions],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.RegionCommandsController.listRegions(java.lang.String,java.lang.String)
+[info 2016/11/02 21:47:40.801 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/regions/{name}],methods=[PUT],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.RegionCommandsController.alterRegion(org.springframework.web.context.request.WebRequest,java.lang.String,java.lang.String[],java.lang.Integer,java.lang.String,java.lang.Integer,java.lang.String,java.lang.Integer,java.lang.String,java.lang.Integer,java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String[],java.lang.String[],java.lang.Boolean,java.lang.Integer)
 
-[info 2016/10/31 16:02:52.501 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/mbean/operation],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<?> com.gemstone.gemfire.management.internal.web.controllers.ShellCommandsController.invoke(java.lang.String,java.lang.String,java.lang.String[],java.lang.Object[])
+[info 2016/11/02 21:47:40.802 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/mbean/operation],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<?> com.gemstone.gemfire.management.internal.web.controllers.ShellCommandsController.invoke(java.lang.String,java.lang.String,java.lang.String[],java.lang.Object[])
 
-[info 2016/10/31 16:02:52.502 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/index],methods=[GET],params=[],headers=[],consumes=[],produces=[application/xml],custom=[]}" onto public com.gemstone.gemfire.management.internal.web.domain.LinkIndex com.gemstone.gemfire.management.internal.web.controllers.ShellCommandsController.index()
+[info 2016/11/02 21:47:40.803 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/index],methods=[GET],params=[],headers=[],consumes=[],produces=[application/xml],custom=[]}" onto public com.gemstone.gemfire.management.internal.web.domain.LinkIndex com.gemstone.gemfire.management.internal.web.controllers.ShellCommandsController.index()
 
-[info 2016/10/31 16:02:52.502 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/version],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.ShellCommandsController.version()
+[info 2016/11/02 21:47:40.803 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/version],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.ShellCommandsController.version()
 
-[info 2016/10/31 16:02:52.502 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/management/commands],methods=[POST],params=[cmd],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.ShellCommandsController.command(java.lang.String)
+[info 2016/11/02 21:47:40.803 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/management/commands],methods=[POST],params=[cmd],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.ShellCommandsController.command(java.lang.String)
 
-[info 2016/10/31 16:02:52.502 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/mbean/attribute],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<?> com.gemstone.gemfire.management.internal.web.controllers.ShellCommandsController.getAttribute(java.lang.String,java.lang.String)
+[info 2016/11/02 21:47:40.803 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/mbean/query],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<?> com.gemstone.gemfire.management.internal.web.controllers.ShellCommandsController.queryNames(com.gemstone.gemfire.management.internal.web.domain.QueryParameterSource)
 
-[info 2016/10/31 16:02:52.503 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/mbean/query],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<?> com.gemstone.gemfire.management.internal.web.controllers.ShellCommandsController.queryNames(com.gemstone.gemfire.management.internal.web.domain.QueryParameterSource)
+[info 2016/11/02 21:47:40.804 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/ping],methods=[GET || HEAD],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.gemstone.gemfire.management.internal.web.controllers.ShellCommandsController.ping()
 
-[info 2016/10/31 16:02:52.503 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/ping],methods=[GET || HEAD],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.gemstone.gemfire.management.internal.web.controllers.ShellCommandsController.ping()
+[info 2016/11/02 21:47:40.804 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/mbean/attribute],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<?> com.gemstone.gemfire.management.internal.web.controllers.ShellCommandsController.getAttribute(java.lang.String,java.lang.String)
 
-[info 2016/10/31 16:02:52.503 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/version/full],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.ShellCommandsController.versionSimple()
+[info 2016/11/02 21:47:40.804 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/version/full],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.ShellCommandsController.versionSimple()
 
-[info 2016/10/31 16:02:52.505 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/gateways/receivers],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.WanCommandsController.createGatewayReceiver(java.lang.String[],java.lang.Boolean,java.lang.String[],java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.String[])
+[info 2016/11/02 21:47:40.805 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/gateways/senders],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.WanCommandsController.createGatewaySender(java.lang.String,java.lang.Integer,java.lang.String[],java.lang.String[],java.lang.Boolean,java.lang.Boolean,java.lang.Integer,java.lang.Integer,java.lang.Boolean,java.lang.Integer,java.lang.Integer,java.lang.Boolean,java.lang.String,java.lang.Boolean,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String[],java.lang.String[])
 
-[info 2016/10/31 16:02:52.505 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/gateways/senders/{id}],methods=[POST],params=[op=load-balance],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.WanCommandsController.loadBalanceGatewaySender(java.lang.String)
+[info 2016/11/02 21:47:40.805 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/gateways/senders],methods=[POST],params=[op=start],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.WanCommandsController.startGatewaySender(java.lang.String,java.lang.String[],java.lang.String[])
 
-[info 2016/10/31 16:02:52.505 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/gateways/receivers],methods=[POST],params=[op=start],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.WanCommandsController.startGatewayReceiver(java.lang.String[],java.lang.String[])
+[info 2016/11/02 21:47:40.805 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/gateways/senders/{id}],methods=[POST],params=[op=pause],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.WanCommandsController.pauseGatewaySender(java.lang.String,java.lang.String[],java.lang.String[])
 
-[info 2016/10/31 16:02:52.505 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/gateways/receivers],methods=[POST],params=[op=stop],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.WanCommandsController.stopGatewayReceiver(java.lang.String[],java.lang.String[])
+[info 2016/11/02 21:47:40.806 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/gateways/senders/{id}],methods=[POST],params=[op=resume],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.WanCommandsController.resumeGatewaySender(java.lang.String,java.lang.String[],java.lang.String[])
 
-[info 2016/10/31 16:02:52.506 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/gateways/senders],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.WanCommandsController.createGatewaySender(java.lang.String,java.lang.Integer,java.lang.String[],java.lang.String[],java.lang.Boolean,java.lang.Boolean,java.lang.Integer,java.lang.Integer,java.lang.Boolean,java.lang.Integer,java.lang.Integer,java.lang.Boolean,java.lang.String,java.lang.Boolean,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String[],java.lang.String[])
+[info 2016/11/02 21:47:40.806 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/gateways/senders/{id}],methods=[POST],params=[op=stop],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.WanCommandsController.stopGatewaySender(java.lang.String,java.lang.String[],java.lang.String[])
 
-[info 2016/10/31 16:02:52.506 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/gateways/senders],methods=[POST],params=[op=start],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.WanCommandsController.startGatewaySender(java.lang.String,java.lang.String[],java.lang.String[])
+[info 2016/11/02 21:47:40.806 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/gateways/receivers],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.WanCommandsController.createGatewayReceiver(java.lang.String[],java.lang.Boolean,java.lang.String[],java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.String[])
 
-[info 2016/10/31 16:02:52.506 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/gateways/senders/{id}],methods=[POST],params=[op=pause],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.WanCommandsController.pauseGatewaySender(java.lang.String,java.lang.String[],java.lang.String[])
+[info 2016/11/02 21:47:40.806 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/gateways/senders/{id}],methods=[POST],params=[op=load-balance],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.WanCommandsController.loadBalanceGatewaySender(java.lang.String)
 
-[info 2016/10/31 16:02:52.506 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/gateways/senders/{id}],methods=[POST],params=[op=resume],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.WanCommandsController.resumeGatewaySender(java.lang.String,java.lang.String[],java.lang.String[])
+[info 2016/11/02 21:47:40.806 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/gateways/receivers],methods=[POST],params=[op=start],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.WanCommandsController.startGatewayReceiver(java.lang.String[],java.lang.String[])
 
-[info 2016/10/31 16:02:52.506 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/gateways/senders/{id}],methods=[POST],params=[op=stop],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.WanCommandsController.stopGatewaySender(java.lang.String,java.lang.String[],java.lang.String[])
+[info 2016/11/02 21:47:40.806 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/gateways/receivers],methods=[POST],params=[op=stop],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.WanCommandsController.stopGatewayReceiver(java.lang.String[],java.lang.String[])
 
-[info 2016/10/31 16:02:52.507 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/gateways],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.WanCommandsController.listGateways(java.lang.String[],java.lang.String[])
+[info 2016/11/02 21:47:40.806 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/gateways],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.WanCommandsController.listGateways(java.lang.String[],java.lang.String[])
 
-[info 2016/10/31 16:02:52.507 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/gateways/receivers],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.WanCommandsController.statusGatewayReceivers(java.lang.String[],java.lang.String[])
+[info 2016/11/02 21:47:40.806 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/gateways/receivers],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.WanCommandsController.statusGatewayReceivers(java.lang.String[],java.lang.String[])
 
-[info 2016/10/31 16:02:52.507 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Mapped "{[/v1/gateways/senders/{id}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.WanCommandsController.statusGatewaySenders(java.lang.String,java.lang.String[],java.lang.String[])
+[info 2016/11/02 21:47:40.807 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Mapped "{[/v1/gateways/senders/{id}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.gemstone.gemfire.management.internal.web.controllers.WanCommandsController.statusGatewaySenders(java.lang.String,java.lang.String[],java.lang.String[])
 
-[info 2016/10/31 16:02:52.623 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] FrameworkServlet 'gemfire': initialization completed in 748 ms
+[info 2016/11/02 21:47:40.920 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] FrameworkServlet 'gemfire': initialization completed in 646 ms
 
-[info 2016/10/31 16:02:52.624 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Started o.e.j.w.WebAppContext@3651d2c0{/gemfire,file:/Users/wlund/Dropbox/git-workspace/wxlund/jdbc-gemfire-samples/gemfire/server/gemfire-server-proto/scripts/loc-Waynes-MacBook-Pro-8.local/GemFire_wlund/services/http/0.0.0.0_7575_gemfire/webapp/,AVAILABLE}{/usr/local/Cellar/gemfire/8.2.0/libexec/tools/Extensions/gemfire.war}
+[info 2016/11/02 21:47:40.920 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Started o.e.j.w.WebAppContext@33e7f711{/gemfire,file:/Users/wlund/Dropbox/git-workspace/wxlund/jdbc-gemfire-samples/gemfire-server-proto/scripts/loc-Waynes-MacBook-Pro-8.local/GemFire_wlund/services/http/0.0.0.0_7575_gemfire/webapp/,AVAILABLE}{/usr/local/Cellar/gemfire/8.2.0/libexec/tools/Extensions/gemfire.war}
 
-[info 2016/10/31 16:02:53.549 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] NO JSP Support for /pulse, did not find org.apache.jasper.servlet.JspServlet
+[info 2016/11/02 21:47:42.178 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] NO JSP Support for /pulse, did not find org.apache.jasper.servlet.JspServlet
 
-[info 2016/10/31 16:02:53.578 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Initializing Spring root WebApplicationContext
+[info 2016/11/02 21:47:42.204 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Initializing Spring root WebApplicationContext
 
-[info 2016/10/31 16:02:54.636 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Initializing Spring FrameworkServlet 'mvc-dispatcher'
+[info 2016/11/02 21:47:43.054 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Initializing Spring FrameworkServlet 'mvc-dispatcher'
 
-[info 2016/10/31 16:02:54.811 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Started o.e.j.w.WebAppContext@2221aa03{/pulse,file:/Users/wlund/Dropbox/git-workspace/wxlund/jdbc-gemfire-samples/gemfire/server/gemfire-server-proto/scripts/loc-Waynes-MacBook-Pro-8.local/GemFire_wlund/services/http/0.0.0.0_7575_pulse/webapp/,AVAILABLE}{/usr/local/Cellar/gemfire/8.2.0/libexec/tools/Pulse/pulse.war}
+[info 2016/11/02 21:47:43.186 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Started o.e.j.w.WebAppContext@f162d39{/pulse,file:/Users/wlund/Dropbox/git-workspace/wxlund/jdbc-gemfire-samples/gemfire-server-proto/scripts/loc-Waynes-MacBook-Pro-8.local/GemFire_wlund/services/http/0.0.0.0_7575_pulse/webapp/,AVAILABLE}{/usr/local/Cellar/gemfire/8.2.0/libexec/tools/Pulse/pulse.war}
 
-[info 2016/10/31 16:02:54.823 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Started ServerConnector@794b3f17{HTTP/1.1}{0.0.0.0:7575}
+[info 2016/11/02 21:47:43.197 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Started ServerConnector@5c6cca59{HTTP/1.1}{0.0.0.0:7575}
 
-[info 2016/10/31 16:02:54.824 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Started @19889ms
+[info 2016/11/02 21:47:43.198 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Started @19649ms
 
-[info 2016/10/31 16:03:06.179 PDT loc-Waynes-MacBook-Pro-8.local <ViewHandler> tid=0x6d] Membership: sending new view [[Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:87847:locator)<v0>:24375|1] [Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:87847:locator)<v0>:24375/6161, Waynes-MacBook-Pro-8(server-Waynes-MacBook-Pro-8.local:87883)<v1>:51107/23798]] (2 mbrs)
+[info 2016/11/02 21:47:55.736 PDT loc-Waynes-MacBook-Pro-8.local <ViewHandler> tid=0x6e] Membership: sending new view [[Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:14657:locator)<v0>:10915|1] [Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:14657:locator)<v0>:10915/45649, Waynes-MacBook-Pro-8(server-Waynes-MacBook-Pro-8.local:14703)<v1>:28273/43882]] (2 mbrs)
   
 
-[info 2016/10/31 16:03:06.184 PDT loc-Waynes-MacBook-Pro-8.local <UDP Incoming Message Handler> tid=0x26] Membership: received new view  [Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:87847:locator)<v0>:24375|1] [Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:87847:locator)<v0>:24375/6161, Waynes-MacBook-Pro-8(server-Waynes-MacBook-Pro-8.local:87883)<v1>:51107/23798]
+[info 2016/11/02 21:47:55.743 PDT loc-Waynes-MacBook-Pro-8.local <UDP Incoming Message Handler> tid=0x26] Membership: received new view  [Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:14657:locator)<v0>:10915|1] [Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:14657:locator)<v0>:10915/45649, Waynes-MacBook-Pro-8(server-Waynes-MacBook-Pro-8.local:14703)<v1>:28273/43882]
 
-[info 2016/10/31 16:03:06.184 PDT loc-Waynes-MacBook-Pro-8.local <UDP Incoming Message Handler> tid=0x26] Membership: lead member is now Waynes-MacBook-Pro-8(server-Waynes-MacBook-Pro-8.local:87883)<v1>:51107
+[info 2016/11/02 21:47:55.743 PDT loc-Waynes-MacBook-Pro-8.local <UDP Incoming Message Handler> tid=0x26] Membership: lead member is now Waynes-MacBook-Pro-8(server-Waynes-MacBook-Pro-8.local:14703)<v1>:28273
 
-[info 2016/10/31 16:03:06.188 PDT loc-Waynes-MacBook-Pro-8.local <FD_SOCK Ping thread> tid=0x6f] GemFire failure detection is now monitoring Waynes-MacBook-Pro-8(server-Waynes-MacBook-Pro-8.local:87883)<v1>:51107
+[info 2016/11/02 21:47:55.745 PDT loc-Waynes-MacBook-Pro-8.local <FD_SOCK Ping thread> tid=0x70] GemFire failure detection is now monitoring Waynes-MacBook-Pro-8(server-Waynes-MacBook-Pro-8.local:14703)<v1>:28273
 
-[info 2016/10/31 16:03:06.190 PDT loc-Waynes-MacBook-Pro-8.local <View Message Processor> tid=0x70] Membership: Processing addition < Waynes-MacBook-Pro-8(server-Waynes-MacBook-Pro-8.local:87883)<v1>:51107 >
+[info 2016/11/02 21:47:55.748 PDT loc-Waynes-MacBook-Pro-8.local <View Message Processor> tid=0x71] Membership: Processing addition < Waynes-MacBook-Pro-8(server-Waynes-MacBook-Pro-8.local:14703)<v1>:28273 >
 
-[info 2016/10/31 16:03:06.190 PDT loc-Waynes-MacBook-Pro-8.local <View Message Processor> tid=0x70] Admitting member <Waynes-MacBook-Pro-8(server-Waynes-MacBook-Pro-8.local:87883)<v1>:51107>. Now there are 2 non-admin member(s).
+[info 2016/11/02 21:47:55.748 PDT loc-Waynes-MacBook-Pro-8.local <View Message Processor> tid=0x71] Admitting member <Waynes-MacBook-Pro-8(server-Waynes-MacBook-Pro-8.local:14703)<v1>:28273>. Now there are 2 non-admin member(s).
 
-[info 2016/10/31 16:03:06.194 PDT loc-Waynes-MacBook-Pro-8.local <pool-3-thread-1> tid=0x73] Initializing region _monitoringRegion_10.0.0.45<v1>51107
+[info 2016/11/02 21:47:55.751 PDT loc-Waynes-MacBook-Pro-8.local <pool-3-thread-1> tid=0x74] Initializing region _monitoringRegion_10.0.0.45<v1>28273
 
-[info 2016/10/31 16:03:06.223 PDT loc-Waynes-MacBook-Pro-8.local <Pooled High Priority Message Processor 1> tid=0x78] Member Waynes-MacBook-Pro-8(server-Waynes-MacBook-Pro-8.local:87883)<v1>:51107 is equivalent or in the same redundancy zone.
+[info 2016/11/02 21:47:55.790 PDT loc-Waynes-MacBook-Pro-8.local <Pooled High Priority Message Processor 1> tid=0x79] Member Waynes-MacBook-Pro-8(server-Waynes-MacBook-Pro-8.local:14703)<v1>:28273 is equivalent or in the same redundancy zone.
 
-[info 2016/10/31 16:03:06.244 PDT loc-Waynes-MacBook-Pro-8.local <pool-3-thread-1> tid=0x73] Initialization of region _monitoringRegion_10.0.0.45<v1>51107 completed
+[info 2016/11/02 21:47:55.815 PDT loc-Waynes-MacBook-Pro-8.local <pool-3-thread-1> tid=0x74] Initialization of region _monitoringRegion_10.0.0.45<v1>28273 completed
 
-[info 2016/10/31 16:03:06.251 PDT loc-Waynes-MacBook-Pro-8.local <pool-3-thread-1> tid=0x73] Initializing region _notificationRegion_10.0.0.45<v1>51107
+[info 2016/11/02 21:47:55.823 PDT loc-Waynes-MacBook-Pro-8.local <pool-3-thread-1> tid=0x74] Initializing region _notificationRegion_10.0.0.45<v1>28273
 
-[info 2016/10/31 16:03:06.252 PDT loc-Waynes-MacBook-Pro-8.local <pool-3-thread-1> tid=0x73] Initialization of region _notificationRegion_10.0.0.45<v1>51107 completed
+[info 2016/11/02 21:47:55.825 PDT loc-Waynes-MacBook-Pro-8.local <pool-3-thread-1> tid=0x74] Initialization of region _notificationRegion_10.0.0.45<v1>28273 completed
 
-[info 2016/10/31 16:03:07.904 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Received request for configuration  : ConfigurationRequest for groups : 
+[info 2016/11/02 21:47:57.283 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Received request for configuration  : ConfigurationRequest for groups : 
    cluster[cluster]
 
-[info 2016/10/31 16:03:07.905 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2c] Building up configuration response with following configurations
+[info 2016/11/02 21:47:57.284 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[1]> tid=0x2d] Building up configuration response with following configurations
 
-[info 2016/10/31 16:08:50.979 PDT loc-Waynes-MacBook-Pro-8.local <RMI TCP Connection(3)-10.0.0.45> tid=0x7c] (tid=124 msgId=46) Executing list regions
+[info 2016/11/02 22:00:46.413 PDT loc-Waynes-MacBook-Pro-8.local <RMI TCP Connection(3)-10.0.0.45> tid=0x7d] (tid=125 msgId=46) Executing query --query="select * from /Title" --step-name=SELECT_EXEC
 
-[info 2016/10/31 16:09:05.366 PDT loc-Waynes-MacBook-Pro-8.local <RMI TCP Connection(3)-10.0.0.45> tid=0x7c] (tid=124 msgId=47) Executing query --query="select * from /RoyaltySchedule" --step-name=SELECT_EXEC
+[info 2016/11/02 22:00:46.544 PDT loc-Waynes-MacBook-Pro-8.local <RMI TCP Connection(3)-10.0.0.45> tid=0x7d] (tid=125 msgId=47) Executing query --query="select * from /Title" --step-name=SELECT_END
 
-[info 2016/10/31 16:09:05.455 PDT loc-Waynes-MacBook-Pro-8.local <RMI TCP Connection(3)-10.0.0.45> tid=0x7c] (tid=124 msgId=48) Executing query --query="select * from /RoyaltySchedule" --step-name=SELECT_END
+[info 2016/11/03 08:18:03.117 PDT loc-Waynes-MacBook-Pro-8.local <RMI TCP Connection(11)-10.0.0.45> tid=0x7d] (tid=125 msgId=48) Executing query --query="select * from /TitleAuthor" --step-name=SELECT_EXEC
 
-[info 2016/10/31 16:24:31.541 PDT loc-Waynes-MacBook-Pro-8.local <RMI TCP Connection(3)-10.0.0.45> tid=0x7c] (tid=124 msgId=49) Executing query --query="select * from /RoyaltySchedule" --step-name=SELECT_EXEC
+[info 2016/11/03 08:18:03.170 PDT loc-Waynes-MacBook-Pro-8.local <RMI TCP Connection(11)-10.0.0.45> tid=0x7d] (tid=125 msgId=49) Executing query --query="select * from /TitleAuthor" --step-name=SELECT_END
 
-[info 2016/10/31 16:24:31.577 PDT loc-Waynes-MacBook-Pro-8.local <RMI TCP Connection(3)-10.0.0.45> tid=0x7c] (tid=124 msgId=50) Executing query --query="select * from /RoyaltySchedule" --step-name=SELECT_END
+[info 2016/11/03 08:18:21.825 PDT loc-Waynes-MacBook-Pro-8.local <RMI TCP Connection(11)-10.0.0.45> tid=0x7d] (tid=125 msgId=50) Executing show metrics --region=/TitleAuthor
 
-[info 2016/10/31 16:28:23.444 PDT loc-Waynes-MacBook-Pro-8.local <RMI TCP Connection(3)-10.0.0.45> tid=0x7c] (tid=124 msgId=51) Executing query --query="select * from /Sales" --step-name=SELECT_EXEC
-
-[info 2016/10/31 16:28:23.476 PDT loc-Waynes-MacBook-Pro-8.local <RMI TCP Connection(3)-10.0.0.45> tid=0x7c] (tid=124 msgId=52) Executing query --query="select * from /Sales" --step-name=SELECT_END
-
-[info 2016/10/31 16:28:29.465 PDT loc-Waynes-MacBook-Pro-8.local <RMI TCP Connection(3)-10.0.0.45> tid=0x7c] (tid=124 msgId=53) Executing query --query="select * from /Sale" --step-name=SELECT_EXEC
-
-[info 2016/10/31 16:28:29.478 PDT loc-Waynes-MacBook-Pro-8.local <RMI TCP Connection(3)-10.0.0.45> tid=0x7c] (tid=124 msgId=54) Executing query --query="select * from /Sale" --step-name=SELECT_END
-
-[info 2016/10/31 16:42:17.736 PDT loc-Waynes-MacBook-Pro-8.local <RMI TCP Connection(3)-10.0.0.45> tid=0x7c] (tid=124 msgId=55) Executing query --query="select * from /Sale" --step-name=SELECT_EXEC
-
-[info 2016/10/31 16:42:17.748 PDT loc-Waynes-MacBook-Pro-8.local <RMI TCP Connection(3)-10.0.0.45> tid=0x7c] (tid=124 msgId=56) Executing query --query="select * from /Sale" --step-name=SELECT_END
-
-[info 2016/10/31 16:53:52.541 PDT loc-Waynes-MacBook-Pro-8.local <RMI TCP Connection(3)-10.0.0.45> tid=0x7c] (tid=124 msgId=57) Executing query --query="select * from /Sale" --step-name=SELECT_EXEC
-
-[info 2016/10/31 16:53:52.552 PDT loc-Waynes-MacBook-Pro-8.local <RMI TCP Connection(3)-10.0.0.45> tid=0x7c] (tid=124 msgId=58) Executing query --query="select * from /Sale" --step-name=SELECT_END
-
-[info 2016/10/31 16:59:07.681 PDT loc-Waynes-MacBook-Pro-8.local <RMI TCP Connection(3)-10.0.0.45> tid=0x7c] (tid=124 msgId=59) Executing query --query="select * from /Sale" --step-name=SELECT_EXEC
-
-[info 2016/10/31 16:59:07.695 PDT loc-Waynes-MacBook-Pro-8.local <RMI TCP Connection(3)-10.0.0.45> tid=0x7c] (tid=124 msgId=60) Executing query --query="select * from /Sale" --step-name=SELECT_END
-
-[info 2016/10/31 16:59:16.244 PDT loc-Waynes-MacBook-Pro-8.local <RMI TCP Connection(3)-10.0.0.45> tid=0x7c] (tid=124 msgId=61) Executing list regions
-
-[info 2016/11/01 14:02:37.081 PDT loc-Waynes-MacBook-Pro-8.local <RMI TCP Connection(10)-10.0.0.45> tid=0x7c] (tid=124 msgId=62) Executing query --query="select * from /Sale" --step-name=SELECT_EXEC
-
-[info 2016/11/01 14:02:37.138 PDT loc-Waynes-MacBook-Pro-8.local <RMI TCP Connection(10)-10.0.0.45> tid=0x7c] (tid=124 msgId=63) Executing query --query="select * from /Sale" --step-name=SELECT_END
-
-[info 2016/11/01 14:19:24.895 PDT loc-Waynes-MacBook-Pro-8.local <RMI TCP Connection(10)-10.0.0.45> tid=0x7c] (tid=124 msgId=64) Executing query --query="select * from /Sale" --step-name=SELECT_EXEC
-
-[info 2016/11/01 14:19:24.906 PDT loc-Waynes-MacBook-Pro-8.local <RMI TCP Connection(10)-10.0.0.45> tid=0x7c] (tid=124 msgId=65) Executing query --query="select * from /Sale" --step-name=SELECT_END
-
-[info 2016/11/01 14:19:43.318 PDT loc-Waynes-MacBook-Pro-8.local <FD_SOCK Ping thread> tid=0x6f] suspecting member Waynes-MacBook-Pro-8(server-Waynes-MacBook-Pro-8.local:87883)<v1>:51107
-
-[info 2016/11/01 14:19:48.329 PDT loc-Waynes-MacBook-Pro-8.local <VERIFY_SUSPECT.TimerThread> tid=0x98] Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:87847:locator)<v0>:24375: No suspect verification response received from Waynes-MacBook-Pro-8(server-Waynes-MacBook-Pro-8.local:87883)<v1>:51107 in 5005 milliseconds: I believe it is gone.
-
-[info 2016/11/01 14:19:48.329 PDT loc-Waynes-MacBook-Pro-8.local <TimeScheduler.Thread> tid=0x24] broadcasting SUSPECT message (suspected_mbrs=[Waynes-MacBook-Pro-8(server-Waynes-MacBook-Pro-8.local:87883)<v1>:51107]) to group
-
-[info 2016/11/01 14:19:48.500 PDT loc-Waynes-MacBook-Pro-8.local <ViewHandler> tid=0x6d] Membership: sending new view [[Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:87847:locator)<v0>:24375|2] [Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:87847:locator)<v0>:24375/6161] crashed mbrs: [Waynes-MacBook-Pro-8(server-Waynes-MacBook-Pro-8.local:87883)<v1>:51107/23798]] (1 mbrs)
-  
-
-[info 2016/11/01 14:19:48.501 PDT loc-Waynes-MacBook-Pro-8.local <ViewHandler> tid=0x6d] 
-     member Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:87847:locator)<v0>:24375 has a weight of 3
-     member Waynes-MacBook-Pro-8(server-Waynes-MacBook-Pro-8.local:87883)<v1>:51107 has a weight of 15
-
-[info 2016/11/01 14:19:48.501 PDT loc-Waynes-MacBook-Pro-8.local <ViewHandler> tid=0x6d] quorum weight calculation:  oldWeight=18 failureWeight=15 threshold=51% (failure weight must be < 9)
-
-[info 2016/11/01 14:19:48.502 PDT loc-Waynes-MacBook-Pro-8.local <UDP Incoming Message Handler> tid=0x26] Membership: received new view  [Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:87847:locator)<v0>:24375|2] [Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:87847:locator)<v0>:24375/6161] crashed mbrs: [Waynes-MacBook-Pro-8(server-Waynes-MacBook-Pro-8.local:87883)<v1>:51107/23798]
-
-[info 2016/11/01 14:19:48.503 PDT loc-Waynes-MacBook-Pro-8.local <UDP Incoming Message Handler> tid=0x26] old membership weight=18, loss threshold=9 and failed weight=15
-
-[info 2016/11/01 14:19:48.510 PDT loc-Waynes-MacBook-Pro-8.local <View Message Processor> tid=0x70] Member at Waynes-MacBook-Pro-8(server-Waynes-MacBook-Pro-8.local:87883)<v1>:51107 unexpectedly left the distributed cache: departed JGroups view
-
-[info 2016/11/01 14:19:53.334 PDT loc-Waynes-MacBook-Pro-8.local <VERIFY_SUSPECT.TimerThread> tid=0x98] Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:87847:locator)<v0>:24375: No suspect verification response received from Waynes-MacBook-Pro-8(server-Waynes-MacBook-Pro-8.local:87883)<v1>:51107 in 5004 milliseconds: I believe it is gone.
-
-[info 2016/11/01 14:20:52.744 PDT loc-Waynes-MacBook-Pro-8.local <ViewHandler> tid=0x6d] Membership: sending new view [[Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:87847:locator)<v0>:24375|3] [Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:87847:locator)<v0>:24375/6161, Waynes-MacBook-Pro-8(server-Waynes-MacBook-Pro-8.local:93724)<v3>:24768/4281]] (2 mbrs)
-  
-
-[info 2016/11/01 14:20:52.750 PDT loc-Waynes-MacBook-Pro-8.local <UDP Incoming Message Handler> tid=0x26] Membership: received new view  [Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:87847:locator)<v0>:24375|3] [Waynes-MacBook-Pro-8(loc-Waynes-MacBook-Pro-8.local:87847:locator)<v0>:24375/6161, Waynes-MacBook-Pro-8(server-Waynes-MacBook-Pro-8.local:93724)<v3>:24768/4281]
-
-[info 2016/11/01 14:20:52.750 PDT loc-Waynes-MacBook-Pro-8.local <UDP Incoming Message Handler> tid=0x26] Membership: lead member is now Waynes-MacBook-Pro-8(server-Waynes-MacBook-Pro-8.local:93724)<v3>:24768
-
-[info 2016/11/01 14:20:52.752 PDT loc-Waynes-MacBook-Pro-8.local <FD_SOCK Ping thread> tid=0x9f] GemFire failure detection is now monitoring Waynes-MacBook-Pro-8(server-Waynes-MacBook-Pro-8.local:93724)<v3>:24768
-
-[info 2016/11/01 14:20:52.752 PDT loc-Waynes-MacBook-Pro-8.local <View Message Processor> tid=0x70] Membership: Processing addition < Waynes-MacBook-Pro-8(server-Waynes-MacBook-Pro-8.local:93724)<v3>:24768 >
-
-[info 2016/11/01 14:20:52.753 PDT loc-Waynes-MacBook-Pro-8.local <View Message Processor> tid=0x70] Admitting member <Waynes-MacBook-Pro-8(server-Waynes-MacBook-Pro-8.local:93724)<v3>:24768>. Now there are 2 non-admin member(s).
-
-[info 2016/11/01 14:20:52.757 PDT loc-Waynes-MacBook-Pro-8.local <pool-3-thread-3> tid=0xa0] Initializing region _monitoringRegion_10.0.0.45<v3>24768
-
-[info 2016/11/01 14:20:52.787 PDT loc-Waynes-MacBook-Pro-8.local <Pooled High Priority Message Processor 1> tid=0x78] Member Waynes-MacBook-Pro-8(server-Waynes-MacBook-Pro-8.local:93724)<v3>:24768 is equivalent or in the same redundancy zone.
-
-[info 2016/11/01 14:20:52.803 PDT loc-Waynes-MacBook-Pro-8.local <pool-3-thread-3> tid=0xa0] Initialization of region _monitoringRegion_10.0.0.45<v3>24768 completed
-
-[info 2016/11/01 14:20:52.804 PDT loc-Waynes-MacBook-Pro-8.local <pool-3-thread-3> tid=0xa0] Initializing region _notificationRegion_10.0.0.45<v3>24768
-
-[info 2016/11/01 14:20:52.806 PDT loc-Waynes-MacBook-Pro-8.local <pool-3-thread-3> tid=0xa0] Initialization of region _notificationRegion_10.0.0.45<v3>24768 completed
-
-[info 2016/11/01 14:20:54.450 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[14]> tid=0x92] Received request for configuration  : ConfigurationRequest for groups : 
-   cluster[cluster]
-
-[info 2016/11/01 14:20:54.452 PDT loc-Waynes-MacBook-Pro-8.local <locator request thread[14]> tid=0x92] Building up configuration response with following configurations
-
-[info 2016/11/01 14:21:20.517 PDT loc-Waynes-MacBook-Pro-8.local <RMI TCP Connection(11)-10.0.0.45> tid=0xa5] (tid=165 msgId=66) Executing list regions
-
-[info 2016/11/01 14:22:51.195 PDT loc-Waynes-MacBook-Pro-8.local <RMI TCP Connection(11)-10.0.0.45> tid=0xa5] (tid=165 msgId=67) Executing show metrics --region=/Sale
-
-[info 2016/11/01 14:23:04.935 PDT loc-Waynes-MacBook-Pro-8.local <RMI TCP Connection(11)-10.0.0.45> tid=0xa5] (tid=165 msgId=68) Executing query --query="select * from /Sale" --step-name=SELECT_EXEC
-
-[info 2016/11/01 14:23:05.011 PDT loc-Waynes-MacBook-Pro-8.local <RMI TCP Connection(11)-10.0.0.45> tid=0xa5] (tid=165 msgId=69) Executing query --query="select * from /Sale" --step-name=SELECT_END
-
-[info 2016/11/01 14:25:08.512 PDT loc-Waynes-MacBook-Pro-8.local <RMI TCP Connection(11)-10.0.0.45> tid=0xa5] (tid=165 msgId=70) Executing query --query="select * from /Sale" --step-name=SELECT_EXEC
-
-[info 2016/11/01 14:25:08.528 PDT loc-Waynes-MacBook-Pro-8.local <RMI TCP Connection(11)-10.0.0.45> tid=0xa5] (tid=165 msgId=71) Executing query --query="select * from /Sale" --step-name=SELECT_END
-
-[info 2016/11/01 14:25:15.520 PDT loc-Waynes-MacBook-Pro-8.local <RMI TCP Connection(11)-10.0.0.45> tid=0xa5] (tid=165 msgId=72) Executing query --query="select * from /Sale" --step-name=SELECT_EXEC
-
-[info 2016/11/01 14:25:15.531 PDT loc-Waynes-MacBook-Pro-8.local <RMI TCP Connection(11)-10.0.0.45> tid=0xa5] (tid=165 msgId=73) Executing query --query="select * from /Sale" --step-name=SELECT_END
-
-[info 2016/11/01 14:25:18.135 PDT loc-Waynes-MacBook-Pro-8.local <RMI TCP Connection(11)-10.0.0.45> tid=0xa5] (tid=165 msgId=74) Executing query --query="select * from /Sale" --step-name=SELECT_EXEC
-
-[info 2016/11/01 14:25:18.146 PDT loc-Waynes-MacBook-Pro-8.local <RMI TCP Connection(11)-10.0.0.45> tid=0xa5] (tid=165 msgId=75) Executing query --query="select * from /Sale" --step-name=SELECT_END
-
-[info 2016/11/01 14:25:43.398 PDT loc-Waynes-MacBook-Pro-8.local <RMI TCP Connection(11)-10.0.0.45> tid=0xa5] (tid=165 msgId=76) Executing query --query="select * from /Sale" --step-name=SELECT_EXEC
-
-[info 2016/11/01 14:25:43.409 PDT loc-Waynes-MacBook-Pro-8.local <RMI TCP Connection(11)-10.0.0.45> tid=0xa5] (tid=165 msgId=77) Executing query --query="select * from /Sale" --step-name=SELECT_END
-
-[info 2016/11/01 14:26:24.989 PDT loc-Waynes-MacBook-Pro-8.local <RMI TCP Connection(11)-10.0.0.45> tid=0xa5] (tid=165 msgId=78) Executing query --query="select * from /Sale" --step-name=SELECT_EXEC
-
-[info 2016/11/01 14:26:25.000 PDT loc-Waynes-MacBook-Pro-8.local <RMI TCP Connection(11)-10.0.0.45> tid=0xa5] (tid=165 msgId=79) Executing query --query="select * from /Sale" --step-name=SELECT_END
-
-[info 2016/11/01 14:26:30.108 PDT loc-Waynes-MacBook-Pro-8.local <RMI TCP Connection(11)-10.0.0.45> tid=0xa5] (tid=165 msgId=80) Executing query --query="select * from /Sale" --step-name=SELECT_EXEC
-
-[info 2016/11/01 14:26:30.120 PDT loc-Waynes-MacBook-Pro-8.local <RMI TCP Connection(11)-10.0.0.45> tid=0xa5] (tid=165 msgId=81) Executing query --query="select * from /Sale" --step-name=SELECT_END
-
-[info 2016/11/01 14:28:55.690 PDT loc-Waynes-MacBook-Pro-8.local <RMI TCP Connection(12)-10.0.0.45> tid=0xaa] (tid=170 msgId=82) Executing show metrics --region=/Sale
-
-[info 2016/11/01 14:29:12.139 PDT loc-Waynes-MacBook-Pro-8.local <RMI TCP Connection(12)-10.0.0.45> tid=0xaa] (tid=170 msgId=83) Executing query --query="select * from /Sale" --step-name=SELECT_EXEC
-
-[info 2016/11/01 14:29:12.151 PDT loc-Waynes-MacBook-Pro-8.local <RMI TCP Connection(12)-10.0.0.45> tid=0xaa] (tid=170 msgId=84) Executing query --query="select * from /Sale" --step-name=SELECT_END
+[info 2016/11/03 09:25:26.330 PDT loc-Waynes-MacBook-Pro-8.local <RMI TCP Connection(11)-10.0.0.45> tid=0x7d] (tid=125 msgId=39535) Executing show metrics --region=/TitleAuthor
