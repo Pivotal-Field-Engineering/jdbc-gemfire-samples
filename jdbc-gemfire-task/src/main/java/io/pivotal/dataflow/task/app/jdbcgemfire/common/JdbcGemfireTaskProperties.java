@@ -17,6 +17,8 @@ package io.pivotal.dataflow.task.app.jdbcgemfire.common;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Component;
 
 @ConfigurationProperties("jdbcgemfire")
 public class JdbcGemfireTaskProperties {

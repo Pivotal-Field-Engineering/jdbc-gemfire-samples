@@ -1,4 +1,3 @@
-#!/usr/bin/env bash
 if [ -z "$1" ]; then
     echo "Usage: gemfire-server <locator-host>"
     exit 1
@@ -8,7 +7,7 @@ loc=$1[10334]
 
 
 hn=`hostname`
-target=/Users/wlund/Dropbox/git-workspace/wxlund/jdbc-gemfire-samples//gemfire-server-proto/target
+target=/Users/zhansen/Projects/Demos/jdbc-gemfire-samples/gemfire-server-proto/target
 xml=../xml
 
 cp=$target/classes

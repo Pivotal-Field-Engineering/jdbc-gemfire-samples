@@ -2,7 +2,7 @@ package io.pivotal.gemfire.pubs.model;
 
 import java.math.BigDecimal;
 
-class TitleAuthor {
+public class TitleAuthor {
 
      private String auId;
      private String titleId;
