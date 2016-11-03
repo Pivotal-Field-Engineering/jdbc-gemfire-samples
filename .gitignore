@@ -1,8 +1,12 @@
+<<<<<<< HEAD
 loc*.local
 server*.local
 *.iml
 *.ipr
 *.iws
+=======
+.iml*
+>>>>>>> master
 .js.map
 .js
 .jar
@@ -15,17 +19,28 @@ target/
 out
 src/main/resources/static/node/
 .DS_Store
+.#*
 
+<<<<<<< HEAD
 *.irf
 *.crf
 *.drf
 *.lk
+=======
+.irf
+.crf
+.log
+.marker
+.drf
+.lk
+>>>>>>> master
 .idea
 .project
 .settings
 .classpath
 .factorypath
 .springBeans
+<<<<<<< HEAD
 .gradle
 *.class
 *.if
@@ -54,6 +69,9 @@ BACKUP*
 ehthumbs.db
 Icon?
 Thumbs.db
+=======
+**scripts/
+>>>>>>> master
 
 provided/sqlf_appointment/server/*
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml

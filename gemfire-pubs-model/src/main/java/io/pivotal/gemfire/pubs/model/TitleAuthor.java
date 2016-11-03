@@ -10,6 +10,8 @@ class TitleAuthor {
      private BigDecimal royaltyshare;
 
     @Override
+
+
     public String toString() {
         return "TitleAuthor{" +
                 "auId='" + auId + '\'' +

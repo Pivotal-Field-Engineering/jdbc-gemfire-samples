@@ -60,8 +60,13 @@ task create --definition 'jdbc-gemfire-task
 task create --definition 'jdbc-gemfire-task
 --jdbcgemfire.datasource.username=postgres
 --jdbcgemfire.datasource.url=jdbc:postgresql://localhost:5432/postgres
+<<<<<<< HEAD
 --jdbcgemfire.datasource.driver-class-name=org.postgresql.Driver
 --jdbcgemfire.region-name=Editor --jdbcgemfire.commit-interval=1000
+=======
+--jdbcgemfire.datasource.driver-class-name=org.postgresql.Driver 
+--jdbcgemfire.region-name=Editor --jdbcgemfire.commit-interval=1000 
+>>>>>>> master
 --jdbcgemfire.sql="select * from editors"' --name pubs-editors
 
 task create --definition 'jdbc-gemfire-task
