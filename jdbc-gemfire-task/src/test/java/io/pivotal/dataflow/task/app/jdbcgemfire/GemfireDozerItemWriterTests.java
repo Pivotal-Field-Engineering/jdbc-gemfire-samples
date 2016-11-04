@@ -37,7 +37,7 @@ import static org.junit.Assert.assertEquals;
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = {CacheConfig.class, RegionConfig.class, DozerConfig.class, GemfireDozerItemWriter.class})
 @SuppressWarnings("serial")
-@TestPropertySource(properties = {"jdbcgemfire.region-name=TitleAuthor"})
+@TestPropertySource(properties = {"jdbcgemfire.region-name=Publisher"})
 
 public class GemfireDozerItemWriterTests {
     private static final Map<String, Map<String, Object>> DATA_SET = createDataSet();
@@ -78,6 +78,7 @@ public class GemfireDozerItemWriterTests {
         dataSet.put("Title", createTitlesMap());
         dataSet.put("TitleAuthor", createTitleAuthorsMap());
         dataSet.put("TitleEditor", createTitleEditorsMap());
+        dataSet.put("Publisher", createPublisherMap());
         return Collections.unmodifiableMap(dataSet);
     }
 
@@ -182,5 +183,14 @@ public class GemfireDozerItemWriterTests {
         return titleEditorItems;
     }
 
+    private static Map<String, Object> createPublisherMap() {
+        Map<String, Object> publisherItems = new HashMap<>();
+        publisherItems.put("pubId", "0736");
+        publisherItems.put("pubName", "New Age Books");
+        publisherItems.put("address", "1 1st St");
+        publisherItems.put("city", "Washington");
+        publisherItems.put("state", "DC");
+        return publisherItems;
+    }
 
 }
