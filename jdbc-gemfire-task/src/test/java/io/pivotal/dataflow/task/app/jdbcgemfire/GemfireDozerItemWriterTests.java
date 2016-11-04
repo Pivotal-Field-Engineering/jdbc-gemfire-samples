@@ -15,6 +15,7 @@
  */
 package io.pivotal.dataflow.task.app.jdbcgemfire;
 
+import com.sun.xml.internal.bind.v2.TODO;
 import io.pivotal.dataflow.task.app.jdbcgemfire.common.GemfireDozerItemWriter;
 import io.pivotal.dataflow.task.app.jdbcgemfire.config.CacheConfig;
 import io.pivotal.dataflow.task.app.jdbcgemfire.config.DozerConfig;
@@ -26,6 +27,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.annotation.Profile;
+import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit4.SpringRunner;
 
@@ -37,8 +40,9 @@ import static org.junit.Assert.assertEquals;
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = {CacheConfig.class, RegionConfig.class, DozerConfig.class, GemfireDozerItemWriter.class})
 @SuppressWarnings("serial")
-@TestPropertySource(properties = {"jdbcgemfire.region-name=Publisher"})
-
+//@TestPropertySource(properties = {"jdbcgemfire.region-name=Publisher"})
+@Profile("authors")
+@ActiveProfiles("authors")
 public class GemfireDozerItemWriterTests {
     private static final Map<String, Map<String, Object>> DATA_SET = createDataSet();
     private static Logger LOG = LoggerFactory.getLogger(GemfireDozerItemWriterTests.class);
@@ -50,6 +54,12 @@ public class GemfireDozerItemWriterTests {
 
     @Autowired
     GemfireDozerItemWriter itemWriter;
+
+    @Test
+    @Profile("authors")
+    public void testAuthors() {
+        //TODO
+    }
 
     @Test
     public void testItemWriter() {
@@ -70,6 +80,7 @@ public class GemfireDozerItemWriterTests {
         assertEquals(null, ex);
     }
 
+
     private static Map<String, Map<String, Object>> createDataSet() {
         Map<String, Map<String, Object>> dataSet = new HashMap<>();
         dataSet.put("RoyaltySchedule", createRoyaltyScheduleMap());
@@ -79,9 +90,12 @@ public class GemfireDozerItemWriterTests {
         dataSet.put("TitleAuthor", createTitleAuthorsMap());
         dataSet.put("TitleEditor", createTitleEditorsMap());
         dataSet.put("Publisher", createPublisherMap());
+        dataSet.put("Author", createAuthorsMap());
+
         return Collections.unmodifiableMap(dataSet);
     }
 
+    @Profile("royalty-schedule")
     private static Map<String, Object> createRoyaltyScheduleMap() {
         Map<String, Object> result = new HashMap<String, Object>();
         // output from log used failure log used for test data
@@ -193,4 +207,16 @@ public class GemfireDozerItemWriterTests {
         return publisherItems;
     }
 
+    private static Map<String, Object> createAuthorsMap() {
+        Map<String, Object> authorItems = new HashMap<>();
+        authorItems.put("auId", "409-56-7008");
+        authorItems.put("auLname", "Bennet");
+        authorItems.put("auFname", "Abraham");
+        authorItems.put("phone", "415 658-9932");
+        authorItems.put("address", "6223 Bateman St.");
+        authorItems.put("city", "Berkeley");
+        authorItems.put("state", "CA");
+        authorItems.put("zip", "94705");
+        return authorItems;
+    }
 }
