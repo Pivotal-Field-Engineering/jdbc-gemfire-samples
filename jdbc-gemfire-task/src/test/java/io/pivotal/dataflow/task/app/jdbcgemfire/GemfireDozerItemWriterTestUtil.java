@@ -15,7 +15,6 @@
  */
 package io.pivotal.dataflow.task.app.jdbcgemfire;
 
-import com.sun.xml.internal.bind.v2.TODO;
 import io.pivotal.dataflow.task.app.jdbcgemfire.common.GemfireDozerItemWriter;
 import io.pivotal.dataflow.task.app.jdbcgemfire.config.CacheConfig;
 import io.pivotal.dataflow.task.app.jdbcgemfire.config.DozerConfig;
@@ -27,9 +26,11 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Profile;
+import org.springframework.stereotype.Component;
+import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.context.ActiveProfiles;
-import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.text.SimpleDateFormat;
@@ -37,15 +38,15 @@ import java.util.*;
 
 import static org.junit.Assert.assertEquals;
 
-@RunWith(SpringRunner.class)
-@SpringBootTest(classes = {CacheConfig.class, RegionConfig.class, DozerConfig.class, GemfireDozerItemWriter.class})
+//@RunWith(SpringRunner.class)
+//@SpringBootTest(classes = {CacheConfig.class, RegionConfig.class, DozerConfig.class, GemfireDozerItemWriter.class})
 @SuppressWarnings("serial")
-//@TestPropertySource(properties = {"jdbcgemfire.region-name=Publisher"})
-@Profile("authors")
-@ActiveProfiles("authors")
-public class GemfireDozerItemWriterTests {
+//@ActiveProfiles(profiles = {"authors", "titles", "royalty-schedule", "sale", "sale-detail", "title-author", "title-editor", "publisher"})
+//@DirtiesContext(classMode = DirtiesContext.ClassMode.AFTER_EACH_TEST_METHOD)
+@Component
+public class GemfireDozerItemWriterTestUtil {
     private static final Map<String, Map<String, Object>> DATA_SET = createDataSet();
-    private static Logger LOG = LoggerFactory.getLogger(GemfireDozerItemWriterTests.class);
+    private static Logger LOG = LoggerFactory.getLogger(GemfireDozerItemWriterTestUtil.class);
     Map<String, Object> map = new HashMap<>();
     Exception ex = null;
 
@@ -55,18 +56,36 @@ public class GemfireDozerItemWriterTests {
     @Autowired
     GemfireDozerItemWriter itemWriter;
 
+/*
+
     @Test
-    @Profile("authors")
-    public void testAuthors() {
-        //TODO
+    @Profile("royalty-schedule")
+    public void testRoyaltySchedule() {
+        String regionName = "RoyaltySchedule";
+        testItemWriter(regionName);
+    }
+
+
+
+    @Test
+    @Profile("title-author")
+    public void testTitleAuthor() {
+        String regionName = "TitleAuthor";
+        testItemWriter(regionName);
     }
 
     @Test
-    public void testItemWriter() {
+    @Profile("title-editor")
+    public void testTitleEditor() {
+        String regionName = "TitleEditor";
+        testItemWriter(regionName);
+    }
+*/
+
+    public void testItemWriter(String regionName) {
         try {
-            //GemfireDozerItemWriter itemWriter = new GemfireDozerItemWriter();
             List<Map<String, Object>> listMap = new ArrayList<>();
-            String regionName = applicationContext.getEnvironment().getProperty("jdbcgemfire.region-name");
+            //String regionName = applicationContext.getEnvironment().getProperty("jdbcgemfire.region-name");
             System.out.println("Region to Test : " + regionName);
             if (regionName != null) {
                 map = DATA_SET.get(regionName);
@@ -95,7 +114,6 @@ public class GemfireDozerItemWriterTests {
         return Collections.unmodifiableMap(dataSet);
     }
 
-    @Profile("royalty-schedule")
     private static Map<String, Object> createRoyaltyScheduleMap() {
         Map<String, Object> result = new HashMap<String, Object>();
         // output from log used failure log used for test data
@@ -148,7 +166,7 @@ public class GemfireDozerItemWriterTests {
         salesDetailsItems.put("titleId", "PS2091");
         salesDetailsItems.put("qtyShipped", 10);
         salesDetailsItems.put("dateShipped", myDate);
-        return Collections.unmodifiableMap(salesDetailsItems);
+        return salesDetailsItems;
     }
 
     private static Map<String, Object> createTitlesMap() {
