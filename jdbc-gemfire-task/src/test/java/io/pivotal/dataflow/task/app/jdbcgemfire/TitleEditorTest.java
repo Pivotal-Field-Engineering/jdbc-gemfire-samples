@@ -6,7 +6,7 @@ import io.pivotal.dataflow.task.app.jdbcgemfire.common.GemfireDozerItemWriter;
 import io.pivotal.dataflow.task.app.jdbcgemfire.config.CacheConfig;
 import io.pivotal.dataflow.task.app.jdbcgemfire.config.DozerConfig;
 import io.pivotal.dataflow.task.app.jdbcgemfire.config.RegionConfig;
-import io.pivotal.gemfire.pubs.model.TitleAuthor;
+import io.pivotal.gemfire.pubs.model.TitleEditor;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,13 +23,12 @@ import static org.junit.Assert.assertEquals;
 /**
  * Created by zhansen on 11/4/16.
  */
-
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = {CacheConfig.class, RegionConfig.class, DozerConfig.class, GemfireDozerItemWriter.class, GemfireDozerItemWriterTestUtil.class})
 @SuppressWarnings("serial")
-@ActiveProfiles(profiles = {"title-author"})
+@ActiveProfiles(profiles = {"title-editor"})
 @DirtiesContext(classMode = DirtiesContext.ClassMode.AFTER_EACH_TEST_METHOD)
-public class TitleAuthorTest {
+public class TitleEditorTest {
 
     @Autowired
     GemfireDozerItemWriterTestUtil util;
@@ -38,14 +37,14 @@ public class TitleAuthorTest {
     ClientCache cache;
 
     @Test
-    @Profile("title-author")
-    public void testTitleAuthor() {
-        String regionName = "TitleAuthor";
+    @Profile("title-editor")
+    public void testTitleEditor() {
+        String regionName = "TitleEditor";
         Region region = cache.getRegion(regionName);
         Object k = util.testItemWriter(regionName);
-        TitleAuthor value = (TitleAuthor) region.get(k);
-        Map<String,Object> testValue = util.createTitleAuthorsMap();
-        assertEquals(testValue.get("auId"), value.getAuId());
+        TitleEditor value = (TitleEditor) region.get(k);
+        Map<String,Object> testValue = util.createTitleEditorsMap();
+        assertEquals(testValue.get("titleId"), value.getTitleId());
         region.remove(k);
     }
 }

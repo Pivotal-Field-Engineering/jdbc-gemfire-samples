@@ -16,33 +16,18 @@
 package io.pivotal.dataflow.task.app.jdbcgemfire;
 
 import io.pivotal.dataflow.task.app.jdbcgemfire.common.GemfireDozerItemWriter;
-import io.pivotal.dataflow.task.app.jdbcgemfire.config.CacheConfig;
-import io.pivotal.dataflow.task.app.jdbcgemfire.config.DozerConfig;
-import io.pivotal.dataflow.task.app.jdbcgemfire.config.RegionConfig;
-import org.junit.Test;
-import org.junit.runner.RunWith;
+import org.dozer.DozerBeanMapper;
+import org.dozer.Mapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.ConfigurableApplicationContext;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
-import org.springframework.test.annotation.DirtiesContext;
-import org.springframework.test.context.ActiveProfiles;
-import org.springframework.test.context.junit4.SpringRunner;
 
 import java.text.SimpleDateFormat;
 import java.util.*;
 
-import static org.junit.Assert.assertEquals;
 
-//@RunWith(SpringRunner.class)
-//@SpringBootTest(classes = {CacheConfig.class, RegionConfig.class, DozerConfig.class, GemfireDozerItemWriter.class})
-@SuppressWarnings("serial")
-//@ActiveProfiles(profiles = {"authors", "titles", "royalty-schedule", "sale", "sale-detail", "title-author", "title-editor", "publisher"})
-//@DirtiesContext(classMode = DirtiesContext.ClassMode.AFTER_EACH_TEST_METHOD)
 @Component
 public class GemfireDozerItemWriterTestUtil {
     private static final Map<String, Map<String, Object>> DATA_SET = createDataSet();
@@ -56,51 +41,35 @@ public class GemfireDozerItemWriterTestUtil {
     @Autowired
     GemfireDozerItemWriter itemWriter;
 
-/*
+    @Autowired
+    DozerBeanMapper dmb;
 
-    @Test
-    @Profile("royalty-schedule")
-    public void testRoyaltySchedule() {
-        String regionName = "RoyaltySchedule";
-        testItemWriter(regionName);
-    }
-
-
-
-    @Test
-    @Profile("title-author")
-    public void testTitleAuthor() {
-        String regionName = "TitleAuthor";
-        testItemWriter(regionName);
-    }
-
-    @Test
-    @Profile("title-editor")
-    public void testTitleEditor() {
-        String regionName = "TitleEditor";
-        testItemWriter(regionName);
-    }
-*/
-
-    public void testItemWriter(String regionName) {
+    public Object testItemWriter(String regionName) {
+        Object k = new Object();
         try {
             List<Map<String, Object>> listMap = new ArrayList<>();
-            //String regionName = applicationContext.getEnvironment().getProperty("jdbcgemfire.region-name");
             System.out.println("Region to Test : " + regionName);
             if (regionName != null) {
                 map = DATA_SET.get(regionName);
             }
+            Class K = Class.forName("io.pivotal.gemfire.pubs.key." + regionName+ "Key");
+             k = K.newInstance();
+            LOG.debug("KeyClass={}", K.getName());
             listMap.add(map);
             itemWriter.write(listMap);
+            Mapper mp = dmb;
+            LOG.info("Starting Dozer Mapping of Class [{}]", K.getName());
+            k = mp.map(map, K);
         } catch (Exception e) {
             System.out.println("ex: " + e.getMessage());
             ex = e;
         }
-        assertEquals(null, ex);
+        LOG.debug("Key returned in test={}",k.toString());
+        return k;
     }
 
 
-    private static Map<String, Map<String, Object>> createDataSet() {
+    public static Map<String, Map<String, Object>> createDataSet() {
         Map<String, Map<String, Object>> dataSet = new HashMap<>();
         dataSet.put("RoyaltySchedule", createRoyaltyScheduleMap());
         dataSet.put("Sale", createSalesMap());
@@ -114,7 +83,7 @@ public class GemfireDozerItemWriterTestUtil {
         return Collections.unmodifiableMap(dataSet);
     }
 
-    private static Map<String, Object> createRoyaltyScheduleMap() {
+    public static Map<String, Object> createRoyaltyScheduleMap() {
         Map<String, Object> result = new HashMap<String, Object>();
         // output from log used failure log used for test data
         // {lorange=5001, hirange=50000, titleId=BU1032, royalty=0.12}
@@ -126,7 +95,7 @@ public class GemfireDozerItemWriterTestUtil {
     }
 
     //working method change all others to this model
-    private static Map<String, Object> createSalesMap() {
+    public static Map<String, Object> createSalesMap() {
         Map<String, Object> salesItems = new HashMap<String, Object>();
         Date myDate = null;
         try {
@@ -146,7 +115,7 @@ public class GemfireDozerItemWriterTestUtil {
         return salesItems;
     }
 
-    private static Map<String, Object> createSalesDetailMap() {
+    public static Map<String, Object> createSalesDetailMap() {
         Map<String, Object> salesDetailsItems = new HashMap<String, Object>();
         // output from log used failure log used for test data
         // {sonum=2, sdate=1998-09-14, ponum=D4482, storId=7067}
@@ -169,7 +138,7 @@ public class GemfireDozerItemWriterTestUtil {
         return salesDetailsItems;
     }
 
-    private static Map<String, Object> createTitlesMap() {
+    public static Map<String, Object> createTitlesMap() {
         Map<String, Object> titlesMapItems = new HashMap<>();
         // output from log used failure log used for test data
         // {sonum=2, sdate=1998-09-14, ponum=D4482, storId=7067}
@@ -197,7 +166,7 @@ public class GemfireDozerItemWriterTestUtil {
         return titlesMapItems;
     }
 
-    private static Map<String, Object> createTitleAuthorsMap() {
+    public static Map<String, Object> createTitleAuthorsMap() {
         Map<String, Object> titleAuthorItems = new HashMap<>();
         // {auOrd=1, auId=409-56-7008, titleId=BU1032, royaltyshare=0.60}
         titleAuthorItems.put("auId", "409-56-7008");
@@ -207,7 +176,7 @@ public class GemfireDozerItemWriterTestUtil {
         return titleAuthorItems;
     }
 
-    private static Map<String, Object> createTitleEditorsMap() {
+    public static Map<String, Object> createTitleEditorsMap() {
         Map<String, Object> titleEditorItems = new HashMap<>();
         titleEditorItems.put("edId", "826-11-9034");
         titleEditorItems.put("titleId", "BU20752");
@@ -215,7 +184,7 @@ public class GemfireDozerItemWriterTestUtil {
         return titleEditorItems;
     }
 
-    private static Map<String, Object> createPublisherMap() {
+    public static Map<String, Object> createPublisherMap() {
         Map<String, Object> publisherItems = new HashMap<>();
         publisherItems.put("pubId", "0736");
         publisherItems.put("pubName", "New Age Books");
@@ -225,7 +194,7 @@ public class GemfireDozerItemWriterTestUtil {
         return publisherItems;
     }
 
-    private static Map<String, Object> createAuthorsMap() {
+    public static Map<String, Object> createAuthorsMap() {
         Map<String, Object> authorItems = new HashMap<>();
         authorItems.put("auId", "409-56-7008");
         authorItems.put("auLname", "Bennet");
