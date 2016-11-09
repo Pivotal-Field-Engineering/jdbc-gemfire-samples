@@ -26,6 +26,14 @@ public class JdbcGemfireTaskProperties {
 	@Value("$jdbcgemfire.regionName:RoyaltySchedule")
 	public String regionName;
 
+	public String getLocators() {
+		return locators;
+	}
+
+	public void setLocators(String locators) {
+		this.locators = locators;
+	}
+
 	@Value("${locators:localhost:10334}")
 	public String locators;
 
