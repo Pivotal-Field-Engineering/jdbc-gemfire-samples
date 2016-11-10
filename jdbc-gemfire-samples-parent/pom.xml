@@ -6,7 +6,7 @@
   <groupId>jdbc-gemfire-samples</groupId>
   <artifactId>jdbc-gemfire-samples-parent</artifactId>
   <packaging>pom</packaging>
-  <version>1.0</version>
+  <version>0.0.1-SNAPSHOT</version>
   <name>jdbc-gemfire-samples-parent</name>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -25,6 +25,7 @@
     <module>../gemfire-pubs-model</module>
     <module>../gemfire-server-proto</module>
     <module>../jdbc-gemfire-task</module>
+    <module>../jdbc-gemfire-samples-rest</module>
   </modules>
 
   <build>

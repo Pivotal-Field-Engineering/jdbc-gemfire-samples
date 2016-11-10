@@ -8,7 +8,7 @@
 	<parent>
 		<groupId>jdbc-gemfire-samples</groupId>
 		<artifactId>jdbc-gemfire-samples-parent</artifactId>
-		<version>1.0</version>
+		<version>0.0.1-SNAPSHOT</version>
 		<relativePath>../jdbc-gemfire-samples-parent</relativePath>
 	</parent>
 	<build>
