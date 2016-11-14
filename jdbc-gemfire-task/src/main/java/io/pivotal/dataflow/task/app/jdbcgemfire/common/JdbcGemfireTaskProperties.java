@@ -23,7 +23,6 @@ import org.springframework.stereotype.Component;
 @ConfigurationProperties("jdbcgemfire")
 public class JdbcGemfireTaskProperties {
 
-	@Value("$jdbcgemfire.regionName:RoyaltySchedule")
 	public String regionName;
 
 	public String getLocators() {
@@ -34,10 +33,8 @@ public class JdbcGemfireTaskProperties {
 		this.locators = locators;
 	}
 
-	@Value("${locators:localhost:10334}")
 	public String locators;
 
-	
 	public static final int DEFAULT_COMMIT_INTERVAL = 1000;
 
 	public static final int DEFAULT_MAX_WORKERS = 2;

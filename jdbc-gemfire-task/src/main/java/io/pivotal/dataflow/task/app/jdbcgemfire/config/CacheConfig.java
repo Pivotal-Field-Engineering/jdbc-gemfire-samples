@@ -26,7 +26,7 @@ public class CacheConfig {
         LOG.info("creating cache");
         ClientCacheFactory ccf = new ClientCacheFactory();
 
-        String locators = props.getLocators();
+        String locators = props.locators;
 
         String[] sa1 = locators.split(",");
         for (String st : sa1) {
