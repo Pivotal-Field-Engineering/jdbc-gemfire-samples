@@ -17,9 +17,6 @@ import com.gemstone.gemfire.cache.client.Pool;
 @Component
 public class RegionConfig {
 	private static final Logger LOG = LoggerFactory.getLogger(RegionConfig.class);
-	
-/*	@Resource(name = "clientRegion")
-	public Region<?, ?> region;*/
 
 	@Bean(name = "clientRegion" )
 	public Region<?, ?> createTaskRegion(ClientCache cache, Pool pool, JdbcGemfireTaskProperties props) {
