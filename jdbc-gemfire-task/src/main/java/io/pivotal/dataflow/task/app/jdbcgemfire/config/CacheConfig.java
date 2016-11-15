@@ -23,24 +23,26 @@ public class CacheConfig {
 
     @Bean
     public ClientCache createCache(JdbcGemfireTaskProperties props) {
-        LOG.info("creating cache");
-        ClientCacheFactory ccf = new ClientCacheFactory();
-
+        LOG.info("Initializing ClientCache..");
+        String pdxSerializedClasses = "io.pivotal.gemfire.pubs.model.*";
         String locators = props.locators;
+        Boolean readSerializedFlag = false;
+
+        ClientCacheFactory ccf = new ClientCacheFactory();
 
         String[] sa1 = locators.split(",");
         for (String st : sa1) {
             String[] sat = st.split(":");
             String host = sat[0];
             int port = sat.length > 1 ? Integer.parseInt(sat[1]) : 10334;
-            LOG.info("creating cache: adding locator: host={}, port={}", host, port);
+            LOG.info("Adding locator to pool..: host={}, port={}", host, port);
 
             ccf.addPoolLocator(host, port);
         }
 
-        ccf.setPdxReadSerialized(false);
-        ccf.setPdxSerializer(new ReflectionBasedAutoSerializer("io.pivotal.gemfire.pubs.model.*"));
-
+        ccf.setPdxReadSerialized(readSerializedFlag);
+        ccf.setPdxSerializer(new ReflectionBasedAutoSerializer(pdxSerializedClasses));
+        LOG.info("Created ClientCache with properties[locator:{}, PdxSerializer:{}, ReadSerialized:{}]", locators, pdxSerializedClasses, readSerializedFlag);
         return ccf.create();
     }
 

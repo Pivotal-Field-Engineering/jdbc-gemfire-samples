@@ -38,12 +38,12 @@ public class JdbcGemfireDataSourceProperties {
 	private String driverClassName;
 
 	/**
-	 * The username of the datasource that will be used by jdbhdfs app to retrieve table input.
+	 * The username of the datasource that will be used by jdbcgemfire app to retrieve table input.
 	 */
 	private String username;
 
 	/**
-	 * The password of the datasource that will be used by jdbhdfs app to retrieve table input.
+	 * The password of the datasource that will be used by jdbcgemfire app to retrieve table input.
 	 */
 	private String password;
 
