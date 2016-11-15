@@ -23,180 +23,176 @@ import org.springframework.stereotype.Component;
 @ConfigurationProperties("jdbcgemfire")
 public class JdbcGemfireTaskProperties {
 
-	public String regionName;
+    public static final int DEFAULT_COMMIT_INTERVAL = 1000;
 
-	public String getLocators() {
-		return locators;
-	}
+    public static final int DEFAULT_MAX_WORKERS = 2;
 
-	public void setLocators(String locators) {
-		this.locators = locators;
-	}
+    /**
+     * The GemFire region to write to.
+     */
+    public String regionName;
 
-	public String locators;
+    /**
+     * The GemFire servers to add to pool.
+     */
+    public String servers;
 
-	public static final int DEFAULT_COMMIT_INTERVAL = 1000;
+    /**
+     * The properties location to be used.
+     */
+    private String propertiesLocation;
 
-	public static final int DEFAULT_MAX_WORKERS = 2;
+    /**
+     * The security method to be used.
+     */
+    private String securityMethod;
 
+    /**
+     * The register url handler to be used.
+     */
+    private String registerUrlHandler;
 
+    /**
+     * The name of the table to be queried.
+     */
+    private String tableName;
 
-	/**
-	 * The properties location to be used.
-	 */
-	private String propertiesLocation;
+    /**
+     * The name of the columns to be queried.
+     */
+    private String columnNames;
 
-	/**
-	 * The security method to be used.
-	 */
-	private String securityMethod;
+    /**
+     * Sql to be used to retrieve the data.
+     */
+    private String sql;
 
+    /**
+     * The commit interval for the application.
+     */
+    private int commitInterval = DEFAULT_COMMIT_INTERVAL;
 
+    /**
+     * The name of the column used to partition the data.
+     */
+    private String partitionColumn;
 
+    /**
+     * The name of the column used to determine if the data should be read.
+     */
+    private String checkColumn;
 
-	/**
-	 * The register url handler to be used.
-	 */
-	private String registerUrlHandler;
+    /**
+     * Is the batch job restartable.
+     */
+    private boolean restartable;
 
+    /**
+     * Maximum number of concurrent workers.
+     */
+    private int maxWorkers = DEFAULT_MAX_WORKERS;
 
-	/**
-	 * The name of the table to be queried.
-	 */
-	private String tableName;
+    public String getPropertiesLocation() {
+        return propertiesLocation;
+    }
 
-	/**
-	 * The name of the columns to be queried.
-	 */
-	private String columnNames;
+    public void setPropertiesLocation(String propertiesLocation) {
+        this.propertiesLocation = propertiesLocation;
+    }
 
-	/**
-	 * Sql to be used to retrieve the data.
-	 */
-	private String sql;
+    public String getSecurityMethod() {
+        return securityMethod;
+    }
 
-	/**
-	 * The commit interval for the application.
-	 */
-	private int commitInterval = DEFAULT_COMMIT_INTERVAL;
+    public void setSecurityMethod(String securityMethod) {
+        this.securityMethod = securityMethod;
+    }
 
+    public String getRegisterUrlHandler() {
+        return registerUrlHandler;
+    }
 
-	/**
-	 * The name of the column used to partition the data.
-	 */
-	private String partitionColumn;
+    public void setRegisterUrlHandler(String registerUrlHandler) {
+        this.registerUrlHandler = registerUrlHandler;
+    }
 
-	/**
-	 * The name of the column used to determine if the data should be read.
-	 */
-	private String checkColumn;
+    public String getTableName() {
+        return tableName;
+    }
 
-	/**
-	 * Is the batch job restartable.
-	 */
-	private boolean restartable;
+    public void setTableName(String tableName) {
+        this.tableName = tableName;
+    }
 
-	/**
-	 * Maximum number of concurrent workers.
-	 */
-	private int maxWorkers = DEFAULT_MAX_WORKERS;
+    public String getColumnNames() {
+        return columnNames;
+    }
 
+    public void setColumnNames(String columnNames) {
+        this.columnNames = columnNames;
+    }
 
-	public String getPropertiesLocation() {
-		return propertiesLocation;
-	}
+    public String getSql() {
+        return sql;
+    }
 
-	public void setPropertiesLocation(String propertiesLocation) {
-		this.propertiesLocation = propertiesLocation;
-	}
+    public void setSql(String sql) {
+        this.sql = sql;
+    }
 
-	public String getSecurityMethod() {
-		return securityMethod;
-	}
+    public int getCommitInterval() {
+        return commitInterval;
+    }
 
-	public void setSecurityMethod(String securityMethod) {
-		this.securityMethod = securityMethod;
-	}
+    public void setCommitInterval(int commitInterval) {
+        this.commitInterval = commitInterval;
+    }
 
-	public String getRegisterUrlHandler() {
-		return registerUrlHandler;
-	}
+    public String getPartitionColumn() {
+        return partitionColumn;
+    }
 
-	public void setRegisterUrlHandler(String registerUrlHandler) {
-		this.registerUrlHandler = registerUrlHandler;
-	}
+    public void setPartitionColumn(String partitionColumn) {
+        this.partitionColumn = partitionColumn;
+    }
 
-	
+    public String getCheckColumn() {
+        return checkColumn;
+    }
 
-	public String getTableName() {
-		return tableName;
-	}
+    public void setCheckColumn(String checkColumn) {
+        this.checkColumn = checkColumn;
+    }
 
-	public void setTableName(String tableName) {
-		this.tableName = tableName;
-	}
+    public boolean isRestartable() {
+        return restartable;
+    }
 
-	public String getColumnNames() {
-		return columnNames;
-	}
+    public void setRestartable(boolean restartable) {
+        this.restartable = restartable;
+    }
 
-	public void setColumnNames(String columnNames) {
-		this.columnNames = columnNames;
-	}
+    public int getMaxWorkers() {
+        return maxWorkers;
+    }
 
-	public String getSql() {
-		return sql;
-	}
+    public void setMaxWorkers(int maxWorkers) {
+        this.maxWorkers = maxWorkers;
+    }
 
-	public void setSql(String sql) {
-		this.sql = sql;
-	}
+    public String getRegionName() {
+        return regionName;
+    }
 
-	public int getCommitInterval() {
-		return commitInterval;
-	}
+    public void setRegionName(String regionName) {
+        this.regionName = regionName;
+    }
 
-	public void setCommitInterval(int commitInterval) {
-		this.commitInterval = commitInterval;
-	}
+    public String getServers() {
+        return servers;
+    }
 
-	public String getPartitionColumn() {
-		return partitionColumn;
-	}
-
-	public void setPartitionColumn(String partitionColumn) {
-		this.partitionColumn = partitionColumn;
-	}
-
-	public String getCheckColumn() {
-		return checkColumn;
-	}
-
-	public void setCheckColumn(String checkColumn) {
-		this.checkColumn = checkColumn;
-	}
-
-	public boolean isRestartable() {
-		return restartable;
-	}
-
-	public void setRestartable(boolean restartable) {
-		this.restartable = restartable;
-	}
-
-	public int getMaxWorkers() {
-		return maxWorkers;
-	}
-
-	public void setMaxWorkers(int maxWorkers) {
-		this.maxWorkers = maxWorkers;
-	}
-
-	public String getRegionName() {
-		return regionName;
-	}
-
-	public void setRegionName(String regionName) {
-		this.regionName = regionName;
-	}
+    public void setServers(String servers) {
+        this.servers = servers;
+    }
 }
