@@ -90,7 +90,6 @@
             <artifactId>dozer</artifactId>
             <version>5.5.1</version>
         </dependency>
-
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-deployer-local</artifactId>
@@ -118,7 +117,8 @@
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
-            <scope>runtime</scope>
+            <version>9.4-1201-jdbc41</version>
+           <!-- <scope>runtime</scope>-->
         </dependency>
         <dependency>
             <groupId>org.hsqldb</groupId>
