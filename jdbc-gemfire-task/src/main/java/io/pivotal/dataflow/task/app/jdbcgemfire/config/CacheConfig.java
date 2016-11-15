@@ -37,8 +37,8 @@ public class CacheConfig {
             int port = sat.length > 1 ? Integer.parseInt(sat[1]) : 10334;
             LOG.info("Adding locator to pool : host={}, port={}", host, port);
 
-            //ccf.addPoolLocator(host, port);
-            ccf.addPoolServer(host,40404);
+            ccf.addPoolLocator(host, port);
+
         }
 
         ccf.setPdxReadSerialized(readSerializedFlag);
