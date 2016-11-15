@@ -35,9 +35,9 @@ public class CacheConfig {
             String[] sat = st.split(":");
             String host = sat[0];
             int port = sat.length > 1 ? Integer.parseInt(sat[1]) : 10334;
-            LOG.info("Adding locator to pool : host={}, port={}", host, port);
+            LOG.info("Adding Server to pool : host={}, port={}", host, 40404);
 
-            ccf.addPoolLocator(host, port);
+            ccf.addPoolServer(host, 40404);
 
         }
 
