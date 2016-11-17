@@ -46,7 +46,7 @@ import org.springframework.context.annotation.Import;
 import org.springframework.core.env.Environment;
 
 
-@EnableTask
+//@EnableTask
 @EnableBatchProcessing
 @org.springframework.context.annotation.Configuration
 @EnableConfigurationProperties({JdbcGemfireTaskProperties.class})
