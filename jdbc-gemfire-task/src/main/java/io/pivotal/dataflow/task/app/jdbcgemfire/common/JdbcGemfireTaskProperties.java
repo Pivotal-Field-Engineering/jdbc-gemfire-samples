@@ -38,6 +38,16 @@ public class JdbcGemfireTaskProperties {
     public String servers;
 
     /**
+     * The GemFire locator to add to pool.
+     */
+    public String locators;
+
+    /**
+     * The GemFire connection strategy.
+     */
+    public String connectionType;
+
+    /**
      * The properties location to be used.
      */
     private String propertiesLocation;
@@ -194,5 +204,21 @@ public class JdbcGemfireTaskProperties {
 
     public void setServers(String servers) {
         this.servers = servers;
+    }
+
+    public String getLocators() {
+        return locators;
+    }
+
+    public void setLocators(String locators) {
+        this.locators = locators;
+    }
+
+    public String getConnectionType() {
+        return connectionType;
+    }
+
+    public void setConnectionType(String connectionType) {
+        this.connectionType = connectionType;
     }
 }
