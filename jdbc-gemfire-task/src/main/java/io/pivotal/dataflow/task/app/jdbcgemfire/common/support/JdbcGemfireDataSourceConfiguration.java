@@ -2,7 +2,6 @@ package io.pivotal.dataflow.task.app.jdbcgemfire.common.support;
 
 import javax.sql.DataSource;
 
-import io.pivotal.dataflow.task.app.jdbcgemfire.config.CacheConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

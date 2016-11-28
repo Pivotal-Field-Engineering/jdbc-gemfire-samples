@@ -1,78 +1,131 @@
-<<<<<<< HEAD
-loc*.local
-server*.local
-*.iml
-*.ipr
-*.iws
-=======
-.iml*
->>>>>>> master
-.js.map
-.js
-.jar
-*npm-debug.log
-.mvn/
-.vscode/
-node_modules/
-typings/
-target/
-out
-src/main/resources/static/node/
-.DS_Store
-.#*
+# Created by .ignore support plugin (hsz.mobi)
 
-<<<<<<< HEAD
-*.irf
-*.crf
-*.drf
-*.lk
-=======
-.irf
-.crf
-.log
-.marker
-.drf
-.lk
->>>>>>> master
-.idea
-.project
-.settings
-.classpath
-.factorypath
-.springBeans
-<<<<<<< HEAD
-.gradle
-*.class
-*.if
-build
-vf.*
-bin
-# packaging
-*.7z
-*.dmg
-*.gz
-*.iso
-*.rar
-*.tar
-*.zip
-target/
-BACKUP*
-# logs and database
+
+######################
+# GemFire stuff:
+######################
+*.local
 *.log
-*.sqlite
-*.state
-*.lock
+*.if
 *.crf
 *.drf
-# OS generate files #
-.DS_Store*
-ehthumbs.db
-Icon?
-Thumbs.db
-=======
-**scripts/
->>>>>>> master
+*.krf
+*.lf
+*.lk
+*.pid
+*.gfs
+*.dat
+vf.gf.dmn-events.txt
+vf.gf.dmn-license.cfg
 
-provided/sqlf_appointment/server/*
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+
+######################
+# Directories #
+######################
+
+/build/
+bin/
+repos/
+/repos/
+doc/
+/doc/
+.gradle/
+/bin/
+target/
+
+######################
+# JetBrain's Idea specific stuff
+######################
+
+.idea*
+*.iml
+
+######################
+# User-specific stuff:
+######################
+
+######################
+## File-based project format:
+######################
+
+######################
+## Plugin-specific files:
+######################
+
+######################
+# IntelliJ
+######################
+
+######################
+# Windows
+######################
+
+
+######################
+# OSX
+######################
+
+.DS_Store
+.svn
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+
+######################
+# Eclipse
+######################
+
+.metadata
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
+
+# Eclipse Core
+.project
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# PyDev specific (Python IDE for Eclipse)
+*.pydevproject
+
+# CDT-specific (C/C++ Development Tooling)
+.cproject
+
+# JDT-specific (Eclipse Java Development Tools)
+.classpath
+
+# Java annotation processor (APT)
+.factorypath
+
+# PDT-specific (PHP Development Tools)
+.buildpath
+
+# sbteclipse plugin
+.target
+
+# Tern plugin
+.tern-project
+
+# TeXlipse plugin
+.texlipse
+
+# STS (Spring Tool Suite)
+.springBeans
+
+# Code Recommenders
+.recommenders/

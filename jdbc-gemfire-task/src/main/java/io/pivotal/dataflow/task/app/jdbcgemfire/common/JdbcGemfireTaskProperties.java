@@ -20,6 +20,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
+//TODO - remove locators
 @ConfigurationProperties("jdbcgemfire")
 public class JdbcGemfireTaskProperties {
 
@@ -34,8 +35,8 @@ public class JdbcGemfireTaskProperties {
 
     /**
      * The GemFire servers to add to pool.
+     public String locators;
      */
-    public String servers;
 
     /**
      * The properties location to be used.
@@ -187,12 +188,13 @@ public class JdbcGemfireTaskProperties {
     public void setRegionName(String regionName) {
         this.regionName = regionName;
     }
-
-    public String getServers() {
-        return servers;
+/*
+    public String getLocators() {
+        return locators;
     }
 
-    public void setServers(String servers) {
-        this.servers = servers;
+    public void setLocators(String locators) {
+        this.locators = locators;
     }
+*/
 }

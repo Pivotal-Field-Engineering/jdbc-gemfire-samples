@@ -3,9 +3,8 @@ package io.pivotal.dataflow.task.app.jdbcgemfire;
 import com.gemstone.gemfire.cache.Region;
 import com.gemstone.gemfire.cache.client.ClientCache;
 import io.pivotal.dataflow.task.app.jdbcgemfire.common.GemfireDozerItemWriter;
-import io.pivotal.dataflow.task.app.jdbcgemfire.config.CacheConfig;
+import io.pivotal.dataflow.task.app.jdbcgemfire.config.ClientConfiguration;
 import io.pivotal.dataflow.task.app.jdbcgemfire.config.DozerConfig;
-import io.pivotal.dataflow.task.app.jdbcgemfire.config.RegionConfig;
 import io.pivotal.gemfire.pubs.model.Author;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -25,7 +24,7 @@ import static org.junit.Assert.assertEquals;
  */
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = {CacheConfig.class, RegionConfig.class, DozerConfig.class, GemfireDozerItemWriter.class, GemfireDozerItemWriterTestUtil.class})
+@SpringBootTest(classes = {ClientConfiguration.class, DozerConfig.class, GemfireDozerItemWriter.class, GemfireDozerItemWriterTestUtil.class})
 @SuppressWarnings("serial")
 @ActiveProfiles(profiles = {"authors"})
 @DirtiesContext(classMode = DirtiesContext.ClassMode.AFTER_EACH_TEST_METHOD)

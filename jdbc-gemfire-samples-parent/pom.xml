@@ -25,7 +25,7 @@
     <module>../gemfire-pubs-model</module>
     <module>../gemfire-server-proto</module>
     <module>../jdbc-gemfire-task</module>
-    <module>../jdbc-gemfire-samples-rest</module>
+ <!--   <module>../jdbc-gemfire-samples-rest</module> -->
   </modules>
 
   <build>
