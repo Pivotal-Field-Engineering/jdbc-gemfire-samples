@@ -16,11 +16,7 @@
 package io.pivotal.dataflow.task.app.jdbcgemfire.common;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.stereotype.Component;
 
-//TODO - remove locators
 @ConfigurationProperties("jdbcgemfire")
 public class JdbcGemfireTaskProperties {
 
@@ -34,9 +30,9 @@ public class JdbcGemfireTaskProperties {
     public String regionName;
 
     /**
-     * The GemFire servers to add to pool.
-     public String locators;
+     * The GemFire locatorslo to add to pool.
      */
+    public String locators;
 
     /**
      * The properties location to be used.
@@ -188,7 +184,7 @@ public class JdbcGemfireTaskProperties {
     public void setRegionName(String regionName) {
         this.regionName = regionName;
     }
-/*
+
     public String getLocators() {
         return locators;
     }
@@ -196,5 +192,4 @@ public class JdbcGemfireTaskProperties {
     public void setLocators(String locators) {
         this.locators = locators;
     }
-*/
 }

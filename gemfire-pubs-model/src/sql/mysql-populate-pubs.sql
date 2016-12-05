@@ -38,7 +38,7 @@ INTO
 
 INSERT
 INTO
-    PUBLISHERS
+    publishers
     (
         PUB_ID,
         PUB_NAME,
@@ -59,7 +59,7 @@ INTO
 /*
 INSERT
 INTO
-    PUB_INFO
+    pub_info
     (
         PUB_ID,
         LOGO,
