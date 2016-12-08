@@ -1,0 +1,10 @@
+Connected, dumping recent logs for app test1 in org Northwest / space wlund as wlund@pivotal.io...
+
+2016-11-16T11:45:13.52-0800 [API/1]      OUT Created app with guid 579b320c-4339-4283-8115-a2ebae55495b
+2016-11-16T11:45:34.20-0800 [API/1]      OUT Updated app with guid 579b320c-4339-4283-8115-a2ebae55495b ({"state"=>"STOPPED"})
+2016-11-16T11:45:34.61-0800 [API/3]      OUT Updated app with guid 579b320c-4339-4283-8115-a2ebae55495b ({"environment_json"=>"PRIVATE DATA HIDDEN"})
+2016-11-16T11:45:39.43-0800 [API/7]      OUT Updated app with guid 579b320c-4339-4283-8115-a2ebae55495b ({"state"=>"STARTED"})
+2016-11-16T11:45:39.83-0800 [STG/0]      OUT Creating container
+2016-11-16T11:45:50.50-0800 [STG/0]      ERR Failed to create container
+2016-11-16T11:45:50.53-0800 [STG/0]      OUT Destroying container
+2016-11-16T11:45:50.53-0800 [STG/0]      OUT Successfully destroyed container
