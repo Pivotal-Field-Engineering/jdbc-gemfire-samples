@@ -1,4 +1,4 @@
-# jdbc-gemfire-samples
+<h1> VMware has ended active development of this project, this repository will no longer be updated.</h1><br># jdbc-gemfire-samples
  * **gemfire**  - Gemfire project space (client,server,model)
  * **dataflow** - Custom SCS components for SCDF (jdbc-source,groovy-processor,gemfire-sink)
  * **test**     - Local test suite (gemfire-sink-test)
